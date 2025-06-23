@@ -1,0 +1,205 @@
+---
+title: "results_first_model"
+format: 
+  pdf:
+    include-in-header:
+      text: |
+        \usepackage{tikz}
+        \usepackage{ebgaramond}
+        \setlength{\parindent}{1cm}
+editor: visual
+---
+
+## Dynamics
+
+We model an individual who makes an intertemporal decision. Starting from an initial level of resources $x_0$, he lives through two time periods (denoted 1 and 2). A normally distributed perturbation (mean 0 and variance $\sigma^2$, representing volatility) is added between $x_0$ and $x_1$, then again between $x_1$ and $x_2$.
+
+At time 0, the agent decides between two options:
+
+```{=tex}
+\begin{itemize}
+    \item Being 'impatient', and gaining $g$ resources immediately, that is between $x_0$ and $x_1$.
+    \item Being 'patient', and gaining $(1+r)g$ resources one period later (between $x_1$ and $x_2$). $r$ represents the interest rate.
+\end{itemize}
+```
+```{=tex}
+\begin{tikzpicture}[>=stealth, node distance=3cm]
+% Nodes
+\node (x0) at (0,0) {$x_0$};
+\node (x1) at (4,0) {$x_1$};
+\node (x2) at (8,0) {$x_2$};
+
+
+% Arrows
+\draw[->] (x0) -- node[below]{$+\mathcal{N}(0, \sigma^2)$} (x1);
+\draw[->] (x1) -- node[below]{$+\mathcal{N}(0, \sigma^2)$} (x2);
+
+% Curvy dashed arrows with labels
+\draw[->, bend left=45, dashed] (x0) to node[below] {+$g$} node[above] {If impatient} (x1);
+\draw[->, bend left=45, dashed] (x1) to node[below] {+$(1+r)g$} node[above] {If patient} (x2);
+
+\end{tikzpicture}
+```
+\section{Goals of the individual}
+
+The individual wants two things: be as rich as possible at the end of the game (maximise $x_2$) and pay rent at both time period (that is, minimise the probability that $x_1<0$ and $x_2<0$). One more thing: we assume that not paying rent once hurts a lot ($-\alpha)$, not paying it a second time hurts less ($-\beta$, with $0 \le \beta \le \alpha)$: you might already have been evicted, or anyway you are already in trouble with your landlord. This assumption reflects the idea of a 'rock bottom'. Note that the framework includes the case where there is no rock bottom ($\beta = \alpha$) and the case where it is game over after one rent failure ($\beta = 0$).
+
+The utility function is therefore: $$
+U(x_1,x_2) = x_2 - \alpha (x_1 < 0 \cup x_2 < 0) - \beta (x_1 < 0 \cap x_2 < 0)
+$$ {#eq-utility}
+
+For every value of the parameters, we will compute the interest rate $r^\star$ such that the individual is indifferent between patience and impatience, that is, between $g$ resources now and $(1+r)g$ resources later. Actually, I realised while doing the model that for small $g$, we can simply compare marginal utilities in $t_1$ vs $t_2$: $$r^\star \approx \frac{U_{t_1}'}{U_{t_2}'}-1$$
+
+This is much quicker to compute numerically, so we will use that formula in what follows. It could also be analytically tractable in certain cases: formally, the expected utility is made of integrals, and when you differentiate you get rid of one integral.
+
+## Results
+
+In @fig-discount, we display the discount rate depending on $x_0$, with $\alpha$ fixed at 10 and $\beta$ ranging from 0 (only the first cut hurts) to 10 (the second cut is just as deep as deep as the first one).
+
+```{python}
+#| echo: false
+#| message: false
+#| fig-cap: Discount rate depending on the initial state 
+#| output: asis
+#| label: fig-discount
+
+from tqdm import tqdm
+import numpy as np
+from scipy import stats
+import matplotlib.pyplot as plt
+import numpy as np
+
+def proba_twice_below(x_0, σ, r, patient,g):
+    # Define the mean vector
+    mean = np.array([x_0 + g*(1-patient), x_0 + g*(1-patient) + (1+r)*patient*g])
+    # Var(x_1) = \sigma^2
+    # Var(x_2) = 2 * \sigma^2 (because it's the sum of two independent normal variables)
+    # Cov(x_1, x_2) = \sigma^2 (because they share one common perturbation)
+    cov = np.array([[σ**2, σ**2],
+                    [σ**2, 2*σ**2]])
+    # Compute the probability using the multivariate normal CDF
+    prob = stats.multivariate_normal.cdf([0, 0], mean=mean, cov=cov)
+    return prob
+
+def proba_once_below(x_0,σ,r, patient,g):
+    #p(A U B) = p(A) + p(B) - p(A inter B)
+    return stats.norm.cdf(-(x_0 + g*(1-patient)) / σ) + stats.norm.cdf(-(x_0 + g*(1-patient) + (1+r)*patient*g)/ (σ * np.sqrt(2))) - proba_twice_below(x_0, σ,r, patient,g)
+    
+def expected_utility(x_0,σ,r=0, patient=False,g=0,α=10,β=0,base = 0,drift=0):
+    u = x_0 + g*(1-patient) + (1+r)*patient*g - α*proba_once_below(
+        x_0, σ, r, patient,g) - β*proba_twice_below(
+        x_0,σ, r, patient,g)
+    return u
+
+def discount_factor(x_0,σ,drift=0,base=5,β=0):
+    baseline = expected_utility(x_0,σ,r=0,g=0,patient=False,drift=drift,base=base,β=β)
+    marginal_t1 = expected_utility(x_0,σ,r=0,g=.001,patient=False,drift=drift,base=base,β=β) - baseline
+    marginal_t2 = expected_utility(x_0,σ,r=0,g=.001,patient=True,drift=drift,base=base,β=β) - baseline
+    return(marginal_t1/marginal_t2)
+  
+X = np.linspace(-5,5)
+
+
+for β in [0,5,10]:
+  plt.plot(X,[discount_factor(x_0,σ=1,β=β) - 1 for x_0 in X],label=f"β ={β}")
+
+plt.xlabel("Initial state")
+plt.ylabel("Discount rate")
+plt.legend()
+```
+
+-   In line with our intuition, discount rates rise when the initial state approaches the threshold.
+
+-   Contrary to our intuition, discount rates go back to zero below the threshold.
+
+-   Contrary to our intuition, lowering $\beta$ (which we though amounted to more of a rock bottom) lowers discount rates.
+
+The results make sense if we look at the utility function. In @fig-util, we display expected utility depending on the initial state $x_0$, for standard parameters values. We can make two remarks:
+
+-   Below the threshold, utility reverts to a linear function. In this case, one is sure to never be above the threshold, so in @eq-utility, the terms in $\alpha$ and $\beta$ are null, and the expected utility is simply the expected final state $x_2$. In other words, very desperate individuals simply maximizes expected payoff, so have no reason to discount the future. This does not reflect the 'rock bottom' intuition.
+
+-   Increasing $\beta$ makes the cliff steeper and enlarges the "danger zone" where the function is steep. Hence the higher discount rates, in a wider region in @fig-discount. I think we can all agree that $\beta$ does not play the role we intended for him. Bad $\beta$.
+
+```{python}
+#| echo: false
+#| fig-cap: Expected utility function
+#| label: fig-util
+for β in [0,5,10]:
+  plt.plot(X,[expected_utility(x_0=x_0,σ = .5,base=0,β=β) for x_0 in X],label=f"β ={β}")
+plt.xlabel("Initial state")
+plt.ylabel("Expected utility")
+plt.legend()
+plt.show()
+```
+
+## My alternative proposition
+
+What we had here is a cliff utility function, lacking a rock bottom. The most straightforward way to introduce a rock bottom is to assume that the final payoff is only cashed in if the individual stays above the threshold at both time steps, and is zero otherwise. We also add some quantity $\alpha$ to the payoff, which produces a cliff at the threshold: when $x_2$ is barely above zero, utility is far from zero. We do not have a parameter controlling the degree of rock bottom, as I realised that there is or there is not a rock bottom. If the utility function goes back to linear below threshold, even with a very gentle slope, individuals revert to expected-payoff-maximization.
+
+This gives:
+
+$$
+U(x_1,x_2) = (\alpha + x_2)*(x_1>0 \cap x_2 > 0)
+$$ {#eq-rockbottom}
+
+In this case, I did not looked at discount rates, but I plotted the utility function (@fig-alternative) to make sure it reflects our intuition. It does so, for $\alpha > 0$. Also, I suspect discount rates could be analytically tractable (I'll spare you the details of why).
+
+```{python}
+#| echo: false
+#| fig-cap: Proposed utility function
+#| output: asis
+#| label: fig-alternative
+
+
+def expected_utility(x_0, σ, r=0, g=0, patient=False,drift=0, base = 5):
+    # Define the mean vector and covariance matrix for x_1 and x_2
+    mean = np.array([x_0 + g*(1-patient), x_0 + g*(1-patient) + (1+r)*patient*g + drift])
+    cov = np.array([[σ**2, σ**2],
+                    [σ**2, 2*σ**2]])
+    
+    # Compute probability that both x_1 > 0 and x_2 > 0
+    #cdf_5_5 = stats.multivariate_normal.cdf([5, 5], mean=mean, cov=cov)
+    # Compute the marginal CDFs
+    #cdf_x1_5 = stats.norm.cdf(5, loc=mean[0], scale=np.sqrt(cov[0, 0]))
+    #cdf_x2_5 = stats.norm.cdf(5, loc=mean[1], scale=np.sqrt(cov[1, 1]))
+    # Compute the probability that X1 > 5 and X2 > 5
+    #prob_both_above = 1 - (cdf_x1_5 + cdf_x2_5 - cdf_5_5)
+    # Compute expected value of x_2 given that both x_1 > 0 and x_2 > 0
+    # We need to use the conditional expectation formula for bivariate normal distribution
+    def integrand(x1, x2):
+        return (x2+base) * stats.multivariate_normal.pdf([x1, x2], mean=mean, cov=cov)
+    
+    # Numerical integration to compute E[x_2 | x_1 > 0, x_2 > 0]
+    from scipy import integrate
+    expected_x2_given_both_above, _ = integrate.dblquad(
+        integrand, 0, np.inf, lambda x: 0, lambda x: np.inf
+    )
+    #expected_x2_given_both_above /= prob_both_above
+    
+    # Compute expected utility
+    #expected_utility = prob_both_above * expected_x2_given_both_above
+    expected_utility = expected_x2_given_both_above
+    return expected_utility
+
+X = np.linspace(-2,3)
+
+for a in [0,5,10]:
+  plt.plot(X,[expected_utility(x_0=x_0,σ = .5,base=a) for x_0 in X],label=f"α = {a}")
+
+plt.xlabel("Initial state")
+plt.ylabel("Expected utility")  
+plt.legend()
+plt.show()
+
+
+```
+
+I have one doubt tough: maybe this brings us back to a 'collection risk' argument: it literally assumes that the payout is only collected if one stays above the threshold. It also amounts to assuming a starvation threshold, below which you automatically die. In the meantime, there is still a 'waiting cost' element: you might want the dollar now because it is super useful today, it allows you to stay alive.
+
+Another possibility would be to have a many-time-periods model, where each period below the threshold slashes utility by $x$%. This is what we assumed in the Proc B paper, and a rock bottom ensues. But that would make the model complex, and for sure analytically intractable.
+
+## A remark
+
+Another problem: in our model, we make no distinction between saving and consumption, which simplifies a lot. We just ask the individual if she would prefer to a dollar now rather than tomorrow, and if she takes it now we assume she will still be a dollar richer tomorrow. If she expects to face the threshold tomorrow more than today, intuitively she should save it for tomorrow, but in our model she would say: "give me the dollar now, I'll probably don't need it today but anyway I'll still have it tomorrow". By construction, discount rates can therefore never be negative in our model.
+
+At some point though, I had miscoded something and the resources given could not be stored, so they only immediate consequences on the possibility to be above the threshold at this time. In this caseI had a positive discount rate at zero, but negative ones above (and below when $\beta > 0$). It makes sense: the uncertainty on $x_2$ is larger than on $x_1$ (the variance is $2\sigma$ since there have been two perturbations), so there are scenarios where you know whether you will be below the threshold in $t_1$ (the variance is not large enough to make you cross it), so the real stake is whether you will make it in $t_2$. Maybe it's fine, I just wanted to point it!

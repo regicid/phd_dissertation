@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 720" xmlns="http://www.w3.org/2000/svg">
+    <!-- Font definitions -->
+  <defs>
+    <style type="text/css">
+      @font-face {
+        font-family: 'Garamond';
+        font-style: normal;
+        font-weight: normal;
+        src: local('EB Garamond'), local('EBGaramond');
+      }
+      
+      @font-face {
+        font-family: 'Latin Modern Roman';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Latin Modern Roman'), local('LatinModernRoman'), local('LM Roman');
+      }
+      
+      text.garamond {
+        font-family: 'Garamond', serif;
+      }
+      
+      text.lmroman {
+        font-family: 'Latin Modern Roman', serif;
+      }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="860" fill="white"/>
+  
+  <!-- Panel 1: Dynamics Visualization -->
+  <rect x="50" y="50" width="700" height="120" fill="#f9f9f9" rx="10" ry="10" stroke="#ddd" stroke-width="1"/>
+  <text x="400" y="75" class="garamond" font-size="16" text-anchor="middle" font-weight="bold">(A) Resource levels Dynamics</text>
+  
+  <!-- State circles -->
+  <circle cx="150" cy="120" r="25" fill="white" stroke="#333" stroke-width="2"/>
+  <circle cx="400" cy="120" r="25" fill="white" stroke="#333" stroke-width="2"/>
+  <circle cx="650" cy="120" r="25" fill="white" stroke="#333" stroke-width="2"/>
+  
+  <!-- State labels -->
+  <text x="150" y="125" class="lmroman" font-size="16" text-anchor="middle" font-style="italic">x₀</text>
+  <text x="400" y="125" class="lmroman" font-size="16" text-anchor="middle" font-style="italic">x₁</text>
+  <text x="650" y="125" class="lmroman" font-size="16" text-anchor="middle" font-style="italic">x₂</text>
+  <text x="150" y="90" class="garamond" font-size="12" text-anchor="middle">Initial state</text>
+  <text x="400" y="90" class="garamond" font-size="12" text-anchor="middle">State in period 1</text>
+  <text x="650" y="90" class="garamond" font-size="12" text-anchor="middle">State in period 2</text>
+
+  <!-- Transition arrows -->
+  <line x1="175" y1="120" x2="365" y2="120" stroke="#333" stroke-width="2"/>
+  <line x1="425" y1="120" x2="615" y2="120" stroke="#333" stroke-width="2"/>
+  <polygon points="365,120 355,115 355,125" fill="#333"/>
+  <polygon points="615,120 605,115 605,125" fill="#333"/>
+  
+  <!-- Noise labels -->
+  <text x="265" y="108" class="lmroman" font-size="14" text-anchor="middle" font-style="italic">+ 𝒩(0,σ²)</text>
+  
+  <text x="515" y="108" class="lmroman" font-size="14" text-anchor="middle" font-style="italic">+ d + 𝒩(0,σ²)</text>
+  
+  <!-- Panel 3: Utility Scenarios - With significant vertical extension -->
+  <rect x="50" y="190" width="700" height="500" fill="#f9f9f9" rx="10" ry="10" stroke="#ddd" stroke-width="1"/>
+  <text x="400" y="215" class="garamond" font-size="16" text-anchor="middle" font-weight="bold">(B) Utility Functions</text>
+  
+  <!-- Scenario 1: Additive Penalty - Extended for square placeholder -->
+  <rect x="70" y="230" width="325" height="220" fill="#fff" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="232.5" y="250" class="garamond" font-size="14" text-anchor="middle" font-weight="bold">(i) Additive Penalty</text>
+  <text x="232.5" y="275" class="lmroman" font-size="12" text-anchor="middle" font-style="italic">U(x₁,x₂) = x₁ + x₂ - w(x₁ &lt; 0 ∧ x₂ &lt; 0)</text>
+  
+  <!-- Square placeholder for Python graph -->
+  <image x="132.5" y="265" width="200" height="200" href="/Users/benoit2c/code/model_time/svg_figure/1.png" />
+  
+  <!-- Scenario 2: Hibernation - Extended for square placeholder -->
+  <rect x="405" y="230" width="325" height="220" fill="#fff" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="567.5" y="250" class="garamond" font-size="14" text-anchor="middle" font-weight="bold">(ii) Hibernation</text>
+  <text x="567.5" y="275" class="lmroman" font-size="12" text-anchor="middle" font-style="italic">U(x₁,x₂) = (x₁ + w)(x₁ &lt; 0) + (x₂ + w)(x₂ &lt; 0)</text>
+  
+  <!-- Square placeholder for Python graph -->
+  <image x="467.5" y="265" width="200" height="200" href="/Users/benoit2c/code/model_time/svg_figure/2.png" />
+
+  
+  <!-- Scenario 3: Game Over - Extended for square placeholder -->
+  <rect x="70" y="460" width="325" height="220" fill="#fff" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="232.5" y="480" class="garamond" font-size="14" text-anchor="middle" font-weight="bold">(iii) Game Over</text>
+  <text x="232.5" y="505" class="lmroman" font-size="12" text-anchor="middle" font-style="italic">U(x₁,x₂) = (x₁ + w)(x₁ &gt; 0) + (x₂ + w)(x₁ &gt; 0 ∧ x₂ &gt; 0)</text>
+  
+  <!-- Square placeholder for Python graph -->
+  <image x="132.5" y="495" width="200" height="200" href="/Users/benoit2c/code/model_time/svg_figure/3.png" />
+
+  
+  <!-- Scenario 4: All in Vain - Extended for square placeholder -->
+  <rect x="405" y="460" width="325" height="220" fill="#fff" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
+  <text x="567.5" y="480" class="garamond" font-size="14" text-anchor="middle" font-weight="bold">(iv) All in Vain</text>
+  <text x="567.5" y="505" class="lmroman" font-size="12" text-anchor="middle" font-style="italic">U(x₁,x₂) = (x₁ + x₂ + w)(x₁ &gt; 0 ∧ x₂ &gt; 0)</text>
+  
+  <!-- Square placeholder for Python graph -->
+  <image x="467.5" y="495" width="200" height="200" href="/Users/benoit2c/code/model_time/svg_figure/4.png" />
+
+  
+</svg>

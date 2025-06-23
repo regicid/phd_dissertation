@@ -1,0 +1,270 @@
+---
+title: "Why does poverty increase time discounting? Present needs and uncertain future."
+format:
+  pdf
+bibliography: references.bib
+editor: visual
+header-includes:
+  - \usepackage{tikz}
+  - \usepackage{ebgaramond}
+  - \usepackage{hyperref}
+  - \usepackage{booktabs}
+  - \usepackage{tabularx}
+  - \addtokomafont{disposition}{\rmfamily}
+  - \usepackage{indentfirst}
+  - \setlength{\parindent}{1.5em}
+  - \setlength{\parskip}{0pt}
+csl: procb.csl
+keeptex: true
+---
+
+## Abstract
+
+In situations of poverty, people are observed to heavily discount the future. Despite a clear empirical consensus, the theoretical literature lacks satisfying models explaining this social gradient. In particular, the urge of satisfying urgent needs is often invoked verbally as an explanation, but has never been properly modeled. Here, we show that the desperation threshold model can explain high discounting in situations of poverty. We present an analytical model with four different intertemporal scenarios of the desperation threshold, varying the consequences of the threshold on future utility. The model predicts high discounting around the threshold, and high patience at intermediate levels of resources. In contrast with the consequences of the desperation on risk taking, as the effect is predicted to occur on both sides of the threshold. We show that, unlike existing accounts, our explanation does not depend on assuming a future improvement, but predicts a U-shaped effect of future expectations. We discuss the relevance of our findings for social sciences and public policy.
+
+## Introduction
+
+In situations of poverty, people are often observed to heavily discount the future [@reimers2009; @green1996; @haushofer2014; @lawrance1991; @carvalho]. A dramatic manifestation of this phenomenon is 'payday loans': each year, about ten million Americans with low incomes resort to short term borrowing, at an annual interest rate of the order of 400% [@banerjee2007; @dobbie2013; @bertrand2011]. An association between poverty and time discounting has been observed repeatedly since @malthus1798. Causality has been proven to be bidirectional [@doepke2008]: not only do short-term oriented individuals accumulate less wealth [@sunde2022; @epper2020], but low resources also increases time discounting [@carvalho2016; @handa2020; @haushoferNegativeIncomeShocks2013] -- the process we are here interested in. In a recent review, time discounting was found to be the only known causally robust effect of poverty on decision making [@haushofer]. This effect is of interest to several disciplines, including economics [@lawrance1991], sociology [@duvoux2023], psychology [@haushofer2014; @griskevicius2013] and criminology [@vangelder2025]. It has profound implications: it has been proposed (i) as the common denominator of the 'behavioural constellation of poverty' - the set of behaviours typical of low-income populations [@pepper2017], (ii) as a possible reason for poverty persistence [@haushofer2014], and (iii) as a reason for the higher prevalence of crime - a behaviour that often brings short-term benefits and potential long-term legal troubles - in deprived populations [@pepper2017; @brezina2008].
+
+In stark contrast with the settled empirical case, it remains unclear why poverty increases time discounting. Two perspectives have been proposed. The first considers high discounting as a symptom that poverty degrades decision making. This can occur through stress [@haushofer2014], ego-depletion [@spears2011] or, most famously, a 'tunneling effect': as Shah [@shah2012] put it, "While focusing on the groceries from week to week, we might neglect next month's rent" (p. 682). In a similar vein, @banerjee2007 suggest that not thinking about the future is "emotionally wise \[...\], to avoid confronting the sheer inadequacy of the standard of living" (p. 165).
+
+A second perspective, which we adopt here, proposes that high discounting is not dysfunctional, but on the contrary an appropriate response to a context of poverty. A common argument concerns "collection risks": in poverty, people may be less likely to actually collect the future reward, for instance because of a higher mortality risk [@griskevicius2011]. However, people with low incomes also exhibit high discount rates over very short periods of times (e.g. weeks in the case of payday loans), where mortality risks are negligible [@riis-vestergaard2017]. Furthermore, this class of explanations cannot account for the influence of 'states', like hunger [@allen2021] or more generally financial need [@sharma2023; @carvalho2016; @fitzpatrick2014] on time discounting: collection risks are an environment-level parameter, presumably stable on short-term scales. In any case, collection risks are only one side of the problem: poverty also plausibly increases how much one needs resources right now, and can thereby generate 'waiting costs' [@mell2021]. Many authors [@sharma2023; @mell2021; @frankenhuis2020; @epper2015; @haushoferNegativeIncomeShocks2013; @fisher1930] thus propose a simple verbal justification, well summarised by the character Earn in the TV series *Atlanta*: "poor people don't have time for investments, because poor people are too busy trying not to be poor! I need to eat today, not in September...".
+
+However intuitive Earn's argument may be, we consider it underspecified and potentially misleading. The optimal level of time discounting depends not only on the value of present consumption, but also on the (expected) value of future consumption -- which should also increase in situations of poverty, if low resources today tends to be correlated with low resources tomorrow. Simply put, Earn will also need to eat in September; his current level of need is therefore not a sufficient reason to discount the future. The reasoning only holds if survival is at stake [@chavas2013] or if Earn has reasons to expect his situation to improve in the meantime -- that is, if his poverty is not a persistent condition, but a rough patch. We are aware of only two attempts to formalize this intuition, one in economics [@epper2015] and one in evolutionary psychology [@mell2021]. Both rely on the assumption that individuals in poverty expect their situation to improve. If someone expects to be even worse off in the future, these models instead predict patience [@epper2015, p. 4]. In reality, the "truly disadvantaged" populations [@wilson2012] tend to be stuck in poverty, and are often found by ethnographers to be rather pessimistic [@macleod2018; @lewis1963]. Among them, pessimism has been found to be associated with low saving [@gladstone2025], and in particular, offenders have been described in ethnographies as both extremely short term oriented and particularly pessimistic about the future [@wilson2012; @dickinson2024; @anderson2000]. Thus, the literature lacks a model capable of explaining why people tend to discount the future when they struggle to meet basic needs, and their future is not expected to be brighter.
+
+In this paper, we show that Earn's intuition is warranted under an alternative conceptualisation of needs', grounded in the desperation threshold model (DTM) [@decourson]. The DTM posits that individuals experience a critical resource level representing basic needs above which they strongly prefer to be. In contrast with the standard microeconomics model, the DTM does not assume a concave mapping between resources and utility, but a S-shape. The utility function features a very steep region -- the desperation threshold -- where basic needs hang in the balance. It is flatter both above and below the threshold, as basic needs are respectively securely satisfied and definitively unmet. Here, we extend the DTM from the study of risk taking to the study of intertemporal decisions, introducing four distinct scenarios, varying the consequences of the desperation threshold on utility. We demonstrate that, regardless of implementation, one should discount the future more when close to this threshold. This occurs because the long term is more uncertain than the present: individuals situation may improve or worsen, both resulting in lower subjective resource valuation. For the same reason, three out of the four scenarios predicts even more pronounced discounting when a desperate individual has *directional* expectations about the future: whether she expects to have more or less resources in the future, future rewards become further devalued. Thus, unlike previous approaches [@epper2015; @mell2021], our result is not contingent on assuming that individuals in poverty are optimistic about the future, but it integrates those models highlighting optimism's role with evidence of extreme discounting among fatalistic populations [@anderson2000; @dickinson2024; @wilson1985].
+
+## Model
+
+We model an agent living for two periods (Fig. 1A), defined by a single state parameter: its level of resources, that changes stochastically over time. The agent begins with $x_0$ resources. The resource level is subject to random shocks before the first time period, and between the first and the second. These shocks are independent and identically distributed, following a normal distribution with mean zero and variance $\sigma^2$, with $\sigma$ representing environmental volatility. Between periods, a constant drift parameter $d$ is applied to the resource level. This parameter captures future expectations: $\mathbb{E}(x_2|x_1)= x_1 + d$, in other words one expects his state to improve over time if $d>0$, and to deteriorate if $d<0$. For simplicity, we do not distinguish between consumption, income and wealth: the variables $x_i$ summarises the material standing of the agent at time $i$.
+
+The agent's preferences are represented by a utility function that depends on resource states in both periods, $x_1$ and $x_2$. Here, we realized that the desperation threshold concept could be translated into an intertemporal utility function in multiple ways. The threshold is verbally defined as a strong disutility below some level of resources [@decourson]. Yet, it has been formalised in several, slightly different ways [@decourson2021; @decoursonWhyViolenceHigh2023b; @decourson2025]. While these implementations yield qualitatively similar predictions regarding risk taking --- the primary dependent variable in previous studies --- their implications on time discounting may differ substantially. We identified four subtly different scenarios of the DTM idea within our two-period setup. For the sake of exhaustiveness, we present all four scenarios, highlighting the places where the results diverge. We keep these functions as simple as possible, combining a linear dependence on states with thresholds effects. In other words, we neglect diminishing marginal utility at high resource levels, since our analysis focuses on decision making around the threshold.
+
+In Fig. 1, we define the four utility functions, along with conceptual figures and their intuitive names. In the first one, falling below the threshold incurs a fixed utility penalty $w$. This penalty applies additively: being below the threshold in both periods generates twice the disutility of being below once. Importantly, utility continues to decrease linearly below the threshold without a lower bound, meaning that one is still sensitive to its level of resources even if can not meet the goal. The second function sets period utility to zero whenever resources fall below the threshold. Here and in the next functions, an agent becomes indifferent to its state when below the threshold: if one is below, it does not matter how far below one is. To create a discontinuous utility jump at the threshold, we introduce a constant also denoted $w$ in this and subsequent functions. This function can represent 'hibernation': being below the threshold makes it impossible to accumulate utility in the present, but preserves the possibility to do so in the future. The third function represents a 'game-over' below the threshold: it cancels not only the utility of this time period, but also of possible future time periods. This captures irreversible consequences, such as eviction: even if resources become sufficient tomorrow, today's eviction cannot be undone. Our fourth function sets lifetime utility to zero if resources fall below the threshold in any period. Even if one has been above the threshold in the past, it has all been 'in vain'. This can for instance capture starvation during development: life terminates, and the previously accumulated physical capital is inconsequential.
+
+These utility functions give rise to a time orientation, i.e. a preference for sooner, or later, resources. We capture the agent's level of time discounting through its marginal rate of intertemporal substitution (MRIS) -- the amount one must receive to willingly surrender one resource unit today. Formally, $$
+MRIS(x_0) = \frac{\frac{d\mathbb{E}(U)}{dx_1}}{\frac{d\mathbb{E}(U)}{dx_2}}
+$$
+
+In other words, the agent decides whether to discount the future based on her initial level of resources, by comparing to what extent an extra resource in the first time period makes her happier than an extra resource in the second one. Note that economists often distinguish between genuine time discounting -- an exogenous disregard for future consequences just because they happen in the future -- from rational motives to prefer immediate rewards [@carvalho2016; @haushofer]. Here, we do not make such a distinction, as we aim to find rational explanations for observed behaviour. Note also that when computing the marginal utility in the first period, we assume that the extra resource is not present in the second period. This is simply a way to present the results in a more insightful way. Otherwise, $MRIS > 1$ by construction: one always prefers to have the resource in the short term, even if it is mainly useful in the long term. Note also that $x_1$ and $x_2$ are random variables. $MRIS$ thus depends on *expected* marginal utilities knowing only $x_0$. By differentiating with respect to $x_1$, we mean with respect to its expectation, while keeping $\mathbb{E}(x_2)$ constant. This specification is necessary to obtain a meaningful discount factor: as we study discontinuous -- and therefore non-differentiable -- utility functions, the random perturbations smoothes utility, ensuring marginal utility is well-defined.
+
+```{r}
+#| fig.cap: "Summary of the model assumptions. Utility functions are visualized in heatmaps, where lighter tones indicate higher utility. Zero marks the desperation threshold, hatches mark areas where utility is zero."
+#| out.width: "100%"  # Control the size as needed
+#| echo: false
+knitr::include_graphics("figure.svg")
+```
+
+## Results
+
+```{python}
+#| echo: false
+#| fig.cap: "Time discounting depending on the initial level of resources $x_0$. Here, we assume neutral future expectations ($d=0$), and $\\sigma = 1$. The vertical dashed line marks the desperation threshold, the horizontal one marks time neutrality."
+
+
+import numpy as np
+from scipy import stats
+import matplotlib.pyplot as plt
+from matplotlib import rc
+from matplotlib import rcParams
+
+def beta_oneoff(x_0,d=0,w=5,σ=1):
+    marginal_1 =stats.norm.cdf(x_0,scale = σ) + w*stats.norm.pdf(x_0,scale = σ )
+    marginal_2 = stats.norm.cdf((x_0+d)/np.sqrt(2),scale = σ)  + w*stats.norm.pdf(
+        (x_0+d)/np.sqrt(2),scale = σ)/np.sqrt(2)
+    return marginal_1/marginal_2
+
+def beta_cliff(x_0,d=0,w=5,σ=1):
+    marginal_1 = 1 + w*stats.norm.pdf(x_0,scale = σ )
+    marginal_2 = 1 + w*stats.norm.pdf(
+        (x_0+d)/np.sqrt(2),scale = σ)/np.sqrt(2)
+    return marginal_1/marginal_2
+
+def beta_gameover(x_0,d,w=5,σ=1):
+    def prob_both_above(x_0):
+        mean = [x_0,x_0+d]
+        cov = np.array([[σ**2, σ**2],
+                    [σ**2, 2*σ**2]])
+        return 1 - stats.norm.cdf(-x_0/σ) - stats.norm.cdf(-(x_0+d)/(σ*np.sqrt(2))) + stats.multivariate_normal.cdf([0, 0], mean=mean, cov=cov)
+    marginal_1 = stats.norm.cdf(x_0) + w*stats.norm.pdf(x_0,scale=σ) +  stats.norm.pdf(x_0 + d, scale=σ) * ((w + d) * stats.norm.cdf(d, scale=σ) + σ**2 * stats.norm.pdf(x_0 + d, scale=σ))
+    marginal_2 = prob_both_above(x_0) + w*stats.norm.pdf(x_0 + d, scale=np.sqrt(2) * σ) / np.sqrt(2) * stats.norm.cdf(x_0 - d, scale=np.sqrt(2) * σ)
+    return marginal_1/marginal_2
+
+def beta_onestrike(x_0,d=0,w=5,σ=1):
+    def prob_both_above(x_0,σ,d):
+        mean = [x_0,x_0+d]
+        cov = np.array([[σ**2, σ**2],
+                    [σ**2, 2*σ**2]])
+        return 1 - stats.norm.cdf(-x_0/σ) - stats.norm.cdf(-(x_0+d)/(σ*np.sqrt(2))) + stats.multivariate_normal.cdf([0, 0], mean=mean, cov=cov)
+    marginal_1 = prob_both_above(x_0,σ,d) + stats.norm.pdf(x_0, scale=σ) * ((w + d) * stats.norm.cdf(d, scale=σ) + σ**2 * stats.norm.pdf(x_0 + d, scale=σ))
+    marginal_2 = prob_both_above(x_0,σ,d) + w*stats.norm.pdf(x_0 + d, scale=np.sqrt(2) * σ) / np.sqrt(2) * stats.norm.cdf(x_0 - d, scale=np.sqrt(2) * σ)
+    return marginal_1/marginal_2
+
+rc('text', usetex=True)
+rcParams['font.family'] = 'garamond'
+
+fig, axes = plt.subplots(2, 2, figsize=(8, 8),sharey=True)
+X = np.linspace(-5,5,200)
+w = 10
+d = 0
+σ = 1
+
+# Calculate y values for each function
+y1 = [beta_cliff(x_0,σ=σ,w=w,d=d) for x_0 in X]
+y2 = [beta_oneoff(x_0,σ=σ,w=w,d=d) for x_0 in X]
+y3 = [beta_gameover(x_0,σ=σ,w=w,d=d) for x_0 in X]
+y4 = [beta_onestrike(x_0,σ=σ,w=w,d=d) for x_0 in X]
+
+# Plot lines and fill areas with different colors above and below y=1
+axes[0, 0].plot(X, y1, color="k")
+axes[0, 0].fill_between(X, 1, y1, where=(np.array(y1) >= 1), alpha=0.3, color='lightblue', interpolate=True)
+axes[0, 0].fill_between(X, 1, y1, where=(np.array(y1) < 1), alpha=0.3, color='lightcoral', interpolate=True)
+
+axes[0, 1].plot(X, y2, color="k")
+axes[0, 1].fill_between(X, 1, y2, where=(np.array(y2) >= 1), alpha=0.3, color='lightblue', interpolate=True)
+axes[0, 1].fill_between(X, 1, y2, where=(np.array(y2) < 1), alpha=0.3, color='lightcoral', interpolate=True)
+
+axes[1, 0].plot(X, y3, color="k")
+axes[1, 0].fill_between(X, 1, y3, where=(np.array(y3) >= 1), alpha=0.3, color='lightblue', interpolate=True)
+axes[1, 0].fill_between(X, 1, y3, where=(np.array(y3) < 1), alpha=0.3, color='lightcoral', interpolate=True)
+
+axes[1, 1].plot(X, y4, color="k")
+axes[1, 1].fill_between(X, 1, y4, where=(np.array(y4) >= 1), alpha=0.3, color='lightblue', interpolate=True)
+axes[1, 1].fill_between(X, 1, y4, where=(np.array(y4) < 1), alpha=0.3, color='lightcoral', interpolate=True)
+
+axes[0, 0].set_title(r"\textbf{(A) Additive penalty}")
+axes[0, 1].set_title(r"\textbf{(B) Hibernation}")
+axes[1, 0].set_title(r"\textbf{(C) Game-over}")
+axes[1, 1].set_title(r"\textbf{(D) All in vain}")
+
+for ax in axes.flat:
+    ax.set_yscale("log")
+    ax.axhline(y=1, color='k', linestyle='--', linewidth=1)
+    ax.axvline(x=0, color='k', linestyle='--', linewidth=1)
+
+fig.text(0.53, 0.02, "Resources ($x_0$)", ha='center', va='center', fontsize=20, fontweight='bold')
+fig.text(0.02, 0.5, "Time discounting", ha='center', va='center', rotation='vertical', fontsize=20, fontweight='bold')
+
+plt.ylim((.1,10))
+plt.tight_layout(rect=[.02, 0.03, 1, 1])
+plt.show()
+```
+
+### Analytical derivation
+
+We analyse our model by describing how time discounting, as measured by the MRIS varies depending on the agent's state $x_0$, future expectations $d$ and environment volatility $\sigma$. Here, we give an intuitive account of the results, and develop some mathematical details of only the simpler cases -- the 'additive penalty' and the 'hibernation' scenario, that are time-separable. In the SI, we present detailed analytical derivations for all four scenarios, asymptotic approximations and full numerical results.
+
+To derive marginal utilities formulas, we note that an extra resource has two effects on the agent's utility. First, a 'level effect': it makes her richer on average. Second, the extra resource has a 'threshold effect': it may push one above the threshold, which brings a utility of $w$ with a weight $\phi(x_0)$ -- the normal probability density function. This component follows the bell-shaped Gaussian curve, with a peak at $x_0=0$. This captures the DTM intuition: one never needs resources more than on the threshold of desperation. The marginal utility decomposes naturally using the Leibniz rule: the 'level effect' comes from differentiating under the integral, while the 'threshold effect' arises from the change in probability mass at the threshold -- a boundary term. In the second time period, the agent faces a similar dilemma, hence the same functional form, only with a doubled variance due to the longer time horizon, and a drift $d$. In the additive penalty case, the MRIS simplifies to: $$MRIS = \frac{1+w\phi_{\sigma^2}(x_0)}{\underbrace{1}_{\text{level effect}}+\underbrace{w\phi_{2\sigma^2}(x_0+d)}_{\text{threshold effect}}}$$
+
+### The effect of resources
+
+In Fig. 2, we plot discounting levels depending on $x_0$, assuming neutral future expectations ($d=0$). Above the threshold, all four utility scenarios yield qualitatively similar patterns. Far above the threshold, the agent exhibits time neutrality ($MRIS \sim 1$). This occurs because the threshold becomes irrelevant ($\Phi(-x_0) = o(1)$), and by assumption, resources in both periods yield equal utility. Slightly above the threshold, the agent should be patient ($MRIS < 1$), out of precaution: immediate needs are almost certainly met, but future needs remain at stake.
+
+The agent becomes impatient ($MRIS > 1$) when $x_0$ is very close to the threshold. In this region, meeting the threshold hangs in the balance both periods, but greater uncertainty about the future makes immediate gains more important. More precisely, one can thus be quite sure to need the resources in the short term, but in the long term, her situation is likely to have changed more. Whether her future condition improves or worsens, the probability of being near the threshold declines (Fig. 3), reducing the marginal value of future resources.
+
+Fig. 3 illustrates these two results by comparing the probability that a marginal resource shifts the agent above the threshold in each period. Analytically, for $x_0 > 0$, $\phi_{2\sigma^2}(x_0) > \phi_{\sigma^2}(x_0) \Longleftrightarrow x_0 < \sigma \sqrt{2\ln 2}$. This defines the region in which the agent prefers present resources in the 'additive penalty' case: $MRIS > 1 \Leftrightarrow x_0 < \sigma \sqrt{2\ln 2}$ (Fig. 3). In the 'hibernation' scenario, it is a sufficient condition for $MRIS > 1$ (see SI). This implies that size of this 'impatience' region is roughly proportional to the volatility $\sigma$: higher uncertainty requires a higher buffer to feel secure in the present. However, volatility does not affect overall time preference directionally. Instead, it acts like a scaling parameter, expanding both precautionary and impatient zones (Fig. SXX).
+
+These results are related to the more general concept of 'prudence', defined in utility theory as the convexity of marginal utility -- formally, the third derivative of the utility function, usually assumed to be positive. Under this assumption, uncertainty increases expected marginal utility: by Jensen's inequality, if $U'$ is convex $\mathbb{E}(U'(x)) \ge U'(\mathbb{E}(x))$. This leads to 'precautionary savings': when future resources are on average equal to present ones but uncertain, one should save, as the risk of being worse off tomorrow outweighs the benefits of being better off. However, in our model, marginal utility is bell-shaped in all four scenarios, and thus convex for high values -- hence patience at those level of resources -- but concave around the desperation threshold, at the cusp of the bell. This point of view allows to recover the above result in the time-separable scenarios: in the 'additive penalty' scenario, $U'''(x) > 0 \Longleftrightarrow |x|<\sigma$. Like in our model, this results in time discounting in a region centered around the threshold, and of width proportional to $\sigma$, but $\sqrt{2\ln 2}$ smaller -- as this compares marginal utility in time $1$ and $1+\epsilon$ rather than time 1 and time 2 as in the above model. A concave marginal utility reverts the Jensen inequality: $\mathbb{E}(U'(x)) \le U'(\mathbb{E}(x))$, meaning that uncertainty makes resources less useful in the future, in expectation. This reasoning is analogous to the one-dimensional heat equation: in our framework, time has a 'diffusive' effect, it brings randomness, and therefore spreads marginal utility (Fig. 3). Like in the heat equation ($\frac{df}{dt}\propto \frac{d^2f}{d^2x}$), a resource is expected to be less useful in the future if and only if expected marginal utility is concave at that point.
+
+```{python}
+#| echo: false
+#| fig-show: hold
+#| fig.cap: "Normal probability density functions $\\phi_{\\sigma^2}$ and $\\phi_{2\\sigma^2}$. They represent the probability density function of $x_1$ and $x_2$, assuming $x_0 = 0$ and $d=0$. Equivalently, due to the Gaussian density symmetry, they describe the likelihood that future resource levels $x_1$ and $x_2$ are exactly zero, given $x_0=x$. This yields the 'threshold effect' (see Results) on marginal utility: the probability that an extra resource pushes one above the threshold. In the central region ($|x| < \\sqrt{2ln(2)}$), an extra resource is more valuable to cross the threshold in the first period than in the second, and vice versa outside this region."
+
+
+X = np.linspace(-4, 4, 1000)
+y1_pdf = [stats.norm.pdf(x_0, scale=1) for x_0 in X]
+y2_pdf = [stats.norm.pdf(x_0, scale=np.sqrt(2)) for x_0 in X]
+
+plt.plot(X, y1_pdf, 'k-', linewidth=2, label='First time period')
+plt.plot(X, y2_pdf, 'k--', linewidth=2, label='Second time period')
+
+# Add vertical lines to second plot too
+line_pos = np.sqrt(2 * np.log(2))  # Positive position
+line_neg = -line_pos
+plt.axvline(x=line_pos, color='gray', linestyle=':', linewidth=1.5)
+plt.axvline(x=line_neg, color='gray', linestyle=':', linewidth=1.5)
+
+# Annotate the vertical lines on second plot
+plt.text(line_pos + 0.1, .22, r'$+\sigma\sqrt{2\ln(2)}$', fontsize=10)
+plt.text(line_neg - 1.2, .22, r'$-\sigma\sqrt{2\ln(2)}$', fontsize=10)
+# Add vertical lines
+
+# Add labels and legend for second plot
+plt.xlabel('Resources',fontsize = 16)
+plt.ylabel('Probability',fontsize = 16)
+plt.legend(loc='upper left')
+plt.xticks([-2,0,2],["$-2\sigma$","0","$2\sigma$"]);
+plt.yticks([],[]);
+# Adjust layout and display
+plt.tight_layout()
+plt.show()
+```
+
+Far below the threshold, the four utility scenarios diverge in their predictions. The 'additive penalty' scenario predicts a symmetric pattern, in line with the symmetry of its utility function. When the threshold is out of reach, either because one is definitely above it, or definitely below it, utility becomes linear in this scenario (Fig. 1A), and the agent acts as if the threshold did not exist. In the 'hibernation' case, the agent becomes infinitely patient: she receives no utility today, but keeps some hope for recovery tomorrow. Formally, since uncertainty increases over time, the agent has a higher chance of surpassing the threshold in the second period than in the first: as $x_0 \to -\infty$, $\phi_{\sigma^2}(x_0) = o(\phi_{2\sigma^2}(x_0))$ (Fig. 3). The best strategy is to accept to be below the threshold in the short term and bet on the second period -- hence the label 'hibernation'. Such a strategy is not viable in the 'game-over' and 'all in vain' scenarios -- the game is over if $x_1 < 0$. This leads to extreme time discounting below the threshold: one needs to eat today in order for there to be a tomorrow.
+
+### The effect of future expectatoins
+
+In all scenarios except 'all in vain', the effect of future expectations $d$ on time preference is U-shaped (Fig. 4). The increasing discounting for large positive $d$ is a known result: when tomorrow looks bright, one should prioritize present needs [@epper2015; @mell2021]. By contrast, the increasing discounting for negative $d$ is novel. It arises from the desperation threshold: if the threshold can still be reached today, but you strongly expect to fall below tomorrow, the best strategy is to enjoy the present. The effect is more pronounced in the 'hibernation' and the 'game-over' scenario: in these two cases, if below the threshold in the second period, it does not matter how much below. In this case, the agent tries to enjoy today, as tomorrow will be equally awful whatever she does. Of course, this strategy is impossible in the 'all in vain' scenario: if below the threshold in the second period, then the first period is also ruined, hence the monotonic effect of $d$ in this setting (Fig. 4).
+
+The U-shape of Fig. 4 is also valid for any $x_0$ (see heatmaps in the SI), but the point of maximum patience shifts to $d \approx -x_0$, that is, when $\mathbb{E}(x_2) = 0$. In other words, patience peaks when the agent expects her basic needs to be in the balance in the long term, but not the short term. This result can be approached analytically in the 'additive penalty' and the 'hibernation' scenarios: for small $|x_0|$ and high $w$ -- that is, if the threshold is the main contribution on utility -- we have the following approximation: $log(MRIS) \propto \frac{ln(2)}{2} + (d+x_0)^2 - 2x_0^2$, which is minimized when $d=-x_0$. This approximation also explains the parabolic shape of log(MRIS) around 0: downward-opening with respect to $x_0$ (Fig. 2) and upward-opening with respect to $d$ (Fig. 4).
+
+```{python}
+#| echo: false
+#| fig.cap: Time discounting depending on future expectations $d$, for $x_0=0$ and $\sigma=1$. The vertical dashed line marks neutral future expectations, the horizontal one marks time neutrality.
+
+fig, axes = plt.subplots(2, 2, figsize=(8, 8))  # Adjust figsize as needed
+D = np.linspace(-5,5)
+x_0 = 0
+σ = 1
+w=10
+axes[0, 0].plot(D,[beta_cliff(x_0,σ=σ,w=w,d=d) for d in D], color="k")
+#axes[0, 0].plot(D,[beta_cliff(x_0-1,σ=σ,w=w,d=d) for d in D], color="red")
+axes[0, 1].plot(D,[beta_oneoff(x_0,σ=σ,w=w,d=d) for d in D], color="k")
+#axes[0, 1].plot(D,[beta_oneoff(x_0-1,σ=σ,w=w,d=d)[0] for d in D], color="red")
+axes[1, 0].plot(D,[beta_gameover(x_0,σ=σ,w=w,d=d) for d in D], color="k")
+#axes[1, 0].plot(D,[beta_gameover(x_0-1,σ=σ,w=w,d=d)[0] for d in D], color="red")
+axes[1, 1].plot(D,[beta_onestrike(x_0,σ=σ,w=w,d=d) for d in D], color="k")
+#axes[1, 1].plot(D,[beta_onestrike(x_0-1,σ=σ,w=w,d=d)[0] for d in D], color="red")
+
+axes[0, 0].set_xlabel("",fontsize=12)
+axes[0, 0].set_ylabel("",fontsize=12)
+
+axes[0, 0].set_title(r"\textbf{(A) Additive penalty}")
+axes[0, 1].set_title(r"\textbf{(B) Hibernation}")
+axes[1, 0].set_title(r"\textbf{(C) Game-over}")
+axes[1, 1].set_title(r"\textbf{(D) All in vain")
+
+for ax in axes.flat:
+    #ax.plot([min(D),max(D)],[1,1])
+    ax.axhline(y=1, color='k', linestyle='--', linewidth=1)  # Ligne horizontale pour y=1
+    ax.axvline(x=0, color='k', linestyle='--', linewidth=1)  # Ligne verticale pour x=0
+    ax.set_yscale("log")
+    #ax.grid(True, which="both", linestyle="--", alpha=0.6)
+
+fig.text(0.53, 0.02, "Future expectations ($d$)", ha='center', va='center', fontsize=20, fontweight='bold')
+
+# Add a big y label in the middle (to the left of the subplots)
+fig.text(0.02, 0.5, "Time discounting", ha='center', va='center', rotation='vertical', fontsize=20, fontweight='bold')
+plt.tight_layout(rect=[0, 0.05, 1, 1])
+```
+
+## Discussion
+
+Time discounting in poverty is often justified on intuitive grounds [@sharma2023; @mell2021; @frankenhuis2020; @epper2015; @haushoferNegativeIncomeShocks2013; @fisher1930] by what we have called Earn's argument: in poverty, one 'needs to eat today', and thus prioritizes immediate needs. This paper began with a challenge to that idea: if one expects to also be in poverty tomorrow, then urgent needs today do not, by themselves, justify discounting the future. 'Need' is a folk psychological concept, and a clearer specification is needed. Based on the desperation threshold model, we propose that need corresponds to a steep region in the utility function -- steeper than both above (where needs are met) and below (where they are not). We introduced four stylized scenarios of need, each producing distinct predictions. These divergences shows that Earn's argument is not trivial, and a formal model was needed. However, all four scenarios converge on one finding: near the desperation threshold, one should discount the future (Fig. 2). Counter-intuitively, this occurs not because the individual expects to need less resources in the future, but because she expects to be less likely to need them (Fig. 3). She definitely finds herself in need now, but is uncertain about whether she will find herself in need later; later, she may have either escaped poverty or fallen so far below that the additional resources then will be futile.
+
+Two additional factors can amplify this effect. First, when agents hold directional expectations about their future -- whether optimistic or pessimistic ($d \ne 0$), they expect to move further from the threshold in one direction or the other, and therefore discount the future more (Fig. 4). Second, when failing to meet the threshold carries irreversible consequences, as in the 'game over' and 'all in vain' scenarios, the agent focuses on short-term needs in order for there to be a tomorrow at all. This last result echoes previous models [@chavas2013], as well collection risk explanations, albeit in a state-dependent fashion. The two other effects (the effect of uncertainty and of $d \ne 0$) are however new, and direct consequences of the desperation threshold assumption.
+
+When only the 'uncertainty' effect is present (Fig. 2A&B), our model predicts only a modest effect on time discounting: at best, $MRIS = \sqrt{2}$. This implies that one would trade 1€ in the first period for 1.41€ in the second. This result should not be interpreted literally: for technical and simplicity reasons (see Methods), our model compares two future time points rather than present versus future, with the second period being $\sqrt{2}$ times more uncertain than the first. In fact, maximum discounting is determined by the ratio of standard deviation of the resource levels at the two time periods. At the limit, if $x_1$ was known almost perfectly and we kept a discontinuous utility function, our model yields infinite discounting at the threshold in all four scenarios. This result also has an intriguing consequence if we vary the delay between time periods: in standard random walks or Brownian motion, variance increases linearly with time, which produces hyperbolic discounting. Thus, our model provides a possible rational explanation for hyperbolic discounting, which is commonly observed empirically, but often interpreted as 'time inconsistency' [@frederick2002].
+
+Importantly, this effect occurs on both sides of the desperation threshold (Fig. 2). This contrasts with the implications of the desperation threshold on risk taking [@decourson2021; @decoursonWhyViolenceHigh2023b], that predict a shift from extreme risk taking to extreme risk avoidance at the threshold. In other words, the DTM predicts that while poverty has a polarizing effect on risk taking, it uniformly increases time discounting. This aligns with empirical findings: studies find that poverty can increase or decrease risk taking, but the effect on time discounting is consistently positive [@haushofer].
+
+What real-world behaviors might our model explain? We argue that it provides a new possible rational account of decisions that alleviate need in the short-term, even if they lead to possibly greater need later. It applies particularly well to behaviors like acquisitive crime in contexts of pressing need [@rossmo2022; @topalli2015; @jacobs1999], or to payday loans uptake [@bertrand2011; @dobbie2013]. It does not, as presented here, account for, for example, high consumption of 'temptation goods' in deprived populations [@banerjee2010]. To extend the model to cover those goods, we would have to posit needs that those goods serve, such as reputational or signalling needs. Alternatively, the consumption of such goods may be a maladaptive byproduct of increased discounting whose proper domain is need goods.
+
+A second common prediction across our four scenarios is that when above the threshold but still vulnerable in the long run, one should be particularly patient, out of caution (Fig. 2). This intuition echoes the concept of 'prudence' and 'precautionary savings' in microeconomics. However, standard utility theory predicts precautionary saving across the social ladder, and in particular among individuals with low resources. In contrast, our model predicts that patience should peak among the 'middle class', that Ravaillon [@ravallion2016] defines as those "who are not considered 'poor' in a specific society but face a non-negligible chance of falling into poverty" (p.270).. We are not aware of cross-sectional data supporting this prediction that the middle class is more patient than the upper class: on the contrary, @epper2020 finds that the negative association between resources and time discounting "exists through the wealth distribution" (p. 1177). However, our prediction echoes multiple theories in social sciences and economic history, which claim that patience and saving belong to so-called 'middle class values' [@veblen1899; @weber1905; @mccloskey2007; @doepke2008]. This view is famously expressed by Weber [@weber1905], who argued that the 'protestant ethic' --- emphasizing thrift and self-discipline --- emerged among the upper-middle class, not the aristocracy. @doepke2008, studying 18th-century Britain, draws a more direct link to discounting behavior: "the middle class developed a system of preferences and values centered around parsimony, the work ethic, and delay of gratification," whereas "members of the upper class displayed a low propensity to save and accumulated debt, which suggests low patience" (p. 749--750). Our model also resonates with Sharma's recent findings [@sharma2023], which find a "polarizing effect of scarcity" (p. 1040) in both surveys and experiments. Specifically: "Perceptions of scarcity that threatened needs with shorter time horizons predicted a significantly increased preference for smaller, sooner outcomes \[...\], while perceptions of scarcity that threatened needs with longer time horizons predicted a significantly increased preference for larger, later outcomes" (p. 1040). We hope our model encourages further empirical work to rigorously test this prediction in contemporary populations.
+
+However, the four scenarios diverge sharply in their predictions far below the threshold (Fig. 2). If falling below the threshold has irreversible consequences (as in the 'game over' and 'all in vain' scenarios), the model predicts extreme impatience. In the 'hibernation' case, the agent becomes maximally patient. In the 'additive penalty' scenario, she remains time-neutral. We do not argue that one of the scenario best captures empirical reality. Rather, each scenario may correspond to different real-world situations, depending on which basic need is threatened. For example, threats to survival such as starvation may be best modeled as an irreversible threshold, whereas more symbolic or social needs --- such as Adam Smith's 'linen shirt' --- may align with the logic of the 'hibernation' scenario, and rental eviction may fall somewhere in between. In any case, the specific predictions below the threshold have limited implications for real-world population patterns. Such states are likely rare and transient, as it one would seek external help or engage in risk-taking in this situation [@decourson]. If these cases are indeed rare, all four scenarios converge on predicting a L-shaped association between resources and time discounting --- high discounting in poverty, patience in the middle class, and time neutrality among the wealthy.
+
+Our model also sheds light on how expectations about the future shape time preferences. In prior models of time discounting in poverty [@epper2015], and more generally in standard economic theory [@friedman1957], the effect of expectations is monotonic: the brighter one expects his future material situation to be, the more one prefers immediate resources. Yet in reality, extremely impatient behaviors such as acquisitive crime are often concentrated among populations with persistently pessimistic expectations [@anderson2000]. In multiple large scale surveys, @gladstone2025 actually finds an interaction effect: individuals with both low income and pessimistic beliefs save less than others (Fig. 4). Our model predicts a U-shaped effect of expectations. It can thus reconcile prior models --- we also find that optimism can generate time discounting --- with these empirical findings.
+
+These findings have implications for public policy. Impatient behavior in poverty is frequently viewed as irrational and harmful both to individuals themselves and to society as a whole. Tt is often addressed as a unfortunate cognitive bias or failing, through interventions that aim to alter perceptions of the future [@rung2018]. Our model suggests, instead, that high discounting is an appropriate response to material need, and therefore that directly addressing material need is the proper way of addressing discounting, while interventions on future orientation may be either ineffective or ethically questionable. Ensuring that everyone's basic needs are met would reduce impulsive behaviors and may yield positive externalities for society. It also makes a counterintuitive prediction: among middle-class individuals, anxiety about meeting future basic needs can lead to excessive saving --- and, as a result, under-consumption or under-investment. An ambitious welfare state could therefore enable people with both adequate and inadequate incomes to better align consumption with their actual preferences, rather than having to adapt their behavior to the looming threat of falling below a desperation threshold.

@@ -1,0 +1,45 @@
+project:
+  type: book
+
+book:
+  title: "The desperation threshold model: a framework to understand decisions in poverty"
+  author: "Benoît de Courson"
+  date: "2025-06-23"
+  
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - chapter1.qmd
+    - chapter2.qmd
+#  - references.qmd
+
+  # Optional: Parts for organizing chapters
+  # parts:
+  #   - part: "Part I: Introduction"
+  #     chapters:
+  #       - index.qmd
+  #       - intro.qmd
+  #   - part: "Part II: Main Content"
+  #     chapters:
+  #       - chapter1.qmd
+  #       - chapter2.qmd
+
+format:
+  html:
+    theme: cosmo
+    cover-image: cover.png
+    favicon: favicon.ico
+    
+  pdf:
+    documentclass: scrreprt
+    
+  epub:
+    cover-image: cover.png
+
+# Optional: Additional metadata
+bibliography: references.bib
+csl: apa.csl
+
+# Optional: Execute options
+execute:
+  freeze: auto
