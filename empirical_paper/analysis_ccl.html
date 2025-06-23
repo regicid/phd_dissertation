@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.52">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Benoît de Courson   , Willem E. Frankenhuis   and Daniel Nettle  ">
+
+<title>Poverty is associated with both risk avoidance and risk taking: empirical evidence for the desperation threshold model from the UK and France</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="analysis_ccl_files/libs/clipboard/clipboard.min.js"></script>
+<script src="analysis_ccl_files/libs/quarto-html/quarto.js"></script>
+<script src="analysis_ccl_files/libs/quarto-html/popper.min.js"></script>
+<script src="analysis_ccl_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="analysis_ccl_files/libs/quarto-html/anchor.min.js"></script>
+<link href="analysis_ccl_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="analysis_ccl_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="analysis_ccl_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="analysis_ccl_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="analysis_ccl_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="analysis_ccl_files/libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+<script src="analysis_ccl_files/libs/tabwid-1.1.3/tabwid.js"></script>
+<link href="analysis_ccl_files/libs/table1-1.0/table1_defaults.css" rel="stylesheet">
+</head><body class="fullcontent">\usepackage[figuresright]{rotating}
+\usepackage{lscape}
+\usepackage{enumerate}
+\newcommand{\beginsupplement}{\setcounter{table}{0}  \renewcommand{\thetable}{S\arabic{table}} \setcounter{figure}{0} \renewcommand{\thefigure}{S\arabic{figure}}}
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+
+
+
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Poverty is associated with both risk avoidance and risk taking: empirical evidence for the desperation threshold model from the UK and France</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Benoît de Courson <a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> <a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> , Willem E. Frankenhuis <a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> <a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> and Daniel Nettle <a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> <a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div style="page-break-after: always;"></div>
+<section id="abstract" class="level1 unnumbered">
+<h1 class="unnumbered">Abstract</h1>
+<p>In situations of poverty, do people take more or less risk? Some theories state that poverty makes people ‘vulnerable’: they cannot buffer against losses, and therefore avoid risk. Yet, other theories state the opposite: poverty makes people ‘desperate’: they have little to lose, and therefore take risks. Each theory has some support: most studies find a negative association between resources and risk taking, but risky behaviors such as crime and gambling are more common in deprived populations. Here, we test the ‘desperation threshold’ model, which integrates both hypotheses. We assume that people attempt to stay above a critical level of resources, representing their ‘basic needs’. Just above this threshold, people have too much to lose, and should avoid risk. Below, they have little to lose, and should take risks. We conducted preregistered tests of this prediction using data of 472 adults over the age of 25 in France and the UK, who completed a survey once a month for 12 months. We found that risk taking followed a V-shape against subjective resources, but not objective resources. Next, we tested whether risk taking varies more among people with fewer resources, as our model predicts, and found strong evidence for this prediction.</p>
+<p><strong>Keywords: Poverty|Optimal foraging|Risk taking|Modeling</strong> <!-- # Significance statement {.unnumbered} --></p>
+<!-- In a longitudinal study of French and British adults, we find that the greatest risk taking and the most extreme risk avoidance both occur among people facing situations of poverty. This reconciles two apparently incompatible views in social sciences, linking poverty respectively with risk avoidance and with risk taking. We propose that both emerge from a 'desperation threshold': those who can only just meet their basic needs avoid risk, while those who can not must take risks, to get a chance to get their head out of water. Thus, many people from deprived populations likely forgo profitable risky opportunities out of 'vulnerability', locking them in poverty. Yet, risky activities such as crime are frequent in such populations, out of 'desperation'. -->
+</section>
+<section id="introduction" class="level1 unnumbered">
+<h1 class="unnumbered">Introduction</h1>
+<p>In situations of poverty, do individuals tend to take more or fewer risks? On this question, there are, as Banerjee puts it, “at least two distinct and, prima facie, inconsistent views” <span class="citation" data-cites="banerjee2004">(<a href="#ref-banerjee2004" role="doc-biblioref">A. Banerjee 2004</a>)</span>. The first is that poverty makes individuals ‘vulnerable’: they have barely enough to make ends meet and would suffer too much from a resource loss. Therefore, they avoid risk. The second is that poverty makes individuals ‘desperate’: they have little to lose, and are ready to gamble to have a chance to get out of poverty, since their situation cannot get much worse. Therefore, they take more risks. Even though these two views predict opposite associations between levels of resources and risk taking, both can be found in theories across the social sciences <span class="citation" data-cites="ellis2012 griskevicius2011 hill1997 daly2001 banerjee1994 haushofer2014 baumard2019 gollier2002 banerjee2007">(for examples of the view that poverty increases risk taking, see <a href="#ref-ellis2012" role="doc-biblioref">Ellis et al. 2012</a>; <a href="#ref-griskevicius2011" role="doc-biblioref">Griskevicius et al. 2011</a>; <a href="#ref-hill1997" role="doc-biblioref">Hill, Ross, and Low 1997</a>; <a href="#ref-daly2001" role="doc-biblioref">M. Daly and Wilson 2001</a>; <a href="#ref-banerjee1994" role="doc-biblioref">A. V. Banerjee and Newman 1994</a>; for examples of the view that poverty decreases risk taking, see <a href="#ref-haushofer2014" role="doc-biblioref">Haushofer and Fehr 2014</a>; <a href="#ref-baumard2019" role="doc-biblioref">Baumard 2019</a>; <a href="#ref-gollier2002" role="doc-biblioref">Gollier 2002</a>; <a href="#ref-banerjee2007" role="doc-biblioref">A. V. Banerjee and Duflo 2007</a>)</span>. Both views have also been used to make sense of empirical findings. The idea that people in poverty avoid risk has been invoked to explain the lack of professional specialization <span class="citation" data-cites="banerjee2007">(<a href="#ref-banerjee2007" role="doc-biblioref">A. V. Banerjee and Duflo 2007</a>)</span>, a reluctance to adopt new technologies or to invest in education <span class="citation" data-cites="haushofer2014">(<a href="#ref-haushofer2014" role="doc-biblioref">Haushofer and Fehr 2014</a>)</span>, and even the persistence of poverty <span class="citation" data-cites="yesuf2009 haushofer2014">(<a href="#ref-yesuf2009" role="doc-biblioref">Yesuf and Bluffstone 2009</a>; <a href="#ref-haushofer2014" role="doc-biblioref">Haushofer and Fehr 2014</a>)</span>. On the other hand, the idea that people in poverty have ‘little to lose’, and therefore seek risk, has been invoked <span class="citation" data-cites="brezina2008 griskevicius2011 daly2001">(<a href="#ref-brezina2008" role="doc-biblioref">Brezina, Tekin, and Topalli 2009</a>; <a href="#ref-griskevicius2011" role="doc-biblioref">Griskevicius et al. 2011</a>; <a href="#ref-daly2001" role="doc-biblioref">M. Daly and Wilson 2001</a>)</span> to explain higher prevalence of crime <span class="citation" data-cites="hsieh1993">(<a href="#ref-hsieh1993" role="doc-biblioref">Hsieh and Pugh 1993</a>)</span> and gambling <span class="citation" data-cites="wardle2014">(<a href="#ref-wardle2014" role="doc-biblioref">Wardle et al. 2014</a>)</span> in deprived populations.</p>
+<p>The empirical record is also mixed <span class="citation" data-cites="kish-gephart2017 tanaka2010 vieider2012 haushofer">(<a href="#ref-kish-gephart2017" role="doc-biblioref">Kish-Gephart 2017</a>; <a href="#ref-tanaka2010" role="doc-biblioref">Tanaka, Camerer, and Nguyen 2010</a>; <a href="#ref-vieider2012" role="doc-biblioref">Vieider, Chmura, and Martinsson 2012</a>; <a href="#ref-haushofer" role="doc-biblioref">Haushofer and Salicath 2023</a>)</span>. In high-income countries, most cross-sectional studies have found that individuals with a lower income or wealth take fewer risks in experimental gambling tasks <span class="citation" data-cites="guiso2008 dohmen2011 eckel2012 sheehy-skeffington2017">(e.g., <a href="#ref-guiso2008" role="doc-biblioref">Guiso and Paiella 2008</a>; <a href="#ref-dohmen2011" role="doc-biblioref">Dohmen et al. 2011</a>; <a href="#ref-eckel2012" role="doc-biblioref">Eckel et al. 2012</a>; for a review, see <a href="#ref-sheehy-skeffington2017" role="doc-biblioref">Sheehy-Skeffington and Rea 2017</a>)</span>. In low-income countries, some studies have also reported less risk taking <span class="citation" data-cites="yesuf2009">(<a href="#ref-yesuf2009" role="doc-biblioref">Yesuf and Bluffstone 2009</a>)</span>, but others found no association <span class="citation" data-cites="binswanger1980 cardenas2013 mosley2005">(<a href="#ref-binswanger1980" role="doc-biblioref">Binswanger 1980</a>; <a href="#ref-cardenas2013" role="doc-biblioref">Cardenas and Carpenter 2013</a>; <a href="#ref-mosley2005" role="doc-biblioref">Mosley and Verschoor 2005</a>)</span>, or even more risk taking. For instance, the poorest Indian farmers were found to be extremely willing to take risks <span class="citation" data-cites="maertens2014">(<a href="#ref-maertens2014" role="doc-biblioref">Maertens, Chari, and Just 2014</a>)</span>. Among poor Madagascar farmers, food insecurity was the best positive predictor of risk taking in hypothetical gambles <span class="citation" data-cites="tucker2012">(<a href="#ref-tucker2012" role="doc-biblioref">Tucker 2012</a>)</span>. Another study used the choice between drought-resistant camels and more productive but riskier small livestock, as a proxy of risk taking among four herder groups <span class="citation" data-cites="mace1990">(<a href="#ref-mace1990" role="doc-biblioref">Mace 1990</a>)</span>. In three of the four groups, the poorest households kept mostly riskier small livestock. To sum up, there is a crucial inconsistency: two bodies of work propose and document exactly opposite associations between poverty and risk taking. Both views are intuitively appealing, and both have support in the empirical record. Both are relevant to explaining key social phenomena, such as occupational choices and crime.</p>
+<p>Optimal foraging theory, and risk-sensitive foraging in particular, can resolve this conundrum <span class="citation" data-cites="decourson2021 decoursonWhyViolenceHigh2023b">(<a href="#ref-decourson2021" role="doc-biblioref">De Courson and Nettle 2021</a>; <a href="#ref-decoursonWhyViolenceHigh2023b" role="doc-biblioref">De Courson et al. 2023</a>)</span>. In a scenario first modeled by <span class="citation" data-cites="stephens1981">Stephens (<a href="#ref-stephens1981" role="doc-biblioref">1981</a>)</span>, a ‘small bird in winter’ aims to acquire enough calories to get through the night. Just above the ‘starvation threshold’ – where the bird is likely to survive, but only just – it should avoid risks, so as to not fall below it. However, below this threshold, it should take risks, to have a chance to keep its head above water. Thus, low compared to high energetic resources will be associated with either greater risk avoidance or greater risk taking, depending on how low they are. Analogous applications of this idea to humans in situations of resource scarcity have emerged independently in disparate fields of research, including psychology <span class="citation" data-cites="barclay mishra2010">(<a href="#ref-barclay" role="doc-biblioref">Barclay, Mishra, and Sparks 2018</a>; <a href="#ref-mishra2010" role="doc-biblioref">Mishra and Lalumière 2010</a>)</span>, agricultural economics <span class="citation" data-cites="roumasset1971 kunreuther1974">(<a href="#ref-roumasset1971" role="doc-biblioref">Roumasset 1971</a>; <a href="#ref-kunreuther1974" role="doc-biblioref">Kunreuther and Wright 1974</a>)</span>, development economics <span class="citation" data-cites="lybbert2011">(<a href="#ref-lybbert2011" role="doc-biblioref">Lybbert and Barrett 2011</a>)</span>, anthropology <span class="citation" data-cites="winterhalder1999">(<a href="#ref-winterhalder1999" role="doc-biblioref">Winterhalder, Lu, and Tucker 1999</a>)</span> and political science <span class="citation" data-cites="scott1977">(<a href="#ref-scott1977" role="doc-biblioref">Scott 1977</a>)</span>. In our papers, we <span class="citation" data-cites="decourson2021 decoursonWhyViolenceHigh2023b">(<a href="#ref-decourson2021" role="doc-biblioref">De Courson and Nettle 2021</a>; <a href="#ref-decoursonWhyViolenceHigh2023b" role="doc-biblioref">De Courson et al. 2023</a>)</span> applied this same logic to criminal behaviour in situations of poverty. We assumed that individuals have a ‘desperation threshold’ representing ‘basic needs’ that they try to always meet. We elaborate the desperation threshold model and its predictions in section 2.</p>
+<p>The desperation threshold model has been tested in lab experiments <span class="citation" data-cites="mishra2010 pietras2001 pietras2006 pietras2008 deditius-island2007 rode1999 radkani2023">(<a href="#ref-mishra2010" role="doc-biblioref">Mishra and Lalumière 2010</a>; <a href="#ref-pietras2001" role="doc-biblioref">Pietras and Hackenberg 2001</a>; <a href="#ref-pietras2006" role="doc-biblioref">Pietras et al. 2006</a>, <a href="#ref-pietras2008" role="doc-biblioref">2008</a>; <a href="#ref-deditius-island2007" role="doc-biblioref">Deditius-Island, Szalda-Petree, and Kucera 2007</a>; <a href="#ref-rode1999" role="doc-biblioref">Rode et al. 1999</a>; <a href="#ref-radkani2023" role="doc-biblioref">Radkani et al. 2023</a>)</span>. Participants – students or online participants from North America or the United Kindgom – typically play a game that includes an artificial threshold, such as a minimum number of points needed to obtain a monetary payoff at the end of the game. Participants tend to behave in accordance with the theoretical prediction, taking fewer risks when their resource level is above the threshold, and more below. These findings suggest that people are able to adjust their behavior when confronted with a threshold. But they tell us little about behavior in natural environments. Do such thresholds exist outside the lab? Do they affect the behavior of a sizeable fraction of the population?</p>
+<p>Evidence for the predictions of the desperation threshold in real-world settings is scarce, in part because cross-sectional studies are often ill-suited to testing threshold effects. Such studies tend to model risk taking as a linear function of resources, whereas the desperation threshold predicts a non-linear mapping (a U- or V-shape): poverty should reduce risk taking up to some point, and then increase it. Nevertheless, several studies are informative. For instance, <span class="citation" data-cites="barsky1997">(<a href="#ref-barsky1997" role="doc-biblioref">Barsky et al. 1997</a>)</span> estimated risk taking by quintiles of income and wealth in the Health and Retirement Study, a representative panel of Americans over age 50. Consistent with the desperation threshold, people in the poorest and the richest quintiles, whether measured in income or in wealth, were ready to take the most risks. Recently, Akesaka et al. <span class="citation" data-cites="akesaka2023">(<a href="#ref-akesaka2023" role="doc-biblioref">Akesaka et al. 2023</a>)</span> documented in the same dataset that those who strongly depended on social security – those with fewer resources – were ready to take significantly more risks the day before receiving welfare checks, when they are most likely to be below the threshold, than at other times.</p>
+<p>In anthropology, Kuznar <span class="citation" data-cites="kuznar2001">(<a href="#ref-kuznar2001" role="doc-biblioref">Kuznar 2001</a>)</span> presented evidence of a U-shape between herd value and risk taking – but the small size of the sample (23 Andean farmers) limits statistical inference. Caballero <span class="citation" data-cites="caballero">(<a href="#ref-caballero" role="doc-biblioref">Caballero 2010</a>)</span> estimated a subsistence threshold in extremely deprived neighbourhoods of Bogota, and found preliminary evidence of a jump in risk taking at that point. But again, the sample size was not sufficient to draw firm conclusions. In principle, though, any dataset that includes measures of resources and risk taking could be used to test the hypothesis, as long as there are enough people above and below the desperation threshold. In sum, there is some evidence from diverse populations of U- or V-shaped relationships between material resources and risk tolerance, but the number of studies is limited and many of them are based on small samples.</p>
+<p>In this paper, we first offer a succinct formalization of the desperation threshold model, from which we derive the predicted non-linear relation between resources and risk taking. Then we test those predictions using the <em>Changing Cost of Living</em> dataset <span class="citation" data-cites="nettleShorttermChangesFinancial2023">(<a href="#ref-nettleShorttermChangesFinancial2023" role="doc-biblioref">Nettle et al. 2024</a>)</span>, a survey of British and French adults that includes questions about participants’ levels of resources across time, as well as a measure of risk taking. Moreover, these questions concerned not only income, but also unavoidable costs and subjective feelings of poverty. Thus, we can test the prediction using an objective measure of resources, and a subjective one, the feeling of resource adequacy.</p>
+</section>
+<section id="theory" class="level1">
+<h1>Theory</h1>
+<p>The desperation threshold idea can be summarised as follows: humans have a strong preference for having at least some amount of resources that represent their ‘basic needs’. Above this level, they continue to derive utility from resources, but this is less important than keeping their basic needs secured. We can formalise this threshold with a utility function. The initial set of models captured this idea with a jump in the utility function <span class="citation" data-cites="masson1974">(<a href="#ref-masson1974" role="doc-biblioref">Masson 1974</a>)</span>, or even a step function, representing life and death <span class="citation" data-cites="stephens1981">(<a href="#ref-stephens1981" role="doc-biblioref">Stephens 1981</a>)</span>. Here, we assume a more general sigmoid shape. The utility function features a steep region, representing that at some point resources are particularly valuable because they secure basic needs. Below the threshold, the utility function is relatively flat, representing the intuition that one has ‘little more to lose’ once basic needs are not reached. Above the threshold, we assume that utility increases linearly with resources.</p>
+<p>Our utility function is therefore: <span class="math display">\[U(x) = \frac{1}{1+e^{-x}} + \frac{x}{50}\mathbb 1_{x&gt;0},\]</span> where <span class="math inline">\(x\)</span> represents resources and the threshold is placed at 0 <span class="math inline">\(\mathbb 1_{x&gt;0}\)</span> being an indicator function, whose value is 1 when <span class="math inline">\(x&gt;0\)</span> and 0 otherwise. Figure 1A represents this utility function, and highlights the central result of the model. Below the threshold, the function is convex: one has more to win than to lose, and should therefore take risks. Above the threshold, the function is concave: one has more to lose than to win, and should therefore avoid risks. It should be noted that the desperation threshold does not predict a change in ‘risk preference’ strictly speaking from an economics point of view: the taste for risky outcomes is unchanged. Rather, Lybbert <span class="citation" data-cites="lybbert2013">Lybbert, Just, and Barrett (<a href="#ref-lybbert2013" role="doc-biblioref">2013</a>)</span> has coined the term of ‘risk response’ to threshold effects, which applies here. Thus, we use the terms ‘risk taking’ and ‘risk avoidance’, rather than ‘risk proneness’ and ‘risk aversion’.</p>
+<p>FIGURE 1 HERE</p>
+<p>In figure 1B, we plot the ‘certainty equivalent’ depending on resources. Concretely, we assume that an individual has the utility function shown in figure 1A and we let her decide between €<span class="math inline">\(x\)</span> for sure and a 50% chance of getting €800. We vary <span class="math inline">\(x\)</span> from 0 to 800 and we plot in figure 1B the minimum value of <span class="math inline">\(x\)</span> she would take. This represents the value she attributes to the risky choice, and can therefore be used as a measure of risk taking. If the certainty equivalent is more than 400, the person is taking risk; if it is less than 400, they are avoiding risk, and if it is exactly 400, they are risk neutral. In the task used in the Changing Cost of Living survey (see next section), the certainty equivalent represents the point where participants would switch to the safe option. The resulting prediction (figure 1B) is that below the threshold, people should take risks even when the expected value of the certain option is higher than that of the risky options, whereas just above the threshold they should avoid risks even when the certain payoff has a worse expected value than the risky option. Note that the switch to risk taking occurs below the threshold here, since participants can only gain resources in the task. The switch from risk avoidance to risk taking is reached around <span class="math inline">\(x=-400\)</span>, where €400 with certainty means ending up precisely at the desperation threshold. Thus, our first prediction is that risk taking should be a V-shape function of resources (figure 1B).</p>
+<p>Now, what if resources are only imperfectly observed? As risk taking varies abruptly with resources around the desperation threshold, it is crucual to tell apart individuals just above the threshold from those just below. In practice, this might not be realistic: resource levels are not perfectly measured, and the threshold may vary from individual to individual. In figure 1C, we present our prediction if resources are observed with a high noise (sd = €500) and certainty equivalents with a low noise (sd = €50). The V-shape is not visible to the naked eye anymore, but we obtain a triangle-shaped scatter plot. This is the basis of our second prediction: risk taking should be more variable in the lower part of the resource distribution than the higher part. This is because the lower part comprises some individuals just above and some individuals just below the threshold, with opposite levels of risk taking.</p>
+<p>To sum up, the desperation threshold model makes two predictions. First, that risk taking should follow a V-shape of resource levels, with both the poorest and the richest participants taking more risks than average (P1). Second, that risk taking should vary more between individuals at low resource levels (P2), since one should find both ‘vulnerable’ participants avoiding risks, and ‘desperate’ ones taking risks. In the Analysis strategy subsection, we explain how we tested P1 and P2 using the <em>Changing Cost of Living</em> Dataset.</p>
+</section>
+<section id="methods" class="level1">
+<h1>Methods</h1>
+<section id="panel" class="level2">
+<h2 class="anchored" data-anchor-id="panel">Panel</h2>
+<p>We used the data collected for the project <em>The Changing Cost of Living</em> study (for a complete description of this data collection, see <span class="citation" data-cites="nettleShorttermChangesFinancial2023">(<a href="#ref-nettleShorttermChangesFinancial2023" role="doc-biblioref">Nettle et al. 2024</a>)</span>; protocols available at <a href="https://osf.io/e8g3p/">https://osf.io/e8g3p</a>). The authors recruited in September 2022 a panel of 232 French and 240 British adults over the age of 25. Participants were invited to complete a survey once a month for 12 months. On average, participants completed 10.05 of the 12 surveys each (sd 2.98). In August 2023, when the study ended, 157 (67.7%) and 216 (90%) of the original participants responded. Table S1 shows participant demographics. The panels were not nationally representative, and were skewed towards the low end of their respective national income distributions, especially in France (see <span class="citation" data-cites="nettleShorttermChangesFinancial2023">(<a href="#ref-nettleShorttermChangesFinancial2023" role="doc-biblioref">Nettle et al. 2024</a>)</span> for details).</p>
+</section>
+<section id="measures" class="level2">
+<h2 class="anchored" data-anchor-id="measures">Measures</h2>
+<p>The full set of measures is described in the preregistered initial (<a href="https://osf.io/x26mf" class="uri">https://osf.io/x26mf</a>) and supplementary (<a href="https://osf.io/rj683" class="uri">https://osf.io/rj683</a>) protocols of the study. The data were collected for multiple studies <span class="citation" data-cites="nettleShorttermChangesFinancial2023">(in particular, <a href="#ref-nettleShorttermChangesFinancial2023" role="doc-biblioref">Nettle et al. 2024</a>)</span>, and we only use some of its measures.</p>
+<p><em>Objective resources</em>. Participants reported the amount of income received into their household in the reference month (i.e., net of taxes and including benefits). UK figures were converted to euros at a purchasing-power parity rate. The mean income of participants was 3437€ and the median 3000€ (sd=2117.1). For costs, participants reported the amounts paid out for rent/mortgage, water, residence-based taxes, and energy (electricity, gas, oil) in the previous month. We summed these amounts to obtain an estimate of unavoidable living costs. We logged income and cost variables with a base 2 (adding €1 because of zeroes), to reduce positive skew and represent the fact that resources have diminishing returns. Our objective resources variable is the difference between the log-transformed income and log-transformed unavoidable costs. Since the difference in logs is the log of the ratio, this variable measures the proportional relationship of household income to unavoidable costs. Thus, a value of zero means that income just covered unavoidable costs; a value of 1 that income was twice unavoidable costs; and and a value of 2 means that income was four times unavoidable costs. Negative values (1.6% of cases) indicate failure of income to even cover unavoidable costs.</p>
+<p><em>Subjective resources</em>. Participants were asked three questions about their subjective risk of losing resources: their subjective risk of destitution, their subjective risk of losing “a suitable place to live”, and their subjective risk of losing “a suitable employment”. Participants answered these three questions on a 0-100 scale, which we summed and reverse coded to compute our subjective resources measure. The three variables had a Cronbach’s alpha of 0.87. To avoid right-skew (a large number of participants reported almost zero on those three measures), we applied a square root transformation. Subjective resources were moderately correlated with objective resources (<span class="math inline">\(r =\)</span> 0.27, p &lt; .001).</p>
+<p><em>Risk taking</em>. Participants were asked whether they preferred a 50% chance of getting €800, or €<span class="math inline">\(x\)</span> for sure, with <span class="math inline">\(x\)</span> being increased by €100 from €100 to €700. We used the number of risky bets (choosing 50% chance of getting €800) that participants preferred as our measure of risk taking. If participants were perfectly consistent, this measure would be proportional to the minimum certainty equivalent that we presented in Figure 1B. But it is more robust to a ‘trembling hand’ of the participants: if a participant mistakenly refuses the least risky bet, but is actually risk neutral, then our measure will almost be correct (3 instead of 4), while the minimum certainty equivalent would have yielded 1.</p>
+<p>On average, participants accepted 2.31 of the 7 bets (sd= 1.6). Participants were weakly-to-moderately stable over time in their risk taking: the intra-class correlation coefficient (ICC) was 0.48.</p>
+<p><em>Time-discounting</em> Participants were asked whether they preferred €100 now or €<span class="math inline">\(x\)</span> 90 days from now, with x ranging from 110 to 170. We used the number of immediate choices as our time discounting measure. We use this variable in our exploratory analysis (see below), for contrast with the results we obtained with risk taking.</p>
+</section>
+<section id="analysis-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-strategy">Analysis strategy</h2>
+<p>We first investigated descriptively the relationship between resources and risk taking. We then ran five confirmatory tests of our predictions relating risk taking to resource levels. These analyses were preregistered here: <a href="https://osf.io/g4x8t/" class="uri">https://osf.io/g4x8t/</a>. In the results section, we present each test twice, using respectively objective and subjective resources. We corrected p-values using the Holm-Bonferroni method to control the error rate. These tests are divided in two distinct groups, differing in their level of severity to test our hypothesis (see below). The two groups relate respectively to P1 and P2 (see Theory).</p>
+<p>In our first group of analyses (analysis 1), we predicted that risk taking would follow a V-shape against resources. First, we fitted mixed effects polynomial models, to test for evidence of a non-linear relationship between resources and risk taking. Second, we fitted segmented linear models, to estimate the association below and after a ‘changepoint’, fitted with maximum likelihood. This approach is less standard in psychology, and has been judged problematic in exploratory analyses <span class="citation" data-cites="breit2023">(<a href="#ref-breit2023" role="doc-biblioref">Breit et al. 2023</a>)</span>. However, our analysis is confirmatory, and our model prediction is closer to a broken-stick relationship (Figure 1B) than a smooth polynomial. We constrained the model to have the two regression lines connected, by fitting the following formula: <span class="math inline">\(risk\_taking = \beta_0 + \beta_1(r-cp)(r\le cp) + \beta_2(r-cp)(r&gt; cp)+\text{controls}\)</span>, where <span class="math inline">\(cp\)</span> is the changepoint and <span class="math inline">\(r\)</span> stands for the resources. The polynomial and the segmented models are two different ways to represent the predicted V-shape. We see them as two different tests of the same prediction.</p>
+<p>In these analyses, we included random effects of participants and fixed effects of age and gender, two variables known to influence risk taking <span class="citation" data-cites="daly2001 dohmen2011">(<a href="#ref-daly2001" role="doc-biblioref">M. Daly and Wilson 2001</a>; <a href="#ref-dohmen2011" role="doc-biblioref">Dohmen et al. 2011</a>)</span>.</p>
+<p>Our second group of analyses (analysis 2) tested the less specific prediction, that risk taking should be more variable in individuals with fewer resources. Our reasoning here was as follows: our resource measures may be too noisy for discriminating when individuals are just below the threshold and when they are just above, especially since the threshold might vary between individuals. In this case, we might not be able to identify a single switch point between risk avoidance and risk taking, but we should still expect a mixture of risk takers and risk avoiders at the bottom of the resource distribution, whereas risk preference should be more homogenous higher in the distribution (Figure 1C). We therefore tested in three ways whether variance in risk taking was higher among individuals with fewer resources. Specifically, we tested:</p>
+<p>This second group of analyses represents a less severe test of the model than the third one, in the sense that the predicted result could be obtained under less stringent conditions, and, as a result, more alternative explanations could be proposed (see Discussion section).</p>
+<p>Finally, we ran an exploratory analysis that was not preregistered. There, we used all the available resource variables to isolate the most deprived individuals, according to different criteria. We computed descriptive statistics of risk taking in these categories: the mean, variance, and frequency of extreme values, and compared them to the full sample population. We also contrasted the results with the ones obtained with richest individuals, and using time discounting instead of risk taking.</p>
+</section>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<section id="descriptive-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="descriptive-analysis">Descriptive analysis</h2>
+<p>To visualize of how risk taking and resources were related, we plotted the average level of risk taking depending on the answer to the question “How are you managing financially?”. We obtained (figure S1) an approximately linear, increasing trend: the easier to manage, the more risks, on average. This could however hide the fact that, as we suggested, those who report that managing financially is ‘very difficult’ include a minority of risk takers, hidden behind a majority of risk avoiders.</p>
+<p>To investigate this possibility, we examined the average values on our two resource measures of people choosing each of the possible numbers of risky options (0-7). Figure 2 shows the results. An inverted V-shape is clear in both cases: both the participants who were ready to take <em>the least</em> and <em>the most</em> risks had on average fewer objective and subjective resources.</p>
+<p>FIGURE 2 HERE</p>
+<div style="page-break-after: always;"></div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="tabwid"><style>.cl-41bd6386{}.cl-41ba2252{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-41ba225c{font-family:'Helvetica';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-41bb78aa{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-41bb78b4{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-41bb81d8{width:2.629in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81d9{width:1.329in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81da{width:1.491in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81db{width:0.668in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81e2{width:2.629in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81e3{width:1.329in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81e4{width:1.491in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81ec{width:0.668in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81ed{width:2.629in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81ee{width:1.329in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81ef{width:1.491in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81f6{width:0.668in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81f7{width:2.629in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81f8{width:1.329in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb81f9{width:1.491in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-41bb8200{width:0.668in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-41bd6386"><thead><tr style="overflow-wrap:break-word;"><th class="cl-41bb81d8"><p class="cl-41bb78aa"><span class="cl-41ba2252">Categories</span></p></th><th class="cl-41bb81d9"><p class="cl-41bb78aa"><span class="cl-41ba2252">% of risk takers</span></p></th><th class="cl-41bb81da"><p class="cl-41bb78aa"><span class="cl-41ba2252">% of risk avoiders</span></p></th><th class="cl-41bb81db"><p class="cl-41bb78b4"><span class="cl-41ba2252">n</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-41bb81e2"><p class="cl-41bb78aa"><span class="cl-41ba225c">Full sample</span></p></td><td class="cl-41bb81e3"><p class="cl-41bb78aa"><span class="cl-41ba225c">6 </span></p></td><td class="cl-41bb81e4"><p class="cl-41bb78aa"><span class="cl-41ba225c">17.4 </span></p></td><td class="cl-41bb81ec"><p class="cl-41bb78b4"><span class="cl-41ba225c">4,882</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-41bb81ed"><p class="cl-41bb78aa"><span class="cl-41ba2252">Bottom 5% in objective resources</span></p></td><td class="cl-41bb81ee"><p class="cl-41bb78aa"><span class="cl-41ba2252">8.4  </span></p></td><td class="cl-41bb81ef"><p class="cl-41bb78aa"><span class="cl-41ba2252">34.7 ***</span></p></td><td class="cl-41bb81f6"><p class="cl-41bb78b4"><span class="cl-41ba2252">242</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-41bb81f7"><p class="cl-41bb78aa"><span class="cl-41ba2252">Bottom 5% in subjective resources</span></p></td><td class="cl-41bb81f8"><p class="cl-41bb78aa"><span class="cl-41ba2252">12 ***</span></p></td><td class="cl-41bb81f9"><p class="cl-41bb78aa"><span class="cl-41ba2252">23.7 *</span></p></td><td class="cl-41bb8200"><p class="cl-41bb78b4"><span class="cl-41ba2252">243</span></p></td></tr></tbody></table></div>
+</div>
+</div>
+<p>Finally, we looked at the prevalence of extreme risk taking among the 5% with the lowest levels of objective and subjective resources (Table 1). We defined participants as ‘risk avoiders’ when they accepted no bets, and as ‘risk takers’ when they accepted more than four bets. We use this term because a participant accepting more than four bets necessarily preferred a risky bet to a safe one that had a higher expected payoff (for instance, a 50% chance of getting 800€, rather than 500€ for sure). In Table S3, we expand this table, adding more descriptive statistics of risk taking.</p>
+<p>Risk avoiders were more common in the bottom 5% than in the full sample. This was true whether resources were defined objectively or subjectively. Risk takers were also more common in the bottom 5% than the full sample. Again this was true whether objective or subjective resources were used, but it was particularly marked for subjective resources. The difference in prevalence of risk takers was only significant with subjective resources, but since risk takers were about three times rarer than risk avoiders, the power of these tests was much lower. Also, risk taking was on average lower (significantly for objective resources), but the variance in risk taking was respectively 37% and 44% higher than in the full sample (<span class="math inline">\(p &lt; .001\)</span> in both cases) (see Table S2).</p>
+</section>
+<section id="analysis-1" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-1">Analysis 1</h2>
+<section id="polynomial-regressions" class="level3">
+<h3 class="anchored" data-anchor-id="polynomial-regressions">Polynomial regressions</h3>
+<p>We fitted a cubic polynomial of resources on risk taking, with a random effect for participant and fixed effects for age and gender. Here and in all the following regression models, we found the usual association for age and gender, with women and older individuals taking fewer risks (for the linear model, we obtained <span class="math inline">\(\beta =\)</span> -0.19, <span class="math inline">\(p =\)</span> 0.005 for woman, <span class="math inline">\(\beta =\)</span> -0.085, <span class="math inline">\(p=\)</span> 0.01 for standardised age).</p>
+<p>We predicted that the fitted polynomial would have an inflection point in the lower half of the resource distribution. This prediction was supported with subjective resources, but not with objective resources, which showed an almost linear relationship (Figure 3A &amp; B). We predicted that a quadratic or cubic model would fit the association of resources to risk taking better than a linear one. For objective resources, this was not the case: both the quadratic and the cubic model had a higher AIC (11587.7 and 11588.5 respectively) than the linear one (11585.7). Neither can reject the linear model in a likelihood ratio test (<span class="math inline">\(\chi^2\)</span>= 0.032, <span class="math inline">\(p=\)</span> 0.859 for the quadratic model, <span class="math inline">\(\chi^2\)</span>= 0.032, <span class="math inline">\(p=\)</span> 0.537 for the cubic one). As a preregistered follow up analysis, we fitted higher degree polynomials, looking for the model with the least AIC. No model had a lower AIC than the linear one.</p>
+<p>With subjective resources, a cubic model had a lower AIC (11603.1) than the linear one (11603.4), the quadratic one (11604.3) and any higher degree model. However, the superior fit of the cubic model over the linear one was not significant in a likelihood ratio test (4.31, <span class="math inline">\(p=\)</span> 0.232).</p>
+</section>
+<section id="segmented" class="level3">
+<h3 class="anchored" data-anchor-id="segmented">Segmented mixed models</h3>
+<p>We fitted segmented mixed models between resource variables and risk taking. The changepoint was fitted by maximum likelihood, testing all possible values to identify the breakpoint giving the smallest deviance, which is a smaller-is-better measure of model fit. In Figure S2, we plot the deviance of the model, depending on the changepoint location.</p>
+<div style="page-break-after: always;"></div>
+<p>Tables 2 and 3 show the scaled coefficients and the associated significance two-sided t-tests, for objective and subjective resources respectively. Figures 3C and 3D show the patterns between resources and risk taking predicted by the fitted models. With objective resources, we obtained the predicted V-shape (see Figure 3C). The slope of the association was significantly different from zero above the changepoint, but not below. The changepoint was found at the extreme bottom of the distribution (13.7% of the observations are above).</p>
+<p>With subjective resources, all our predictions were supported. We obtained a V-shape, with resources having a significantly negative effect below and significantly positive above the threshold. After correction for multiple comparison with objective resources, both tests remained significant (<span class="math inline">\(p=\)</span> 0.068 and <span class="math inline">\(p=\)</span> 0.016). As predicted, the changepoint was found at the lower end of the resource distribution (13.5% of the data points are below it). The effect below the threshold was 4 times stronger than the effect above the threshold. We had not predicted a stronger effect below the changepoint in our preregistration, but this is clearly an implication of the desperation threshold model (Figure 1A). Figure S2 revealed that one could account almost as well for the data with a slightly higher changepoint (11% of the data points were below it). As a robustness check, we checked that our predictions were also supported with this alternative changepoint. Table S2 presents the scaled coefficients of this model. A V-shape was also found, with a significant effect on both sides of the changepoint.</p>
+<p>FIGURE 3 HERE</p>
+</section>
+</section>
+<section id="analysis-2-do-individuals-with-low-resources-vary-more-in-risk-taking" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-2-do-individuals-with-low-resources-vary-more-in-risk-taking">Analysis 2: do individuals with low resources vary more in risk taking?</h2>
+<section id="is-there-more-variance-in-risk-taking-among-close-to-the-edge-participants" class="level3">
+<h3 class="anchored" data-anchor-id="is-there-more-variance-in-risk-taking-among-close-to-the-edge-participants">Is there more variance in risk taking among close-to-the-edge participants?</h3>
+<p>FIGURE 4 HERE</p>
+<p>In our second analysis, we predicted that there would be more variance in risk taking at the bottom of the resources distribution. We tested this prediction using the financial strain question, the objective and the subjective resources variables. As predicted, individuals who report that managing financially is “very difficult” had a 35% higher variance in their risk taking answers (F(4590,250)= 0.74, <span class="math inline">\(p\)</span> &lt; 0.001). This also applied, to a lesser extent, for people who reported that it was “quite difficult” to manage financially (Figure S1B).</p>
+<p>To test the same question with our (continuous) resource variables, we fitted linear regressions between resources and risk taking, keeping age and gender as controls, but without a changepoint and without random effects, so as not to neutralise the between-individual variance. Then, we predicted that squared residuals would decrease with resources in a new linear regression, that is, that the absolute deviation from the line of best fit would be larger at the bottom of the resource distribution. Since this analysis tests for the same prediction as the one above using the financial strain question, we apply a Holm-Bonferroni correction to the three p-values. The prediction was clearly met for both objective and subjective resources (<span class="math inline">\(\beta=\)</span>-0.09 and <span class="math inline">\(\beta=\)</span> -0.06 respectively, <span class="math inline">\(p\)</span>&lt; 0.001 and <span class="math inline">\(p\)</span>&lt; 0.001).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="analysis_ccl_files/figure-html/unnamed-chunk-9-1.jpeg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Ratio of variances in risk taking below and above resource thresholds set at different levels, from the first percentile to the median. For any threshold, the difference in variance is significant (<span class="math inline">\(p&lt;.05\)</span>).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>We visualised this effect by comparing variance in risk taking below and above some resource threshold, varying this threshold from the first percentile of the resource distribution to the median value (Figure 4). For any threshold below the median, the variance was at least 17% higher in the bottom part of the distribution. This variance soars as the threshold goes toward zero, in particular using subjective resources.</p>
+</section>
+<section id="are-participants-with-low-resources-less-stable-over-time-in-their-risk-taking" class="level3">
+<h3 class="anchored" data-anchor-id="are-participants-with-low-resources-less-stable-over-time-in-their-risk-taking">Are participants with low resources less stable over time in their risk taking?</h3>
+<p>Finally, we tested a slightly different prediction: participants with fewer resources should sometimes hover around the threshold, and should then alternate between taking and avoiding risks. We would thus expect that an individual with fewer resources will vary more in risk taking over time. We computed the intra-personal variance in risk taking over all time periods for every individual, and fitted a linear model between this variance over time and the average resource value.</p>
+<p>For objective and subjective resources, the association was in the predicted direction. It was significant with objective resources (standardised <span class="math inline">\(\beta=\)</span> -0.14, <span class="math inline">\(p=\)</span> 0.004), but not with subjective resources (standardised <span class="math inline">\(\beta=\)</span> -0.058, <span class="math inline">\(p=\)</span> 0.22). We must note that the statistical power of these two tests was much lower than the previous ones: since they aggregated all the responses from the same individual, they are based on only 485 data points, against 4817 before.</p>
+</section>
+</section>
+<section id="ruling-out-alternative-explanations" class="level2">
+<h2 class="anchored" data-anchor-id="ruling-out-alternative-explanations">Ruling out alternative explanations</h2>
+<p>We were interested in knowing whether our finding was specific to participants with fewer resources and to risk taking. Therefore, we replicated Table 1 on the top 5% answers in terms of objective and subjective resources (Table S3, line 2 and 3), and using the time discounting variable of the dataset, instead of risk taking (Table S4). We preregistered this analysis as a follow up (<a href="https://osf.io/54hfq" class="uri">https://osf.io/54hfq</a>).</p>
+<p>With time discounting, we predicted (i) that there would be more individuals with high time discounting (defined as choosing only immediate rewards), but (ii) not more individuals with low time discounting (defined as never choosing immediate rewards) in the deprived categories than in the full sample, and (iii) that similarly, variance would not be more than 30% higher (30% being the lowest difference we found in risk taking). In both categories, high time discounting was more than twice as frequent in the deprived categories. In the bottom 5% of objective resources, our two other predictions were not supported: variance in time discounting was 44% higher than in the full sample, and low time discounting was slightly more frequent (22.4%) than in the full sample (18%). With subjective resources, all predictions were supported: variance was 27% higher than in the full sample, and low time discounting was less frequent (15%) than in the full sample (18%). Thus, it seems that our observation that low resources was associated with extreme risk taking was specific to risk taking, and did not reveal a tendency to make extreme decisions in other domains.</p>
+<p>Finally, as another test of comprehension, we examined whether individuals with fewer resources were more likely to produce inconsistent answers in the risk questions. Among the full sample, we categorized 6.5% of the answers as inconsistent, in the sense that the participant refused a bet that was more profitable than another bet they accepted. However, neither objective nor subjective resources were correlated with consistency (<span class="math inline">\(r=\)</span> 0 and <span class="math inline">\(r=\)</span> 0.05, respectively), providing no evidence for differences in comprehension.</p>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<section id="summary-of-results" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-results">Summary of results</h2>
+<p>In a panel of adults from France and the UK, we investigated the association between (lack of) resources and risk taking. We found clear evidence that having low resources is associated with a higher variance in risk taking (Figure 4), and with a large increase in both extreme risk avoidance and extreme risk taking (Table 2). This result is so clear in our data that it seems surprising that it is not an established finding in the social sciences. This might be due to most social science research focusing on linear relations, and undersampling of individuals who are below the threshold. We look forward to future studies of the desperation threshold in other datasets on risk taking and future discounting as well as other domains of cognition and behavior.</p>
+<p>Our finding that poverty is associated with both risk avoidance and risk taking is important for several reasons. First, as noted, it reconciles two opposing perspectives on poverty and risk taking, which <span class="citation" data-cites="banerjee2004">(<a href="#ref-banerjee2004" role="doc-biblioref">A. Banerjee 2004</a>)</span> named ‘vulnerability’ and ‘desperation’. In our sample, a larger proportion of individuals living in situations of poverty avoid risk, suggesting that they have ‘too much to lose’. At the same time, a larger proportion declare themselves ready to take risks that are on average detrimental, suggesting they have ‘little to lose’. We also proposed an explanation for why poverty could lead to either vulnerability or desperation: the ‘desperation threshold’, an hypothesis that is analogous to other social sciences theories <span class="citation" data-cites="winterhalder1999 scott1977 mishra2010 barclay roumasset1971 kunreuther1974 lybbert2007">(<a href="#ref-winterhalder1999" role="doc-biblioref">Winterhalder, Lu, and Tucker 1999</a>; <a href="#ref-scott1977" role="doc-biblioref">Scott 1977</a>; <a href="#ref-mishra2010" role="doc-biblioref">Mishra and Lalumière 2010</a>; <a href="#ref-barclay" role="doc-biblioref">Barclay, Mishra, and Sparks 2018</a>; <a href="#ref-roumasset1971" role="doc-biblioref">Roumasset 1971</a>; <a href="#ref-kunreuther1974" role="doc-biblioref">Kunreuther and Wright 1974</a>; <a href="#ref-lybbert2007" role="doc-biblioref">Lybbert and Barrett 2007</a>)</span>. Our study provides a new source of evidence for the desperation threshold model. Until now, tests of the model have mainly been conducted either (i) in a lab, where poverty (or more precisely, ‘need’) is artificially induced <span class="citation" data-cites="mishra2010 pietras2001 pietras2006 pietras2008 deditius-island2007 rode1999 radkani2023">(<a href="#ref-mishra2010" role="doc-biblioref">Mishra and Lalumière 2010</a>; <a href="#ref-pietras2001" role="doc-biblioref">Pietras and Hackenberg 2001</a>; <a href="#ref-pietras2006" role="doc-biblioref">Pietras et al. 2006</a>, <a href="#ref-pietras2008" role="doc-biblioref">2008</a>; <a href="#ref-deditius-island2007" role="doc-biblioref">Deditius-Island, Szalda-Petree, and Kucera 2007</a>; <a href="#ref-rode1999" role="doc-biblioref">Rode et al. 1999</a>; <a href="#ref-radkani2023" role="doc-biblioref">Radkani et al. 2023</a>)</span>, or (ii) in populations where starvation is a realistic possibility <span class="citation" data-cites="mace1990 maertens2014 kuznar2001 tucker2012 caballero">(<a href="#ref-mace1990" role="doc-biblioref">Mace 1990</a>; <a href="#ref-maertens2014" role="doc-biblioref">Maertens, Chari, and Just 2014</a>; <a href="#ref-kuznar2001" role="doc-biblioref">Kuznar 2001</a>; <a href="#ref-tucker2012" role="doc-biblioref">Tucker 2012</a>; <a href="#ref-caballero" role="doc-biblioref">Caballero 2010</a>)</span>. Our study suggests that a formally equivalent mechanism can apply in the real world to more affluent populations, and that ‘desperate’ risk taking can happen when starvation is unlikely.</p>
+<p>The desperation threshold model makes a more precise prediction (P1): individuals should avoid risk just above a ‘desperation threshold’ yet seek risk below it (Figure 1B). Most previous real-world studies only searched for an increase in risk taking when poverty increased <span class="citation" data-cites="tucker2012 caballero mace1990 kohler1996">(<a href="#ref-tucker2012" role="doc-biblioref">Tucker 2012</a>; <a href="#ref-caballero" role="doc-biblioref">Caballero 2010</a>; <a href="#ref-mace1990" role="doc-biblioref">Mace 1990</a>; <a href="#ref-kohler1996" role="doc-biblioref">Kohler and Van West 2018</a>)</span>. In our study, we aimed to simultaneously test the increase and the decrease. Our findings clearly show that both risk taking and risk avoidance were more common among participants with the fewest resources (Table 2). Yet, the evidence for a V-shape was less clear: we obtained the predicted V-shape when using our subjective resources measure and a segmented regression model, but not when using our objective resources measure or a polynomial model. In our preregistration, we stated the expectation that we would be less likely obtain evidence for P1: it requires (i) our resource measure to be precise enough to tell apart individuals just-above the threshold from the ones just-below, and (ii) that the threshold itself does not vary too much between individuals. Still, our Analysis 1 produced conflicting results: we only obtained the predicted V-shape when using subjective resources and a segmented model. Even though we did not anticipate it, we can propose <em>post-hoc</em> explanations for this finding. The segmented model might be better suited to test our hypothesis: it fits one relation on only the very bottom part of the resource distribution, while a polynomial regression fits the whole sample at once. Polynomial regressions can also be unreliable for making predictions for extreme values of the independent variable <span class="citation" data-cites="simonsohn2018">(<a href="#ref-simonsohn2018" role="doc-biblioref">Simonsohn 2018</a>)</span>, the case we are interested in here.</p>
+<p>As for the measure, subjective resources produced more clear-cut results than objective resources in all analyses (Figure 2, Figure 4, Table S3, and – on time discounting – Table S4). This could mean that the subjective measure is simply a better measure of poverty, and that people are better than researchers at estimating their own situation. In particular, their self-assessment could take into account savings and anticipations of the future, whereas our objective measure did not. This echoes the recurrent finding that subjective socio-economic status is more predictive of health outcomes than objective socio-economic status <span class="citation" data-cites="pepper2014 adler2000 cohen2008">(<a href="#ref-pepper2014" role="doc-biblioref">Pepper and Nettle 2014</a>; <a href="#ref-adler2000" role="doc-biblioref">Adler et al. 2000</a>; <a href="#ref-cohen2008" role="doc-biblioref">Cohen et al. 2008</a>)</span>. This result is also reminiscent of a recent finding <span class="citation" data-cites="blasco2023">(<a href="#ref-blasco2023" role="doc-biblioref">Blasco 2023</a>)</span>, that in multiple European countries, “deprivation ceases to be correlated with income below a certain threshold (p.&nbsp;1). Importantly, the desperation threshold might differ between individuals, as some individuals have higher needs. We tried to capture this in our objective measure, by dividing income by unavoidable costs. Yet, there are likely other ‘needs’ that were not measured. Our subjective measure might better incorporate those needs, since participants estimated for themselves their risk of lacking resources in the near future. Furthermore, our objective resources variable measures flows of resources over a month (income and unavoidable costs), but not stocks (capital). It could thus measure variations in resources, rather than the total amount of resources available, which determines whether an individual can make ends meet. In our sample, 1.6% of the answers have higher unavoidable costs than income over a month. Our objective measure places those answers at the very bottom of the resources distribution. Those points likely reflect an exceptional expense or an unusually low income over one month, which massively influences our objective measure – probably more so than our subjective measure, which should also capture savings and anticipations of the future. Actually, it might be impossible for an extremely poor individual to spend more than she earns, if she has no savings and no options to borrow money. That being said, subjective measures of resources risk are influenced by psychological states, which brings a danger of circularity. It is possible, for instance, that some individuals are panicking because of some unmeasured factor, and therefore report both a higher readiness to take risks and a worse subjective financial situation. In this case, our results still suggest that high financial worries can produce both risk taking and risk avoidance, which is also a new finding.</p>
+</section>
+<section id="alternative-explanations" class="level2">
+<h2 class="anchored" data-anchor-id="alternative-explanations">Alternative explanations</h2>
+<p>The desperation threshold model proposes that poverty causes variations in risk taking, but our data only provide evidence for associations. Yet, our finding that populations in poverty are ‘polarized’ in terms of risk taking, with a mixture of risk avoiders and risk takers, enriches the picture of the link between poverty and risk taking.</p>
+<p>This result could be produced by different mechanisms. First, causality could be reversed. If risk taking was an entirely stable personality trait, one would expect extreme risk taking or risk aversion to produce a higher chance of poverty. Indeed, some of the most risk-prone individuals would end up very poor as the risks they took have not paid off, while the risk-averse individuals would refuse profitable opportunities, and end up poorer than average. However, risk taking is only weakly-to-moderately stable over time in our data (ICC = .48), in line with other findings <span class="citation" data-cites="schildberg-hörisch2018 mata2018">(<a href="#ref-schildberg-hörisch2018" role="doc-biblioref">Schildberg-Hörisch 2018</a>; <a href="#ref-mata2018" role="doc-biblioref">Mata et al. 2018</a>)</span>. Moreover, there is evidence that short-term variations in resources can modify risk taking. Using the same data and measures, <span class="citation" data-cites="nettleShorttermChangesFinancial2023">(<a href="#ref-nettleShorttermChangesFinancial2023" role="doc-biblioref">Nettle et al. 2024</a>)</span> found evidence that within-person reduction in the objective resources variable were associated with within-person reduction in risk taking. Recently, <span class="citation" data-cites="akesaka2023">(<a href="#ref-akesaka2023" role="doc-biblioref">Akesaka et al. 2023</a>)</span> also found that individuals most dependent on social security were ready to take more risks the week before welfare checks arrived.</p>
+<p>Poverty could also produce our results through a different mechanism. For instance, a lower education or a lower cognitive capacity due to financial stress <span class="citation" data-cites="mani2013">(<a href="#ref-mani2013" role="doc-biblioref">Mani et al. 2013</a>)</span> could lead individuals with fewer resources to not understand the risk questions as well. Though, we did not find any evidence of an association between resources and consistency in risk answers (section 4.4). This class of explanation would also predict that individuals in poverty misunderstand other questions as well, and display extreme scores in other domains than risk taking. In our data, the “time discounting” questions were similar in terms of language, and allow for comparison. To test for this alternative explanation, we replicated our exploratory analysis using time discounting. Our results (section 4.4) suggest that among the most deprived participants, steep time discounting was more frequent, but flat time discounting less frequent, whereas the alternative explanation (i.e.&nbsp;more errors amongst participants with low resources) would predict both to be more frequent.</p>
+<p>Our results could also be driven by measurement error: some participants may fill the survey less seriously, and report extreme levels of both resources and risk taking, in either direction. But if so, we would find the same phenomenon not only on time discounting, but also among the individuals with high objective resources. This was not the case: the top 5% in objective and subjective resources showed a lower variance in risk taking, and provided fewer extreme answers (Table S3).</p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>The Changing Cost of Living sample was not representative of UK or French populations. There were no participants below the age of 25, and few over 45. Also, the recruitment via online participation platforms produced an oversampling of individuals with low incomes (for details, see <span class="citation" data-cites="nettleShorttermChangesFinancial2023">Nettle et al. (<a href="#ref-nettleShorttermChangesFinancial2023" role="doc-biblioref">2024</a>)</span>). This could have been an advantage to test our hypothesis, which requires a sufficient number of low income individuals to detect the pattern. To evaluate how generalisable our results are, future research should test our predictions in other populations, ideally from different regions with different levels of standard of living.</p>
+<p>Our risk taking measure also has limitations. Hypothetical lotteries measures may have suboptimal external validity. They predict behaviors like portfolio choice, occupational choice, smoking, and migration <span class="citation" data-cites="dohmen2011">Dohmen et al. (<a href="#ref-dohmen2011" role="doc-biblioref">2011</a>)</span>, but less well than “general risk questions”, like “Are you generally a risk taking person or do you try to avoid risks?” <span class="citation" data-cites="dohmen2011 frey2017">(<a href="#ref-dohmen2011" role="doc-biblioref">Dohmen et al. 2011</a>; <a href="#ref-frey2017" role="doc-biblioref">Frey et al. 2017</a>)</span>. This second measure also tends to be more stable over time, and have a higher ‘convergent validity’ - that is, better generalizes across domains of risk taking <span class="citation" data-cites="mata2018 frey2017">Dohmen et al. (<a href="#ref-dohmen2011" role="doc-biblioref">2011</a>)</span>. However, the ‘desperation threshold’ only applies to risks related to resources. It can make a clear prediction on hypothetical lotteries (figure 1B), but not on the general risk questions. Moreover, because our goal was to capture risk taking as a response to current material conditions rather than a lasting personality trait, the lower temporal stability is thus not an issue for our research question. The hypothetical gambles thus seemed appropriate for our study, even if imperfect, for example because they were not actually incentivized.</p>
+</section>
+<section id="implications" class="level2">
+<h2 class="anchored" data-anchor-id="implications">Implications</h2>
+<p>Our study has important societal implications, both to explain and to remedy problems associated with poverty. In our data, people in poverty were more likely to (i) avoid risk even when it would, on average, benefit them, and to (ii) take risks even when it will, on average, be detrimental. In both cases, such individuals are further from ‘expected payoff’ decision-making, which is, by definition, optimal if one wants to maximize resources in the long term. In a way, the desperation threshold makes it optimal to make decisions that are long-term sub-optimal from a poverty-reduction perspective.</p>
+<p>Concretely, Banerjee <span class="citation" data-cites="banerjee2004">(<a href="#ref-banerjee2004" role="doc-biblioref">A. Banerjee 2004</a>)</span> points out that both ‘poverty as vulnerability’ and ‘poverty as desperation’ can lock people in poverty: if people in poverty have too much to lose, they refrain from investing; if they have little to lose, they have “no obvious reason to want to repay” (p.62) a loan, and therefore no one would lend them resources. In both cases, it is harder for them to escape poverty. In previous research in economics, risk aversion has often been deemed as the cause of suboptimal decisions – in particular in agricultural economics, where it was proposed as the cause of field scattering (e.g, <span class="citation" data-cites="mccloskey1976">McCloskey (<a href="#ref-mccloskey1976" role="doc-biblioref">1976</a>)</span>) or refusal to adopt new, more profitable, technologies <span class="citation" data-cites="morduch1990">(<a href="#ref-morduch1990" role="doc-biblioref">Morduch 1990</a>)</span>.</p>
+<p>‘Desperate risk taking’ likely imposes major costs on individuals, communities, and society at large. When below the desperation threshold, our model predicts that people will take risks even when they have a negative expected payoff (Figure 1B). In our data, the proportion of participants ready to take such ‘bad risks’ was twice as high in the lowest 5% in subjective resources (Table 2). In reality, risks that people in poverty have access to are likely to fall into this category: they lack the money to invest in risky but profitable assets, and can only borrow with astronomically high interest rates <span class="citation" data-cites="banerjee2003">(<a href="#ref-banerjee2003" role="doc-biblioref">A. V. Banerjee 2003</a>)</span>. Also, a desperate individual needs resources urgently, to fulfill a basic need. One way to obtain resources quickly without investing might be to engage in property crime. It is a particularly risky activity: it implies the fundamental uncertainty of being caught and punished.</p>
+<p>In some cases, it is thus plausible that desperate risk taking takes the form of crime. Empirically, risk taking (measured by hypothetical lotteries) has indeed been found to strongly predict property crime <span class="citation" data-cites="epper2022">(<a href="#ref-epper2022" role="doc-biblioref">Epper et al. 2022</a>)</span>. Crime (and in particular property crime) is more frequent in deprived <span class="citation" data-cites="hsieh1993">(<a href="#ref-hsieh1993" role="doc-biblioref">Hsieh and Pugh 1993</a>)</span> or unequal <span class="citation" data-cites="kelly2000 daly2016">(<a href="#ref-kelly2000" role="doc-biblioref">Kelly 2000</a>; <a href="#ref-daly2016" role="doc-biblioref">Martin Daly 2017</a>)</span> populations, a phenomenon that some attribute to a ‘little to lose’ feeling <span class="citation" data-cites="daly1997 brezina2008">(<a href="#ref-daly1997" role="doc-biblioref">Martin Daly and Wilson 1997</a>; <a href="#ref-brezina2008" role="doc-biblioref">Brezina, Tekin, and Topalli 2009</a>)</span>, or to “a mind-set in which offenders are seeking less to maximize their gains than to deal with a present crisis” <span class="citation" data-cites="jacobscrime1999">(p.&nbsp;167, <a href="#ref-jacobscrime1999" role="doc-biblioref">Jacobs and Wright 1999</a>)</span>.</p>
+<p>However, if we equate willingness to take risks and willingness to engage in property crime, our model and our data have a counter-intuitive prediction. It is possible that people in poverty are, on average, more law-abiding (risk taking is on average lower), and yet, most crime occurs there, since people ready to take extreme risks are mostly found among them (Figure 2). This could, in turn, create discrimination: people in poverty could be suspected and mistrusted more, even though the majority of them are on the contrary especially unlikely to engage in crime. In other words, the fact that a minority of people in poverty are in a situation where they have to take risks might create a stigma affecting other people also in poverty. This could generate the fact that poorer people are, empirically, trusted less <span class="citation" data-cites="boon-falleur2023">Boon-Falleur et al. (<a href="#ref-boon-falleur2023" role="doc-biblioref">2024</a>)</span>, even though they might be less likely to engage in unethical behavior <span class="citation" data-cites="piff2010 piff2012">(<a href="#ref-piff2010" role="doc-biblioref">Paul K. Piff et al. 2010</a>; <a href="#ref-piff2012" role="doc-biblioref">P. K. Piff et al. 2012</a>)</span>.</p>
+<p>Finally, the desperation threshold has implications for the welfare system. By helping to meet basic needs under any conditions, social security measures – for instance, unemployment benefits or health insurance – should alleviate the desperation thresholds, and therefore ‘smoothen’ individuals’ utility function. This should reduce both extreme risk aversion (one has less to lose if there is a strong safety net) and extreme risk taking (desperation would become rarer, or non-existent). Empirically, both risk aversion <span class="citation" data-cites="schroyen2018">(<a href="#ref-schroyen2018" role="doc-biblioref">Schroyen and Aarbu 2018</a>)</span> and crime rates <span class="citation" data-cites="rudolph2020">(<a href="#ref-rudolph2020" role="doc-biblioref">Rudolph and Starke 2020</a>)</span> tend to be lower in countries that have a stronger welfare state, which may indicate that such smoothing indeed takes place.</p>
+</section>
+</section>
+<section id="funding-and-acknowledgements" class="level1">
+<h1>Funding and acknowledgements</h1>
+<p>The authors report no conflict of interest. BdC’s contributions have been supported by the Agence Nationale de la Recherche (ANR-23-CE28-0005-01). WEF’s contributions have been supported by the Dutch Research Council (V1.Vidi.195.130) and the James S. McDonnell Foundation (<a href="https://doi.org/10.37717/220020502" class="uri">https://doi.org/10.37717/220020502</a>). The Changing Cost of Living Study was funded by the French Agence Nationale de la Recherche (ANR-21-CE28-0009); the NIHR (Application Development Award: Universal Basic Income. Grant number: NIHR154451. Research Registry number: researchregistry8567); the University of York Cost of Living Research Group; and the UK Prevention Research Partnership (MR/S037527/1) collaboration, ActEarly. UK Prevention Research Partnership is funded by the British Heart Foundation, Cancer Research UK, Chief Scientist Office of the Scottish Government Health and Social Care Directorates, Engineering and Physical Sciences Research Council, Economic and Social Research Council, Health and Social Care Research and Development Division (Welsh Government), Medical Research Council, National Institute for Health Research, Natural Environment Research Council, Public Health Agency (Northern Ireland), The Health Foundation and Wellcome. The authors thank Ulysse Klatzmann, Camille Boissel and Aurélien Allard for their precious help.</p>
+</section>
+<section id="data-transparency-and-reproducibility" class="level1">
+<h1>Data transparency and reproducibility</h1>
+<p>The data are available here: <a href="https://osf.io/e8g3p/" class="uri">https://osf.io/e8g3p/</a>. This article was written in R markdown, which makes the analyses and the plots reproducible inside the document. The code, and the python code used to produce Figure 1, can be found in this repository: <a href="https://github.com/regicid/changing_cost_of_living_desperation" class="uri">https://github.com/regicid/changing_cost_of_living_desperation</a>.</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-adler2000" class="csl-entry" role="listitem">
+Adler, N. E., E. S. Epel, G. Castellazzo, and J. R. Ickovics. 2000. <span>“Relationship of subjective and objective social status with psychological and physiological functioning: preliminary data in healthy white women.”</span> <em>Health Psychology</em> 19 (6): 586–92. <a href="https://doi.org/10.1037//0278-6133.19.6.586">https://doi.org/10.1037//0278-6133.19.6.586</a>.
+</div>
+<div id="ref-akesaka2023" class="csl-entry" role="listitem">
+Akesaka, Mika, Peter Eibich, Chie Hanaoka, and Hitoshi Shigeoka. 2023. <span>“Temporal Instability of Risk Preference Among the Poor: Evidence from Payday Cycles.”</span> <em>American Economic Journal: Applied Economics</em> 15 (4): 68–99. <a href="https://doi.org/10.1257/app.20220073">https://doi.org/10.1257/app.20220073</a>.
+</div>
+<div id="ref-banerjee2004" class="csl-entry" role="listitem">
+Banerjee, Abhijit. 2004. <span>“The Two Poverties.”</span> In <em>Insurance Against Poverty</em>, 59–75. Oxford University Press.
+</div>
+<div id="ref-banerjee2003" class="csl-entry" role="listitem">
+Banerjee, Abhijit V. 2003. <span>“Contracting Constraints, Credit Markets, and Economic Development.”</span> In <em>Advances in Economics and Econometrics: Theory and Applications, Eighth World Congress</em>, edited by Mathias Dewatripont, Lars Peter Hansen, and Stephen J.Editors Turnovsky, 1–46. Econometric Society Monographs. Cambridge University Press.
+</div>
+<div id="ref-banerjee2007" class="csl-entry" role="listitem">
+Banerjee, Abhijit V., and Esther Duflo. 2007. <span>“The Economic Lives of the Poor.”</span> <em>The Journal of Economic Perspectives</em> 21 (1): 141–68. <a href="https://doi.org/10.1257/jep.21.1.141">https://doi.org/10.1257/jep.21.1.141</a>.
+</div>
+<div id="ref-banerjee1994" class="csl-entry" role="listitem">
+Banerjee, Abhijit V., and Andrew F. Newman. 1994. <span>“Poverty, Incentives, and Development.”</span> <em>The American Economic Review</em> 84 (2): 211–15. <a href="https://www.jstor.org/stable/2117831">https://www.jstor.org/stable/2117831</a>.
+</div>
+<div id="ref-barclay" class="csl-entry" role="listitem">
+Barclay, Pat, Sandeep Mishra, and Adam Maxwell Sparks. 2018. <span>“State-Dependent Risk-Taking.”</span> <em>Proceedings of the Royal Society B: Biological Sciences</em> 285 (1881). <a href="https://doi.org/10.1098/rspb.2018.0180">https://doi.org/10.1098/rspb.2018.0180</a>.
+</div>
+<div id="ref-barsky1997" class="csl-entry" role="listitem">
+Barsky, Robert B., F. Thomas Juster, Miles S. Kimball, and Matthew D. Shapiro. 1997. <span>“Preference Parameters and Behavioral Heterogeneity: An Experimental Approach in the Health and Retirement Study.”</span> <em>The Quarterly Journal of Economics</em> 112 (2): 537–79. <a href="https://doi.org/10.1162/003355397555280">https://doi.org/10.1162/003355397555280</a>.
+</div>
+<div id="ref-baumard2019" class="csl-entry" role="listitem">
+Baumard, Nicolas. 2019. <span>“Psychological Origins of the Industrial Revolution.”</span> <em>Behavioral and Brain Sciences</em> 42 (January): e189. <a href="https://doi.org/10.1017/S0140525X1800211X">https://doi.org/10.1017/S0140525X1800211X</a>.
+</div>
+<div id="ref-binswanger1980" class="csl-entry" role="listitem">
+Binswanger, Hans P. 1980. <span>“Attitudes Toward Risk: Experimental Measurement in Rural India.”</span> <em>American Journal of Agricultural Economics</em> 62 (3): 395–407.
+</div>
+<div id="ref-blasco2023" class="csl-entry" role="listitem">
+Blasco, Julien. 2023. <span>“<span class="nocase">Measuring deep poverty in developed countries. A cumulative indicator of income and material deprivation</span>.”</span> <em>LIEPP Working Paper</em>, no. 155 (December). <a href="https://doi.org/hal-04342540">https://doi.org/hal-04342540</a>.
+</div>
+<div id="ref-boon-falleur2023" class="csl-entry" role="listitem">
+Boon-Falleur, Mélusine, Jean-Baptiste André, Nicolas Baumard, and Daniel Nettle. 2024. <span>“Household Wealth Is Associated with Perceived Trustworthiness in a Diverse Set of Countries.”</span> <em>Social Psychological and Personality Science</em>, 1–11. <a href="https://doi.org/10.1177/19485506241289461">https://doi.org/10.1177/19485506241289461</a>.
+</div>
+<div id="ref-breit2023" class="csl-entry" role="listitem">
+Breit, Moritz, Julian Preuß, Vsevolod Scherrer, and Franzis Preckel. 2023. <span>“Why the Use of Segmented Regression Analysis to Explore Change in Relations Between Variables Is Problematic: A Simulation Study.”</span> <em>Psychological Methods</em>, 1–47. <a href="https://doi.org/10.1037/met0000576">https://doi.org/10.1037/met0000576</a>.
+</div>
+<div id="ref-brezina2008" class="csl-entry" role="listitem">
+Brezina, Timothy, Erdal Tekin, and Volkan Topalli. 2009. <span>“<span>‘Might Not Be a Tomorrow’</span>: A Multimethods Approach to Anticipated Early Death and Youth Crime.”</span> <em>Criminology</em> 47 (4): 1091–1129. <a href="https://doi.org/10.1111/j.1745-9125.2009.00170.x">https://doi.org/10.1111/j.1745-9125.2009.00170.x</a>.
+</div>
+<div id="ref-caballero" class="csl-entry" role="listitem">
+Caballero, Gustavo Adolfo. 2010. <span>“Risk Preferences Under Extreme Poverty: A Field Experiment.”</span> <em>Documento CEDE</em>, no. 33. <a href="https://doi.org/10.2139/ssrn.1720983">https://doi.org/10.2139/ssrn.1720983</a>.
+</div>
+<div id="ref-cardenas2013" class="csl-entry" role="listitem">
+Cardenas, Juan Camilo, and Jeffrey Carpenter. 2013. <span>“Risk Attitudes and Economic Well-Being in Latin America.”</span> <em>Journal of Development Economics</em> 103 (July): 52–61. <a href="https://doi.org/10.1016/j.jdeveco.2013.01.008">https://doi.org/10.1016/j.jdeveco.2013.01.008</a>.
+</div>
+<div id="ref-cohen2008" class="csl-entry" role="listitem">
+Cohen, Sheldon, Cuneyt M. Alper, William J. Doyle, Nancy Adler, John J. Treanor, and Ronald B. Turner. 2008. <span>“Objective and Subjective Socioeconomic Status and Susceptibility to the Common Cold.”</span> <em>Health Psychology</em> 27 (2): 268–74. <a href="https://doi.org/10.1037/0278-6133.27.2.268">https://doi.org/10.1037/0278-6133.27.2.268</a>.
+</div>
+<div id="ref-daly2016" class="csl-entry" role="listitem">
+Daly, Martin. 2017. <em>Killing the Competition: Economic Inequality and Homicide</em>. London, UK: Routledge.
+</div>
+<div id="ref-daly1997" class="csl-entry" role="listitem">
+Daly, Martin, and Margo Wilson. 1997. <span>“Crime and Conflict: Homicide in Evolutionary Psychological Perspective.”</span> <em>Crime and Justice</em> 22 (January): 51–100. <a href="https://doi.org/10.1086/449260">https://doi.org/10.1086/449260</a>.
+</div>
+<div id="ref-daly2001" class="csl-entry" role="listitem">
+Daly, M., and M. Wilson. 2001. <span>“Risk-Taking, Intrasexual Competition, and Homicide.”</span> In <em>Nebraska Symposium on Motivation</em>, 47:1–36.
+</div>
+<div id="ref-decoursonWhyViolenceHigh2023b" class="csl-entry" role="listitem">
+De Courson, Benoît, Willem E. Frankenhuis, Daniel Nettle, and Jean-Louis Van Gelder. 2023. <span>“Why Is Violence High and Persistent in Deprived Communities? A Formal Model.”</span> <em>Proceedings of the Royal Society B</em> 290 (1993): 20222095. <a href="https://doi.org/10.1098/rspb.2022.2095">https://doi.org/10.1098/rspb.2022.2095</a>.
+</div>
+<div id="ref-decourson2021" class="csl-entry" role="listitem">
+De Courson, Benoît, and Daniel Nettle. 2021. <span>“Why Do Inequality and Deprivation Produce High Crime and Low Trust?”</span> <em>Scientific Reports</em> 11 (1): 1937. <a href="https://doi.org/10.1038/s41598-020-80897-8">https://doi.org/10.1038/s41598-020-80897-8</a>.
+</div>
+<div id="ref-deditius-island2007" class="csl-entry" role="listitem">
+Deditius-Island, Heide K., Allen D. Szalda-Petree, and Stephanie C. Kucera. 2007. <span>“Sex Differences in Risk Sensitivity Under Positive and Negative Budgets and Predictors of Choice.”</span> <em>The Journal of General Psychology</em> 134 (4): 435–52. <a href="https://doi.org/10.3200/GENP.134.4.435-452">https://doi.org/10.3200/GENP.134.4.435-452</a>.
+</div>
+<div id="ref-dohmen2011" class="csl-entry" role="listitem">
+Dohmen, Thomas, Armin Falk, David Huffman, Uwe Sunde, Jürgen Schupp, and Gert G. Wagner. 2011. <span>“Individual Risk Attitudes: Measurement, Determinants, and Behavioral Consequences.”</span> <em>Journal of the European Economic Association</em> 9 (3): 522–50. <a href="https://doi.org/10.1111/j.1542-4774.2011.01015.x">https://doi.org/10.1111/j.1542-4774.2011.01015.x</a>.
+</div>
+<div id="ref-eckel2012" class="csl-entry" role="listitem">
+Eckel, Catherine C., Philip J. Grossman, Cathleen A. Johnson, Angela C. M. de Oliveira, Christian Rojas, and Rick K. Wilson. 2012. <span>“School Environment and Risk Preferences: Experimental Evidence.”</span> <em>Journal of Risk and Uncertainty</em> 45 (3): 265–92. <a href="https://doi.org/10.1007/s11166-012-9156-2">https://doi.org/10.1007/s11166-012-9156-2</a>.
+</div>
+<div id="ref-ellis2012" class="csl-entry" role="listitem">
+Ellis, Bruce J., Marco Del Giudice, Thomas J. Dishion, Aurelio José Figueredo, Peter Gray, Vladas Griskevicius, Patricia H. Hawley, et al. 2012. <span>“The evolutionary basis of risky adolescent behavior: implications for science, policy, and practice.”</span> <em>Developmental Psychology</em> 48 (3): 598–623. <a href="https://doi.org/10.1037/a0026220">https://doi.org/10.1037/a0026220</a>.
+</div>
+<div id="ref-epper2022" class="csl-entry" role="listitem">
+Epper, Thomas, Ernst Fehr, Kristoffer Balle Hvidberg, Claus Thustrup Kreiner, Søren Leth-Petersen, and Gregers Nytoft Rasmussen. 2022. <span>“Preferences Predict Who Commits Crime Among Young Men.”</span> <em>Proceedings of the National Academy of Sciences</em> 119 (6). <a href="https://doi.org/10.1073/pnas.2112645119">https://doi.org/10.1073/pnas.2112645119</a>.
+</div>
+<div id="ref-frey2017" class="csl-entry" role="listitem">
+Frey, Renato, Andreas Pedroni, Rui Mata, Jörg Rieskamp, and Ralph Hertwig. 2017. <span>“Risk Preference Shares the Psychometric Structure of Major Psychological Traits.”</span> <em>Science Advances</em> 3 (10): e1701381. <a href="https://doi.org/10.1126/sciadv.1701381">https://doi.org/10.1126/sciadv.1701381</a>.
+</div>
+<div id="ref-gollier2002" class="csl-entry" role="listitem">
+Gollier, Christian. 2002. <span>“What Does the Classical Theory Have to Say about Household Portfolios?”</span> In <em>Household Portfolios</em>, 27–54. Cambridge: MIT Press.
+</div>
+<div id="ref-griskevicius2011" class="csl-entry" role="listitem">
+Griskevicius, Vladas, Joshua M. Tybur, Andrew W. Delton, and Theresa E. Robertson. 2011. <span>“The Influence of Mortality and Socioeconomic Status on Risk and Delayed Rewards: A Life History Theory Approach.”</span> <em>Journal of Personality and Social Psychology</em> 100 (6): 1015–26. <a href="https://doi.org/10.1037/a0022403">https://doi.org/10.1037/a0022403</a>.
+</div>
+<div id="ref-guiso2008" class="csl-entry" role="listitem">
+Guiso, Luigi, and Monica Paiella. 2008. <span>“Risk Aversion, Wealth, and Background Risk.”</span> <em>Journal of the European Economic Association</em> 6 (6): 1109–50. <a href="https://doi.org/10.1162/JEEA.2008.6.6.1109">https://doi.org/10.1162/JEEA.2008.6.6.1109</a>.
+</div>
+<div id="ref-haushofer2014" class="csl-entry" role="listitem">
+Haushofer, Johannes, and Ernst Fehr. 2014. <span>“On the Psychology of Poverty.”</span> <em>Science</em> 344 (6186): 862–67. <a href="https://doi.org/10.1126/science.1232491">https://doi.org/10.1126/science.1232491</a>.
+</div>
+<div id="ref-haushofer" class="csl-entry" role="listitem">
+Haushofer, Johannes, and Daniel Salicath. 2023. <span>“The Psychology of Poverty: Where Do We Stand?”</span> <em>Social Philosophy and Policy</em> 40 (1): 150–84.
+</div>
+<div id="ref-hill1997" class="csl-entry" role="listitem">
+Hill, E. M., L. T. Ross, and B. S. Low. 1997. <span>“The role of future unpredictability in human risk-taking.”</span> <em>Human Nature (Hawthorne, N.Y.)</em> 8 (4): 287–325. <a href="https://doi.org/10.1007/BF02913037">https://doi.org/10.1007/BF02913037</a>.
+</div>
+<div id="ref-hsieh1993" class="csl-entry" role="listitem">
+Hsieh, Ching-Chi, and M. D. Pugh. 1993. <span>“Poverty, Income Inequality, and Violent Crime: A Meta-Analysis of Recent Aggregate Data Studies.”</span> <em>Criminal Justice Review</em> 18 (2): 182–202. <a href="https://doi.org/10.1177/073401689301800203">https://doi.org/10.1177/073401689301800203</a>.
+</div>
+<div id="ref-jacobscrime1999" class="csl-entry" role="listitem">
+Jacobs, Bruce A., and Richard Wright. 1999. <span>“Stick-up, Street Culture, and Offender Motivation.”</span> <em>Criminology</em> 37 (1): 149–74. <a href="https://doi.org/10.1111/j.1745-9125.1999.tb00482.x">https://doi.org/10.1111/j.1745-9125.1999.tb00482.x</a>.
+</div>
+<div id="ref-kelly2000" class="csl-entry" role="listitem">
+Kelly, Morgan. 2000. <span>“Inequality and Crime.”</span> <em>The Review of Economics and Statistics</em> 82 (4): 530–39. <a href="https://doi.org/10.1162/003465300559028">https://doi.org/10.1162/003465300559028</a>.
+</div>
+<div id="ref-kish-gephart2017" class="csl-entry" role="listitem">
+Kish-Gephart, Jennifer J. 2017. <span>“Social Class &amp; Risk Preferences and Behavior.”</span> <em>Current Opinion in Psychology</em>, Inequality and social class, 18 (December): 89–92. <a href="https://doi.org/10.1016/j.copsyc.2017.07.034">https://doi.org/10.1016/j.copsyc.2017.07.034</a>.
+</div>
+<div id="ref-kohler1996" class="csl-entry" role="listitem">
+Kohler, Timothy A, and Carla R Van West. 2018. <span>“The Calculus of Self-Interest in the Development of Cooperation: Sociopolitical Development and Risk Among the Northern Anasazi.”</span> In <em>Evolving Complexity and Environmental Risk in the Prehistoric Southwest</em>, 169–96. CRC Press.
+</div>
+<div id="ref-kunreuther1974" class="csl-entry" role="listitem">
+Kunreuther, Howard, and Gavin Wright. 1974. <span>“Safety-First, Gambling, and the Subsistence Farmer.”</span> <em>Fels Discussion Paper</em> 59 (July). <a href="https://ageconsearch.umn.edu/record/257756/files/magr-pennstate-100.pdf">https://ageconsearch.umn.edu/record/257756/files/magr-pennstate-100.pdf</a>.
+</div>
+<div id="ref-kuznar2001" class="csl-entry" role="listitem">
+Kuznar, L.&nbsp;A. 2001. <span>“Risk Sensitivity and Value Among Andean Pastoralists: Measures, Models, and Empirical Tests.”</span> <em>Current Anthropology</em> 42 (3): 432–40. <a href="https://doi.org/10.1086/320483">https://doi.org/10.1086/320483</a>.
+</div>
+<div id="ref-lybbert2007" class="csl-entry" role="listitem">
+Lybbert, Travis J., and Christopher B. Barrett. 2007. <span>“Risk Responses to Dynamic Asset Thresholds.”</span> <em>Review of Agricultural Economics</em> 29 (3): 412–18. <a href="https://doi.org/10.1111/j.1467-9353.2007.00354.x">https://doi.org/10.1111/j.1467-9353.2007.00354.x</a>.
+</div>
+<div id="ref-lybbert2011" class="csl-entry" role="listitem">
+———. 2011. <span>“Risk-Taking Behavior in the Presence of Nonconvex Asset Dynamics.”</span> <em>Economic Inquiry</em> 49 (4): 982–88. <a href="https://doi.org/10.1111/j.1465-7295.2009.00198.x">https://doi.org/10.1111/j.1465-7295.2009.00198.x</a>.
+</div>
+<div id="ref-lybbert2013" class="csl-entry" role="listitem">
+Lybbert, Travis J., David R. Just, and Christopher B. Barrett. 2013. <span>“Estimating Risk Preferences in the Presence of Bifurcated Wealth Dynamics: Can We Identify Static Risk Aversion Amidst Dynamic Risk Responses?”</span> <em>European Review of Agricultural Economics</em> 40 (2): 361–77. <a href="https://doi.org/10.1093/erae/jbs027">https://doi.org/10.1093/erae/jbs027</a>.
+</div>
+<div id="ref-mace1990" class="csl-entry" role="listitem">
+Mace, Ruth. 1990. <span>“Pastoralist Herd Compositions in Unpredictable Environments: A Comparison of Model Predictions and Data from Camel-Keeping Groups.”</span> <em>Agricultural Systems</em> 33 (1): 1–11. <a href="https://doi.org/10.1016/0308-521X(90)90067-Z">https://doi.org/10.1016/0308-521X(90)90067-Z</a>.
+</div>
+<div id="ref-maertens2014" class="csl-entry" role="listitem">
+Maertens, Annemie, A. V. Chari, and David R. Just. 2014. <span>“Why Farmers Sometimes Love Risks: Evidence from India.”</span> <em>Economic Development and Cultural Change</em> 62 (2): 239–74. <a href="https://doi.org/10.1086/674028">https://doi.org/10.1086/674028</a>.
+</div>
+<div id="ref-mani2013" class="csl-entry" role="listitem">
+Mani, Anandi, Sendhil Mullainathan, Eldar Shafir, and Jiaying Zhao. 2013. <span>“Poverty Impedes Cognitive Function.”</span> <em>Science</em> 341 (6149): 976–80. <a href="https://doi.org/10.1126/science.1238041">https://doi.org/10.1126/science.1238041</a>.
+</div>
+<div id="ref-masson1974" class="csl-entry" role="listitem">
+Masson, Robert Tempest. 1974. <span>“Utility Functions with Jump Discontinuities: Some Evidence and Implications from Peasant Agriculture.”</span> <em>Economic Inquiry</em> 12 (4): 559–66. <a href="https://doi.org/10.1111/j.1465-7295.1974.tb00422.x">https://doi.org/10.1111/j.1465-7295.1974.tb00422.x</a>.
+</div>
+<div id="ref-mata2018" class="csl-entry" role="listitem">
+Mata, Rui, Renato Frey, David Richter, Jürgen Schupp, and Ralph Hertwig. 2018. <span>“Risk Preference: A View from Psychology.”</span> <em>Journal of Economic Perspectives</em> 32 (2): 155–72. <a href="https://doi.org/10.1257/jep.32.2.155">https://doi.org/10.1257/jep.32.2.155</a>.
+</div>
+<div id="ref-mccloskey1976" class="csl-entry" role="listitem">
+McCloskey, Donald N. 1976. <span>“English Open Fields as Behavior Towards Risk.”</span> <em>Research in Economic History</em> 1: 124–70. <a href="https://www.semanticscholar.org/paper/English-Open-Fields-as-Behavior-Towards-Risk-McCloskey/6fb21407bbd92cf671d735f14aa78d979d92749a">https://www.semanticscholar.org/paper/English-Open-Fields-as-Behavior-Towards-Risk-McCloskey/6fb21407bbd92cf671d735f14aa78d979d92749a</a>.
+</div>
+<div id="ref-mishra2010" class="csl-entry" role="listitem">
+Mishra, Sandeep, and Martin L. Lalumière. 2010. <span>“You Can<span>’</span>t Always Get What You Want: The Motivational Effect of Need on Risk-Sensitive Decision-Making.”</span> <em>Journal of Experimental Social Psychology</em> 46 (4): 605–11. <a href="https://doi.org/10.1016/j.jesp.2009.12.009">https://doi.org/10.1016/j.jesp.2009.12.009</a>.
+</div>
+<div id="ref-morduch1990" class="csl-entry" role="listitem">
+Morduch, Jonathan. 1990. <span>“Risk, Production and Saving: Theory and Evidence from Indian Households.”</span> <em>Unpublished Manuscript, Harvard University</em>.
+</div>
+<div id="ref-mosley2005" class="csl-entry" role="listitem">
+Mosley, Paul, and Arjan Verschoor. 2005. <span>“Risk Attitudes and the <span>‘</span>Vicious Circle of Poverty<span>’</span>.”</span> <em>The European Journal of Development Research</em> 17 (1): 59–88. <a href="https://doi.org/10.1080/09578810500066548">https://doi.org/10.1080/09578810500066548</a>.
+</div>
+<div id="ref-nettleShorttermChangesFinancial2023" class="csl-entry" role="listitem">
+Nettle, Daniel, Coralie Chevallier, Benoı̂t de Courson, Elliott A Johnson, Matthew T Johnson, and Kate E Pickett. 2024. <span>“Short-Term Changes in Financial Situation Have Immediate Mental Health Consequences: Implications for Social Policy.”</span> <em>Social Policy &amp; Administration</em>, 1–16. <a href="https://doi.org/10.1111/spol.13065">https://doi.org/10.1111/spol.13065</a>.
+</div>
+<div id="ref-pepper2014" class="csl-entry" role="listitem">
+Pepper, Gillian V., and Daniel Nettle. 2014. <span>“Perceived Extrinsic Mortality Risk and Reported Effort in Looking After Health.”</span> <em>Human Nature</em> 25 (3): 378–92. <a href="https://doi.org/10.1007/s12110-014-9204-5">https://doi.org/10.1007/s12110-014-9204-5</a>.
+</div>
+<div id="ref-pietras2006" class="csl-entry" role="listitem">
+Pietras, Cynthia J., Don R. Cherek, Scott D. Lane, and Oleg Tcheremissine. 2006. <span>“Risk Reduction and Resource Pooling on a Cooperation Task.”</span> <em>The Psychological Record</em> 56 (3): 387–401. <a href="https://doi.org/10.1007/BF03395557">https://doi.org/10.1007/BF03395557</a>.
+</div>
+<div id="ref-pietras2001" class="csl-entry" role="listitem">
+Pietras, Cynthia J., and Timothy D. Hackenberg. 2001. <span>“Risk-Sensitive Choice in Humans as a Function of an Earnings Budget.”</span> <em>Journal of the Experimental Analysis of Behavior</em> 76 (1): 1–19. <a href="https://doi.org/10.1901/jeab.2001.76-1">https://doi.org/10.1901/jeab.2001.76-1</a>.
+</div>
+<div id="ref-pietras2008" class="csl-entry" role="listitem">
+Pietras, Cynthia J., Gabriel D. Searcy, Brad E. Huitema, and Andrew E. Brandt. 2008. <span>“Effects of Monetary Reserves and Rate of Gain on Human Risky Choice Under Budget Constraints.”</span> <em>Behavioural Processes</em> 78 (3): 358–73. <a href="https://doi.org/10.1016/j.beproc.2008.01.016">https://doi.org/10.1016/j.beproc.2008.01.016</a>.
+</div>
+<div id="ref-piff2012" class="csl-entry" role="listitem">
+Piff, P. K., D. M. Stancato, S. Cote, R. Mendoza-Denton, and D. Keltner. 2012. <span>“Higher Social Class Predicts Increased Unethical Behavior.”</span> <em>Proceedings of the National Academy of Sciences</em> 109 (11): 4086–91. <a href="https://doi.org/10.1073/pnas.1118373109">https://doi.org/10.1073/pnas.1118373109</a>.
+</div>
+<div id="ref-piff2010" class="csl-entry" role="listitem">
+Piff, Paul K., Michael W. Kraus, Stéphane Côté, Bonnie Hayden Cheng, and Dacher Keltner. 2010. <span>“Having Less, Giving More: The Influence of Social Class on Prosocial Behavior.”</span> <em>Journal of Personality and Social Psychology</em> 99 (5): 771–84. <a href="https://doi.org/10.1037/a0020092">https://doi.org/10.1037/a0020092</a>.
+</div>
+<div id="ref-radkani2023" class="csl-entry" role="listitem">
+Radkani, Setayesh, Eleanor Holton, Benoît De Courson, Rebecca Saxe, and Daniel Nettle. 2023. <span>“Desperation and Inequality Increase Stealing: Evidence from Experimental Microsocieties.”</span> <em>Royal Society Open Science</em> 10 (7): 221385. <a href="https://doi.org/10.1098/rsos.221385">https://doi.org/10.1098/rsos.221385</a>.
+</div>
+<div id="ref-rode1999" class="csl-entry" role="listitem">
+Rode, Catrin, Leda Cosmides, Wolfgang Hell, and John Tooby. 1999. <span>“When and Why Do People Avoid Unknown Probabilities in Decisions Under Uncertainty? Testing Some Predictions from Optimal Foraging Theory.”</span> <em>Cognition</em> 72 (3): 269–304. <a href="https://doi.org/10.1016/S0010-0277(99)00041-4">https://doi.org/10.1016/S0010-0277(99)00041-4</a>.
+</div>
+<div id="ref-roumasset1971" class="csl-entry" role="listitem">
+Roumasset, James A. 1971. <em>Risk and Choice of Technique for Peasant Agriculture: Safety First and Rice Production in the Philippines</em>. Social Systems Research Institute, University of Wisconsin.
+</div>
+<div id="ref-rudolph2020" class="csl-entry" role="listitem">
+Rudolph, Maximilian, and Peter Starke. 2020. <span>“How Does the Welfare State Reduce Crime? The Effect of Program Characteristics and Decommodification Across 18 OECD-Countries.”</span> <em>Journal of Criminal Justice</em> 68 (May): 101684. <a href="https://doi.org/10.1016/j.jcrimjus.2020.101684">https://doi.org/10.1016/j.jcrimjus.2020.101684</a>.
+</div>
+<div id="ref-schildberg-hörisch2018" class="csl-entry" role="listitem">
+Schildberg-Hörisch, Hannah. 2018. <span>“Are Risk Preferences Stable?”</span> <em>Journal of Economic Perspectives</em> 32 (2): 135–54. <a href="https://doi.org/10.1257/jep.32.2.135">https://doi.org/10.1257/jep.32.2.135</a>.
+</div>
+<div id="ref-schroyen2018" class="csl-entry" role="listitem">
+Schroyen, Fred, and Karl Ove Aarbu. 2018. <span>“Attitudes Towards Large Income Risk in Welfare States: An International Comparison.”</span> <em>Economica</em> 85 (340): 846–72. <a href="https://doi.org/10.1111/ecca.12267">https://doi.org/10.1111/ecca.12267</a>.
+</div>
+<div id="ref-scott1977" class="csl-entry" role="listitem">
+Scott, James C. 1977. <em>The Moral Economy of the Peasant: Rebellion and Subsistence in Southeast Asia</em>. Yale University Press. <a href="https://www.degruyter.com/document/doi/10.12987/9780300185553/html">https://www.degruyter.com/document/doi/10.12987/9780300185553/html</a>.
+</div>
+<div id="ref-sheehy-skeffington2017" class="csl-entry" role="listitem">
+Sheehy-Skeffington, Jennifer, and Jessica Rea. 2017. <span>“How Poverty Affects People’s Decision-Making Processes,”</span> February.
+</div>
+<div id="ref-simonsohn2018" class="csl-entry" role="listitem">
+Simonsohn, Uri. 2018. <span>“Two Lines: A Valid Alternative to the Invalid Testing of U-Shaped Relationships With Quadratic Regressions.”</span> <em>Advances in Methods and Practices in Psychological Science</em> 1 (4): 538–55. <a href="https://doi.org/10.1177/2515245918805755">https://doi.org/10.1177/2515245918805755</a>.
+</div>
+<div id="ref-stephens1981" class="csl-entry" role="listitem">
+Stephens, D. W. 1981. <span>“The Logic of Risk-Sensitive Foraging Preferences.”</span> <em>Animal Behaviour</em> 29 (2): 628–29. <a href="https://doi.org/10.1016/S0003-3472(81)80128-5">https://doi.org/10.1016/S0003-3472(81)80128-5</a>.
+</div>
+<div id="ref-tanaka2010" class="csl-entry" role="listitem">
+Tanaka, Tomomi, Colin F. Camerer, and Quang Nguyen. 2010. <span>“Risk and Time Preferences: Linking Experimental and Household Survey Data from Vietnam.”</span> <em>American Economic Review</em> 100 (1): 557–71. <a href="https://doi.org/10.1257/aer.100.1.557">https://doi.org/10.1257/aer.100.1.557</a>.
+</div>
+<div id="ref-tucker2012" class="csl-entry" role="listitem">
+Tucker, Bram. 2012. <span>“Do Risk and Time Experimental Choices Represent Individual Strategies for Coping with Poverty or Conformity to Social Norms? Evidence from Rural Southwestern Madagascar.”</span> <em>Current Anthropology</em> 53 (2): 149–80. <a href="https://doi.org/10.1086/664569">https://doi.org/10.1086/664569</a>.
+</div>
+<div id="ref-vieider2012" class="csl-entry" role="listitem">
+Vieider, Ferdinand M., Thorsten Chmura, and Peter Martinsson. 2012. <span>“Risk Attitudes, Development, and Growth: Macroeconomic Evidence from Experiments in 30 Countries.”</span> <em>Discussion Papers, WZB Junior Research Group Risk and Development</em>, Discussion Papers, WZB Junior Research Group Risk and Development,. <a href="https://ideas.repec.org//p/zbw/wzbrad/spii2012401.html">https://ideas.repec.org//p/zbw/wzbrad/spii2012401.html</a>.
+</div>
+<div id="ref-wardle2014" class="csl-entry" role="listitem">
+Wardle, Heather, Ruth Keily, Gaynor Astbury, and Gerda Reith. 2014. <span>“<span>‘</span>Risky Places?<span>’</span>: Mapping Gambling Machine Density and Socio-Economic Deprivation.”</span> <em>Journal of Gambling Studies</em> 30 (1): 201–12. <a href="https://doi.org/10.1007/s10899-012-9349-2">https://doi.org/10.1007/s10899-012-9349-2</a>.
+</div>
+<div id="ref-winterhalder1999" class="csl-entry" role="listitem">
+Winterhalder, Bruce, Flora Lu, and Bram Tucker. 1999. <span>“Risk-Senstive Adaptive Tactics: Models and Evidence from Subsistence Studies in Biology and Anthropology.”</span> <em>Journal of Archaeological Research</em> 7 (4): 301–48. <a href="https://doi.org/10.1007/BF02446047">https://doi.org/10.1007/BF02446047</a>.
+</div>
+<div id="ref-yesuf2009" class="csl-entry" role="listitem">
+Yesuf, Mahmud, and Randall A. Bluffstone. 2009. <span>“Poverty, Risk Aversion, and Path Dependence in Low-Income Countries: Experimental Evidence from Ethiopia.”</span> <em>American Journal of Agricultural Economics</em> 91 (4): 1022–37. <a href="https://doi.org/10.1111/j.1467-8276.2009.01307.x">https://doi.org/10.1111/j.1467-8276.2009.01307.x</a>.
+</div>
+</div>
+</section>
+<section id="appendix" class="level1">
+<h1>Appendix</h1>
+<div style="page-break-after: always;"></div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="Rtable1">
+<table class="Rtable1 caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Demographic characteristics of the samples. Ns in this table represent numbers of participants. Variables are as reported in the first month of the study (September 2022). Financial strain is a self-report variable of how the participant is managing financially.</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th class="rowlabel firstrow lastrow" data-quarto-table-cell-role="th"></th>
+<th class="firstrow lastrow" data-quarto-table-cell-role="th"><span class="stratlabel">France<br>
+<span class="stratn">(N=232)</span></span></th>
+<th class="firstrow lastrow" data-quarto-table-cell-role="th"><span class="stratlabel">UK<br>
+<span class="stratn">(N=240)</span></span></th>
+<th class="firstrow lastrow" data-quarto-table-cell-role="th"><span class="stratlabel">Overall<br>
+<span class="stratn">(N=472)</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="rowlabel firstrow">Gender</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr class="even">
+<td class="rowlabel">Woman</td>
+<td>119 (51.3%)</td>
+<td>122 (50.8%)</td>
+<td>241 (51.1%)</td>
+</tr>
+<tr class="odd">
+<td class="rowlabel">Man</td>
+<td>108 (46.6%)</td>
+<td>116 (48.3%)</td>
+<td>224 (47.5%)</td>
+</tr>
+<tr class="even">
+<td class="rowlabel">Prefers not to say</td>
+<td>0 (0%)</td>
+<td>0 (0%)</td>
+<td>0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="rowlabel lastrow">Missing</td>
+<td class="lastrow">5 (2.2%)</td>
+<td class="lastrow">2 (0.8%)</td>
+<td class="lastrow">7 (1.5%)</td>
+</tr>
+<tr class="even">
+<td class="rowlabel firstrow">Age</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr class="odd">
+<td class="rowlabel">Mean (SD)</td>
+<td>41.2 (8.45)</td>
+<td>42.2 (12.3)</td>
+<td>41.7 (10.6)</td>
+</tr>
+<tr class="even">
+<td class="rowlabel">Median [Min, Max]</td>
+<td>41.0 [25.0, 59.0]</td>
+<td>40.0 [24.0, 76.0]</td>
+<td>41.0 [24.0, 76.0]</td>
+</tr>
+<tr class="odd">
+<td class="rowlabel lastrow">Missing</td>
+<td class="lastrow">3 (1.3%)</td>
+<td class="lastrow">0 (0%)</td>
+<td class="lastrow">3 (0.6%)</td>
+</tr>
+<tr class="even">
+<td class="rowlabel firstrow">Financial strain</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr class="odd">
+<td class="rowlabel">Finding it very difficult</td>
+<td>12 (5.2%)</td>
+<td>10 (4.2%)</td>
+<td>22 (4.7%)</td>
+</tr>
+<tr class="even">
+<td class="rowlabel">Finding it quite difficult</td>
+<td>26 (11.2%)</td>
+<td>22 (9.2%)</td>
+<td>48 (10.2%)</td>
+</tr>
+<tr class="odd">
+<td class="rowlabel">Just about getting by</td>
+<td>75 (32.3%)</td>
+<td>51 (21.3%)</td>
+<td>126 (26.7%)</td>
+</tr>
+<tr class="even">
+<td class="rowlabel">Doing alright</td>
+<td>97 (41.8%)</td>
+<td>112 (46.7%)</td>
+<td>209 (44.3%)</td>
+</tr>
+<tr class="odd">
+<td class="rowlabel">Living comfortably</td>
+<td>22 (9.5%)</td>
+<td>40 (16.7%)</td>
+<td>62 (13.1%)</td>
+</tr>
+<tr class="even">
+<td class="rowlabel lastrow">Missing</td>
+<td class="lastrow">0 (0%)</td>
+<td class="lastrow">5 (2.1%)</td>
+<td class="lastrow">5 (1.1%)</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="analysis_ccl_files/figure-html/fig_descr-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Mean and variance in risk taking for participants, grouped by their answer in the ‘managing financially’ question</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="analysis_ccl_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Deviance of the statistical models depending on the changepoint location, using objective (A) and subjective (B) resources</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="tabwid"><style>.cl-44e437f6{}.cl-44dfe2fa{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-44e136fa{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-44e13f1a{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f24{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f25{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f2e{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f2f{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f30{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f38{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f42{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f4c{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f4d{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f60{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f6a{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f6b{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f7e{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f92{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f93{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f94{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13f9c{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fa6{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fa7{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fb0{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fb1{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fba{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fc4{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fc5{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fc6{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fce{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fd8{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fd9{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fe2{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fec{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fed{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fee{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13fef{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44e13ff6{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-44e437f6"><thead><tr style="overflow-wrap:break-word;"><th class="cl-44e13f1a"><p class="cl-44e136fa"><span class="cl-44dfe2fa">Variable</span></p></th><th class="cl-44e13f24"><p class="cl-44e136fa"><span class="cl-44dfe2fa">Estimate</span></p></th><th class="cl-44e13f25"><p class="cl-44e136fa"><span class="cl-44dfe2fa">Std. Error</span></p></th><th class="cl-44e13f2e"><p class="cl-44e136fa"><span class="cl-44dfe2fa">df</span></p></th><th class="cl-44e13f2e"><p class="cl-44e136fa"><span class="cl-44dfe2fa">t value</span></p></th><th class="cl-44e13f2f"><p class="cl-44e136fa"><span class="cl-44dfe2fa">p-value</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-44e13f30"><p class="cl-44e136fa"><span class="cl-44dfe2fa">Intercept</span></p></td><td class="cl-44e13f38"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.145</span></p></td><td class="cl-44e13f42"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.052</span></p></td><td class="cl-44e13f4c"><p class="cl-44e136fa"><span class="cl-44dfe2fa">634</span></p></td><td class="cl-44e13f4c"><p class="cl-44e136fa"><span class="cl-44dfe2fa">2.81</span></p></td><td class="cl-44e13f4d"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.005 **</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-44e13f60"><p class="cl-44e136fa"><span class="cl-44dfe2fa">Objective Resources (before changepoint)</span></p></td><td class="cl-44e13f6a"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.056</span></p></td><td class="cl-44e13f6b"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.026</span></p></td><td class="cl-44e13f7e"><p class="cl-44e136fa"><span class="cl-44dfe2fa">4792</span></p></td><td class="cl-44e13f7e"><p class="cl-44e136fa"><span class="cl-44dfe2fa">2.121</span></p></td><td class="cl-44e13f92"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.034 *</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-44e13f60"><p class="cl-44e136fa"><span class="cl-44dfe2fa">Objective Resources (after changepoint)</span></p></td><td class="cl-44e13f6a"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.013</span></p></td><td class="cl-44e13f6b"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.044</span></p></td><td class="cl-44e13f7e"><p class="cl-44e136fa"><span class="cl-44dfe2fa">4783</span></p></td><td class="cl-44e13f7e"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.307</span></p></td><td class="cl-44e13f92"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.759  </span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-44e13f93"><p class="cl-44e136fa"><span class="cl-44dfe2fa">Age</span></p></td><td class="cl-44e13f94"><p class="cl-44e136fa"><span class="cl-44dfe2fa">-0.082</span></p></td><td class="cl-44e13f9c"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.033</span></p></td><td class="cl-44e13fa6"><p class="cl-44e136fa"><span class="cl-44dfe2fa">549</span></p></td><td class="cl-44e13fa6"><p class="cl-44e136fa"><span class="cl-44dfe2fa">-2.499</span></p></td><td class="cl-44e13fa7"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.013 *</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-44e13fb0"><p class="cl-44e136fa"><span class="cl-44dfe2fa">Gender: prefers not to say or self-describe</span></p></td><td class="cl-44e13fb1"><p class="cl-44e136fa"><span class="cl-44dfe2fa">-0.401</span></p></td><td class="cl-44e13fba"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.368</span></p></td><td class="cl-44e13fc4"><p class="cl-44e136fa"><span class="cl-44dfe2fa">644</span></p></td><td class="cl-44e13fc4"><p class="cl-44e136fa"><span class="cl-44dfe2fa">-1.088</span></p></td><td class="cl-44e13fc5"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.277  </span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-44e13fc6"><p class="cl-44e136fa"><span class="cl-44dfe2fa">Gender: woman</span></p></td><td class="cl-44e13fce"><p class="cl-44e136fa"><span class="cl-44dfe2fa">-0.198</span></p></td><td class="cl-44e13fd8"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.067</span></p></td><td class="cl-44e13fd9"><p class="cl-44e136fa"><span class="cl-44dfe2fa">476</span></p></td><td class="cl-44e13fd9"><p class="cl-44e136fa"><span class="cl-44dfe2fa">-2.959</span></p></td><td class="cl-44e13fe2"><p class="cl-44e136fa"><span class="cl-44dfe2fa">0.003 **</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td colspan="6" class="cl-44e13fec"><p class="cl-44e136fa"><span class="cl-44dfe2fa">p-values are uncorrected and rounded to three decimals. Asterisks represent significance levels: * p &lt; 0.05; ** p &lt; 0.01; *** p &lt; 0.001</span></p></td></tr></tfoot></table></div>
+<div class="tabwid"><style>.cl-44f3e322{}.cl-44eff17c{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-44f13ba4{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-44f1439c{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143a6{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143a7{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143a8{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143b0{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143b1{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143b2{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143b3{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143ba{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143bb{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143bc{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143bd{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143c4{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143c5{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143c6{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143ce{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143cf{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143d0{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143d8{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143e2{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143e3{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143e4{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143ec{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143ed{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143ee{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f143f6{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f14400{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f14401{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f14402{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f1440a{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f1440b{width:3.147in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f1440c{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f1440d{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f14414{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-44f14415{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-44f3e322"><thead><tr style="overflow-wrap:break-word;"><th class="cl-44f1439c"><p class="cl-44f13ba4"><span class="cl-44eff17c">Variable</span></p></th><th class="cl-44f143a6"><p class="cl-44f13ba4"><span class="cl-44eff17c">Estimate</span></p></th><th class="cl-44f143a7"><p class="cl-44f13ba4"><span class="cl-44eff17c">Std. Error</span></p></th><th class="cl-44f143a8"><p class="cl-44f13ba4"><span class="cl-44eff17c">df</span></p></th><th class="cl-44f143a8"><p class="cl-44f13ba4"><span class="cl-44eff17c">t value</span></p></th><th class="cl-44f143b0"><p class="cl-44f13ba4"><span class="cl-44eff17c">p-value</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-44f143b1"><p class="cl-44f13ba4"><span class="cl-44eff17c">Intercept</span></p></td><td class="cl-44f143b2"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.01</span></p></td><td class="cl-44f143b3"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.059</span></p></td><td class="cl-44f143ba"><p class="cl-44f13ba4"><span class="cl-44eff17c">809</span></p></td><td class="cl-44f143ba"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.168</span></p></td><td class="cl-44f143bb"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.866  </span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-44f143bc"><p class="cl-44f13ba4"><span class="cl-44eff17c">Objective Resources (before changepoint)</span></p></td><td class="cl-44f143bd"><p class="cl-44f13ba4"><span class="cl-44eff17c">-0.242</span></p></td><td class="cl-44f143c4"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.129</span></p></td><td class="cl-44f143c5"><p class="cl-44f13ba4"><span class="cl-44eff17c">3950</span></p></td><td class="cl-44f143c5"><p class="cl-44f13ba4"><span class="cl-44eff17c">-1.882</span></p></td><td class="cl-44f143c6"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.06  </span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-44f143bc"><p class="cl-44f13ba4"><span class="cl-44eff17c">Objective Resources (after changepoint)</span></p></td><td class="cl-44f143bd"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.068</span></p></td><td class="cl-44f143c4"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.025</span></p></td><td class="cl-44f143c5"><p class="cl-44f13ba4"><span class="cl-44eff17c">3013</span></p></td><td class="cl-44f143c5"><p class="cl-44f13ba4"><span class="cl-44eff17c">2.662</span></p></td><td class="cl-44f143c6"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.008 **</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-44f143ce"><p class="cl-44f13ba4"><span class="cl-44eff17c">Age</span></p></td><td class="cl-44f143cf"><p class="cl-44f13ba4"><span class="cl-44eff17c">-0.088</span></p></td><td class="cl-44f143d0"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.033</span></p></td><td class="cl-44f143d8"><p class="cl-44f13ba4"><span class="cl-44eff17c">555</span></p></td><td class="cl-44f143d8"><p class="cl-44f13ba4"><span class="cl-44eff17c">-2.644</span></p></td><td class="cl-44f143e2"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.008 **</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-44f143e3"><p class="cl-44f13ba4"><span class="cl-44eff17c">Gender: prefers not to say or self-describe</span></p></td><td class="cl-44f143e4"><p class="cl-44f13ba4"><span class="cl-44eff17c">-0.394</span></p></td><td class="cl-44f143ec"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.37</span></p></td><td class="cl-44f143ed"><p class="cl-44f13ba4"><span class="cl-44eff17c">639</span></p></td><td class="cl-44f143ed"><p class="cl-44f13ba4"><span class="cl-44eff17c">-1.067</span></p></td><td class="cl-44f143ee"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.287  </span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-44f143f6"><p class="cl-44f13ba4"><span class="cl-44eff17c">Gender: woman</span></p></td><td class="cl-44f14400"><p class="cl-44f13ba4"><span class="cl-44eff17c">-0.192</span></p></td><td class="cl-44f14401"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.067</span></p></td><td class="cl-44f14402"><p class="cl-44f13ba4"><span class="cl-44eff17c">476</span></p></td><td class="cl-44f14402"><p class="cl-44f13ba4"><span class="cl-44eff17c">-2.854</span></p></td><td class="cl-44f1440a"><p class="cl-44f13ba4"><span class="cl-44eff17c">0.005 **</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td colspan="6" class="cl-44f1440b"><p class="cl-44f13ba4"><span class="cl-44eff17c">p-values are uncorrected and rounded to three decimals. Asterisks represent significance levels: * p &lt; 0.05; ** p &lt; 0.01; *** p &lt; 0.001</span></p></td></tr></tfoot></table></div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="tabwid"><style>.cl-450e6ad0{}.cl-450b5d68{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-450ca6f0{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-450caf10{width:3.215in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf1a{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf1b{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf24{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf25{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf2e{width:3.215in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf38{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf39{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf42{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf4c{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf4d{width:3.215in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf4e{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf56{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf60{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf61{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf62{width:3.215in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf6a{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf6b{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf74{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf75{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf7e{width:3.215in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf7f{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf88{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf89{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf8a{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf92{width:3.215in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf9c{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450caf9d{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450cafa6{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450cafb0{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450cafb1{width:3.215in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450cafb2{width:0.88in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450cafba{width:0.939in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450cafbb{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-450cafc4{width:0.829in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-450e6ad0"><thead><tr style="overflow-wrap:break-word;"><th class="cl-450caf10"><p class="cl-450ca6f0"><span class="cl-450b5d68">Variable</span></p></th><th class="cl-450caf1a"><p class="cl-450ca6f0"><span class="cl-450b5d68">Estimate</span></p></th><th class="cl-450caf1b"><p class="cl-450ca6f0"><span class="cl-450b5d68">Std. Error</span></p></th><th class="cl-450caf24"><p class="cl-450ca6f0"><span class="cl-450b5d68">df</span></p></th><th class="cl-450caf24"><p class="cl-450ca6f0"><span class="cl-450b5d68">t value</span></p></th><th class="cl-450caf25"><p class="cl-450ca6f0"><span class="cl-450b5d68">p-value</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-450caf2e"><p class="cl-450ca6f0"><span class="cl-450b5d68">Intercept</span></p></td><td class="cl-450caf38"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.01</span></p></td><td class="cl-450caf39"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.059</span></p></td><td class="cl-450caf42"><p class="cl-450ca6f0"><span class="cl-450b5d68">809</span></p></td><td class="cl-450caf42"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.168</span></p></td><td class="cl-450caf4c"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.866  </span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-450caf4d"><p class="cl-450ca6f0"><span class="cl-450b5d68">Subjective Resources (before changepoint)</span></p></td><td class="cl-450caf4e"><p class="cl-450ca6f0"><span class="cl-450b5d68">-0.242</span></p></td><td class="cl-450caf56"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.129</span></p></td><td class="cl-450caf60"><p class="cl-450ca6f0"><span class="cl-450b5d68">3950</span></p></td><td class="cl-450caf60"><p class="cl-450ca6f0"><span class="cl-450b5d68">-1.882</span></p></td><td class="cl-450caf61"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.06  </span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-450caf4d"><p class="cl-450ca6f0"><span class="cl-450b5d68">Subjective Resources (after changepoint)</span></p></td><td class="cl-450caf4e"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.068</span></p></td><td class="cl-450caf56"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.025</span></p></td><td class="cl-450caf60"><p class="cl-450ca6f0"><span class="cl-450b5d68">3013</span></p></td><td class="cl-450caf60"><p class="cl-450ca6f0"><span class="cl-450b5d68">2.662</span></p></td><td class="cl-450caf61"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.008 **</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-450caf62"><p class="cl-450ca6f0"><span class="cl-450b5d68">Age</span></p></td><td class="cl-450caf6a"><p class="cl-450ca6f0"><span class="cl-450b5d68">-0.088</span></p></td><td class="cl-450caf6b"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.033</span></p></td><td class="cl-450caf74"><p class="cl-450ca6f0"><span class="cl-450b5d68">555</span></p></td><td class="cl-450caf74"><p class="cl-450ca6f0"><span class="cl-450b5d68">-2.644</span></p></td><td class="cl-450caf75"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.008 **</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-450caf7e"><p class="cl-450ca6f0"><span class="cl-450b5d68">Gender: prefers not to say or self-describe</span></p></td><td class="cl-450caf7f"><p class="cl-450ca6f0"><span class="cl-450b5d68">-0.394</span></p></td><td class="cl-450caf88"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.37</span></p></td><td class="cl-450caf89"><p class="cl-450ca6f0"><span class="cl-450b5d68">639</span></p></td><td class="cl-450caf89"><p class="cl-450ca6f0"><span class="cl-450b5d68">-1.067</span></p></td><td class="cl-450caf8a"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.287  </span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-450caf92"><p class="cl-450ca6f0"><span class="cl-450b5d68">Gender: woman</span></p></td><td class="cl-450caf9c"><p class="cl-450ca6f0"><span class="cl-450b5d68">-0.192</span></p></td><td class="cl-450caf9d"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.067</span></p></td><td class="cl-450cafa6"><p class="cl-450ca6f0"><span class="cl-450b5d68">476</span></p></td><td class="cl-450cafa6"><p class="cl-450ca6f0"><span class="cl-450b5d68">-2.854</span></p></td><td class="cl-450cafb0"><p class="cl-450ca6f0"><span class="cl-450b5d68">0.005 **</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td colspan="6" class="cl-450cafb1"><p class="cl-450ca6f0"><span class="cl-450b5d68">p-values are uncorrected and rounded to three decimals. Asterisks represent significance levels: * p &lt; 0.05; ** p &lt; 0.01; *** p &lt; 0.001</span></p></td></tr></tfoot></table></div>
+</div>
+</div>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Max Planck Institute for the Study of Crime, Security and Law, Freiburg im Breisgau, Germany<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Leiden University, Netherlands<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, Netherlands<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Max Planck Institute for the Study of Crime, Security and Law, Freiburg im Breisgau, Germany<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Institut Jean Nicod, Département d’études cognitives, Ecole Normale Supérieure, Université PSL, EHESS, CNRS, Paris, France<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Department of Social Work, Education and Community Wellbeing, Northumbria University, Newcastle upon Tyne, UK<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Max Planck Institute for the Study of Crime, Security and Law, Freiburg im Breisgau, Germany<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Leiden University, Netherlands<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, Netherlands<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>Max Planck Institute for the Study of Crime, Security and Law, Freiburg im Breisgau, Germany<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Institut Jean Nicod, Département d’études cognitives, Ecole Normale Supérieure, Université PSL, EHESS, CNRS, Paris, France<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Department of Social Work, Education and Community Wellbeing, Northumbria University, Newcastle upon Tyne, UK<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>Max Planck Institute for the Study of Crime, Security and Law, Freiburg im Breisgau, Germany<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>Leiden University, Netherlands<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>Institute for Biodiversity and Ecosystem Dynamics, University of Amsterdam, Netherlands<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>Max Planck Institute for the Study of Crime, Security and Law, Freiburg im Breisgau, Germany<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>Institut Jean Nicod, Département d’études cognitives, Ecole Normale Supérieure, Université PSL, EHESS, CNRS, Paris, France<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>Department of Social Work, Education and Community Wellbeing, Northumbria University, Newcastle upon Tyne, UK<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

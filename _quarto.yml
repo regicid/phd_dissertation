@@ -8,10 +8,12 @@ book:
   
   chapters:
     - index.qmd
-    - intro.qmd
-    - chapter1.qmd
-    - chapter2.qmd
-#  - references.qmd
+    - violence/violence.qmd
+    - model_time/time_draft.qmd
+    - empirical_paper/analysis_ccl.qmd
+    - bbs/bbs.qmd
+    - discussion.qmd
+    - references.qmd
 
   # Optional: Parts for organizing chapters
   # parts:
@@ -32,13 +34,20 @@ format:
     
   pdf:
     documentclass: scrreprt
+    include-in-header: header.tex
     
   epub:
     cover-image: cover.png
 
+link-citations: true
+
 # Optional: Additional metadata
-bibliography: references.bib
-csl: apa.csl
+bibliography: 
+  - references.bib # the intro and discussion references
+  - model_time/references.bib  
+  - empirical_paper/references.bib
+  - violence/references.bib
+  - bbs/references.bib
 
 # Optional: Execute options
 execute:

@@ -14,8 +14,6 @@ header-includes:
   - \usepackage{indentfirst}
   - \setlength{\parindent}{1.5em}
   - \setlength{\parskip}{0pt}
-csl: procb.csl
-keeptex: true
 ---
 
 ## Abstract
@@ -261,10 +259,230 @@ Importantly, this effect occurs on both sides of the desperation threshold (Fig.
 
 What real-world behaviors might our model explain? We argue that it provides a new possible rational account of decisions that alleviate need in the short-term, even if they lead to possibly greater need later. It applies particularly well to behaviors like acquisitive crime in contexts of pressing need [@rossmo2022; @topalli2015; @jacobs1999], or to payday loans uptake [@bertrand2011; @dobbie2013]. It does not, as presented here, account for, for example, high consumption of 'temptation goods' in deprived populations [@banerjee2010]. To extend the model to cover those goods, we would have to posit needs that those goods serve, such as reputational or signalling needs. Alternatively, the consumption of such goods may be a maladaptive byproduct of increased discounting whose proper domain is need goods.
 
-A second common prediction across our four scenarios is that when above the threshold but still vulnerable in the long run, one should be particularly patient, out of caution (Fig. 2). This intuition echoes the concept of 'prudence' and 'precautionary savings' in microeconomics. However, standard utility theory predicts precautionary saving across the social ladder, and in particular among individuals with low resources. In contrast, our model predicts that patience should peak among the 'middle class', that Ravaillon [@ravallion2016] defines as those "who are not considered 'poor' in a specific society but face a non-negligible chance of falling into poverty" (p.270).. We are not aware of cross-sectional data supporting this prediction that the middle class is more patient than the upper class: on the contrary, @epper2020 finds that the negative association between resources and time discounting "exists through the wealth distribution" (p. 1177). However, our prediction echoes multiple theories in social sciences and economic history, which claim that patience and saving belong to so-called 'middle class values' [@veblen1899; @weber1905; @mccloskey2007; @doepke2008]. This view is famously expressed by Weber [@weber1905], who argued that the 'protestant ethic' --- emphasizing thrift and self-discipline --- emerged among the upper-middle class, not the aristocracy. @doepke2008, studying 18th-century Britain, draws a more direct link to discounting behavior: "the middle class developed a system of preferences and values centered around parsimony, the work ethic, and delay of gratification," whereas "members of the upper class displayed a low propensity to save and accumulated debt, which suggests low patience" (p. 749--750). Our model also resonates with Sharma's recent findings [@sharma2023], which find a "polarizing effect of scarcity" (p. 1040) in both surveys and experiments. Specifically: "Perceptions of scarcity that threatened needs with shorter time horizons predicted a significantly increased preference for smaller, sooner outcomes \[...\], while perceptions of scarcity that threatened needs with longer time horizons predicted a significantly increased preference for larger, later outcomes" (p. 1040). We hope our model encourages further empirical work to rigorously test this prediction in contemporary populations.
+A second common prediction across our four scenarios is that when above the threshold but still vulnerable in the long run, one should be particularly patient, out of caution (Fig. 2). This intuition echoes the concept of 'prudence' and 'precautionary savings' in microeconomics. However, standard utility theory predicts precautionary saving across the social ladder, and in particular among individuals with low resources. In contrast, our model predicts that patience should peak among the 'middle class', that Ravaillon [@ravallion2016] defines as those "who are not considered 'poor' in a specific society but face a non-negligible chance of falling into poverty" (p.270). We are not aware of cross-sectional data supporting this prediction that the middle class is more patient than the upper class: on the contrary, @epper2020 finds that the negative association between resources and time discounting "exists through the wealth distribution" (p. 1177). However, our prediction echoes multiple theories in social sciences and economic history, which claim that patience and saving belong to so-called 'middle class values' [@veblen1899; @weber1905; @mccloskey2007; @doepke2008]. This view is famously expressed by Weber [@weber1905], who argued that the 'protestant ethic' --- emphasizing thrift and self-discipline --- emerged among the upper-middle class, not the aristocracy. @doepke2008, studying 18th-century Britain, draws a more direct link to discounting behavior: "the middle class developed a system of preferences and values centered around parsimony, the work ethic, and delay of gratification," whereas "members of the upper class displayed a low propensity to save and accumulated debt, which suggests low patience" (p. 749--750). Our model also resonates with Sharma's recent findings [@sharma2023], which find a "polarizing effect of scarcity" (p. 1040) in both surveys and experiments. Specifically: "Perceptions of scarcity that threatened needs with shorter time horizons predicted a significantly increased preference for smaller, sooner outcomes \[...\], while perceptions of scarcity that threatened needs with longer time horizons predicted a significantly increased preference for larger, later outcomes" (p. 1040). We hope our model encourages further empirical work to rigorously test this prediction in contemporary populations.
 
 However, the four scenarios diverge sharply in their predictions far below the threshold (Fig. 2). If falling below the threshold has irreversible consequences (as in the 'game over' and 'all in vain' scenarios), the model predicts extreme impatience. In the 'hibernation' case, the agent becomes maximally patient. In the 'additive penalty' scenario, she remains time-neutral. We do not argue that one of the scenario best captures empirical reality. Rather, each scenario may correspond to different real-world situations, depending on which basic need is threatened. For example, threats to survival such as starvation may be best modeled as an irreversible threshold, whereas more symbolic or social needs --- such as Adam Smith's 'linen shirt' --- may align with the logic of the 'hibernation' scenario, and rental eviction may fall somewhere in between. In any case, the specific predictions below the threshold have limited implications for real-world population patterns. Such states are likely rare and transient, as it one would seek external help or engage in risk-taking in this situation [@decourson]. If these cases are indeed rare, all four scenarios converge on predicting a L-shaped association between resources and time discounting --- high discounting in poverty, patience in the middle class, and time neutrality among the wealthy.
 
 Our model also sheds light on how expectations about the future shape time preferences. In prior models of time discounting in poverty [@epper2015], and more generally in standard economic theory [@friedman1957], the effect of expectations is monotonic: the brighter one expects his future material situation to be, the more one prefers immediate resources. Yet in reality, extremely impatient behaviors such as acquisitive crime are often concentrated among populations with persistently pessimistic expectations [@anderson2000]. In multiple large scale surveys, @gladstone2025 actually finds an interaction effect: individuals with both low income and pessimistic beliefs save less than others (Fig. 4). Our model predicts a U-shaped effect of expectations. It can thus reconcile prior models --- we also find that optimism can generate time discounting --- with these empirical findings.
 
 These findings have implications for public policy. Impatient behavior in poverty is frequently viewed as irrational and harmful both to individuals themselves and to society as a whole. Tt is often addressed as a unfortunate cognitive bias or failing, through interventions that aim to alter perceptions of the future [@rung2018]. Our model suggests, instead, that high discounting is an appropriate response to material need, and therefore that directly addressing material need is the proper way of addressing discounting, while interventions on future orientation may be either ineffective or ethically questionable. Ensuring that everyone's basic needs are met would reduce impulsive behaviors and may yield positive externalities for society. It also makes a counterintuitive prediction: among middle-class individuals, anxiety about meeting future basic needs can lead to excessive saving --- and, as a result, under-consumption or under-investment. An ambitious welfare state could therefore enable people with both adequate and inadequate incomes to better align consumption with their actual preferences, rather than having to adapt their behavior to the looming threat of falling below a desperation threshold.
+
+## Appendix
+### Mathematical derivations
+
+| Symbol                      | Interpretation                            | Type            |
+|-----------------------------|-------------------------------------------|-----------------|
+| $x_0$                       | Initial resource level                    | Parameter       |
+| $x_1$                       | Resource level in $t_1$                   | Random variable |
+| $x_2$                       | Resource level in $t_2$                   | Random variable |
+| $\sigma$                    | Resource noise between time periods       | Parameter       |
+| $d$                         | Future resource expectations              | Parameter       |
+| $w$                         | Utility jump at the threshold             | Parameter       |
+| $U(.,.)$                    | Utility function                          | Function        |
+| $\mathbb{E}(U)$             | Expected utility                          | Function        |
+| $\frac{d\mathbb{E}(U)}{d.}$ | Marginal utility                          | Function        |
+| $MRIS$                      | Marginal rate of intertemporal substition | Outcome         |
+
+: Parameters used in the model
+
+#### Dynamics
+
+The agent starts with a resource level $x_0$, and lives through two time periods. Between each time period, he is affected by a random perturbation, normally distributed with mean 0 and variance $\sigma^2$, with $\sigma$ capturing the future uncertainty. In $x_2$, we also add a 'drift' parameter $d$, representing the agent expectation -- if $d>0$, she expects her situation to improve, while if $d<0$, she expects it to degrade. We also add the possibility to add a small resource $\Delta x_i$ in either of the time steps, to study the marginal effect of having more resources at some point in time. Note that these terms are only present in one time period: the term $\Delta x_1$ is absent in the second time period -- we justify this choice in the Methods section of the main manuscript.
+
+In other words, $$x_1 = x_0 + \Delta x_1 + \epsilon_1
+$$ And, $$x_2 = x_1 + \Delta x_2 + d + \epsilon_2 = x_0 + \Delta x_2 + d + \epsilon_1 + \epsilon_2,$$
+
+with $\forall i \in \{1,2\}, \epsilon_i \sim \mathcal{N}(0,\sigma^2)$
+
+#### Additive penalty
+
+In this scenario, the utility is the final state, minus a penalty for each period spent below the threshold 0.
+
+$$
+U(x_1,x_2) = x_1 + x_2 - w*(x_1<0+x_2<0)
+$$
+
+Clearly, $x_1 \sim \mathcal{N}(x_0,\sigma^2)$ $x_2 \sim \mathcal{N}(x_0,2\sigma^2)$
+
+We have (denoting $\phi_\sigma$ the normal probability density of mean 0 and variance $\sigma^2$:
+
+$$
+\begin{aligned}
+\mathbb{E}(U) &=  2x_0 - w(p(x_1 <0) + p(x_2<0))\\
+&=  2x_0 - w(p(\epsilon_1 <-x_0) + p(\epsilon_1 + \epsilon_2<-x_0 -d))\\
+&=2x_0 - w\left( \int_{-\infty}^{-x_0}\phi_\sigma(x)dx + \int_{-\infty}^{-x_0-d}\phi_{\sqrt{2}\sigma}(x)dx\right) \\
+&= 2x_0 -w \left( \int_{-\infty}^{-x_0}\frac{1}{\sigma}\phi(\frac x \sigma)dx + \int_{-\infty}^{-x_0-d}\frac{1}{\sqrt{2}\sigma}\phi\left(\frac{x}{\sqrt{2}\sigma}\right)dx\right)
+\end{aligned}
+$$
+
+To compute time discounting through the marginal rate of intertemporal substitution, we modify this formula by adding the option to add a small resource $\Delta x_i$ in one of time steps. The formula becomes:
+
+$$
+\mathbb{E}(U) = 2x_0 + \Delta x_1 + \Delta x_2 -w \left( \int_{-\infty}^{-x_0-\Delta x_1}\frac{1}{\sigma}\phi(\frac x \sigma)dx + \int_{-\infty}^{-x_0-d - \Delta x_2}\frac{1}{\sqrt{2}\sigma}\phi\left(\frac{x}{\sqrt{2}\sigma}\right)dx\right) $$
+
+Now, we compute the MRIS, which is defined as: $$MRIS = \frac{\frac{d E(U)}{d x_1}}{\frac{d E(U)}{d x_2}}$$
+
+By $dx_i$, we mean that we look at the marginal effect of the resource $\Delta x_1$ on utility.
+
+In our case, differentiating under the integral and using the symmetry of the normal density, we get:
+
+$$MRIS(x_0) = \frac{1+\frac w\sigma\phi(\frac{x_0}{\sigma}) }{1+\frac{w}{\sqrt 2 \sigma}\phi(\frac{x_0+d}{\sqrt{2}\sigma})}
+$$
+
+We can make a few observations: if $d=0$, the MRIS is an even function ($\forall x_0 \in \mathbb{R}, MRIS(-x_0) = MRIS(x_0)$), symmetrical around the desperation threshold 0. It reaches a maximum at 0, that is, at the desperation threshold ($MRIS'(0) = 0$, $MRIS''(0) < 0$). This maximum is:
+
+$$
+MRIS(0) = \frac{1+\frac{w}{\sqrt{2 \pi}\sigma}}{1+\frac{w}{2\sqrt \pi\sigma}}
+$$
+
+This maximum discounting value clearly increases with $w$ (more generally one can prove that for all $x_0$ values $MRIS(x_0)$ increases with $w$). For very high values of $w$ (a situation where utility approximates a step function around the threshold), we have:
+
+$$
+MRIS(0) \to \sqrt{2}
+$$
+
+For $d=0$, we can derive analytically the condition for the agent to discount the future:
+
+$$
+\begin{aligned}
+MRIS > 1 &\Longleftrightarrow \frac{d E(U)}{d x_1} > \frac{d E(U)}{d x_2} \\
+&\Longleftrightarrow 1+\frac w\sigma\phi(\frac{x_0}{\sigma}) > 1+\frac{w}{\sqrt 2 \sigma}\phi(\frac{x_0}{\sqrt{2}\sigma}) \\
+&\Longleftrightarrow e^{-x^2/2\sigma^2} > \frac{1}{\sqrt{2}} e^{-x^2/4\sigma^2}\\
+&\Longleftrightarrow e^{-x^2/4\sigma^2} > \frac{1}{\sqrt{2}} \\
+&\Longleftrightarrow \frac{-x^2}{4\sigma^2} > ln(\frac{1}{\sqrt{2}}) = \frac{-ln(2)}{2}\\
+&\Longleftrightarrow |x| < \sigma\sqrt{2ln(2)}
+\end{aligned}
+$$
+
+For extreme values of $x_0$, $\phi = o(1)$ whatever the variance, so $MRIS \to 1$ for $x \to ±\infty$.
+
+### Hibernation
+
+Now, utility is: $$
+U(x_1,x_2) = (x_1+w)(x_1 > 0) + (x_2+w)(x_2 > 0)
+$$
+
+Therefore, $$
+\mathbb{E}(U) = \int_{-x_0-\Delta x_1}^{+\infty}(x_0+\Delta x_1 +x+w)\phi(x)dx + \int_{-\infty}^{+\infty}\int_{-x_0-d-y - \Delta x_2}^{+\infty}(x_0+\Delta x_2 + x+y+d+w)\phi(x)\phi(y)dxdy
+$$ Marginal utilities are computed in a similar way as in the previous scenario, using Leibniz rule: $$
+\frac{d\mathbb{E}(U)}{dx_1} = \int_{-x_0}^{+\infty}\phi_\sigma(x)dx + w \phi_\sigma(-x_0) =\Phi_\sigma(x_0) + w\phi_\sigma(x_0) = \Phi(x_0/\sigma) + \frac w\sigma\phi(x_0/\sigma)
+$$
+
+$$
+\frac{d\mathbb{E}(U)}{dx_2} = \int_{-x_0-d}^{+\infty}\frac{1}{\sigma\sqrt{2}}\phi(\frac{x}{\sigma\sqrt{2}})dxdy + \frac{w}{\sigma\sqrt{2}}\phi(\frac{x_0+d}{\sigma\sqrt{2}}) = \Phi(\frac{x_0+d}{\sigma\sqrt{2}}) + \frac{w}{\sigma\sqrt{2}}\phi(\frac{x_0+d}{\sigma\sqrt{2}})
+$$ Like in the first scenario, marginal utility in the second time period has the same shape as in the first, with only an increased variance. The formula has an intuitive interpretation. It is the probability to be above the threshold by that time (in which case you derive utility from extra resources), plus the density at the threshold, weighted by $w$ (the utility at the threshold).
+
+It is not possible to derive analytically a necessary and sufficient condition for $MRIS > 1$, but the one found in the first scenario can be shown to be a sufficient condition for positive $x_0$. Numerical results show that this actual region is slightly larger (see Fig. 2B in the main manuscript).
+
+Indeed, if $x_0 > 0$, $\Phi_\sigma(x_0) > \Phi_{\sqrt{2}\sigma}(x_0)$, and as in the previous scenario, $\phi_\sigma(x_0) > \phi_{\sqrt{2}\sigma}(x_0) \Longleftrightarrow|x_0| < \sigma\sqrt{2ln(2)}$.
+
+Therefore, $0<x_0<\sigma\sqrt{2ln(2)} \Longrightarrow \frac{d\mathbb{E}(U)}{dx_1} > \frac{d\mathbb{E}(U)}{dx_2} \Longrightarrow MRIS > 1$.
+
+For $x_0 \to +\infty$, in both cases $\Phi \to 1$ and $\phi \to 0$ (intuitively, one becomes sure to be above the threshold, and the density at the threshold vanishes). Clearly, $\frac{d\mathbb{E}(U)}{dx_1} \to 1$ and $\frac{d\mathbb{E}(U)}{dx_2} \to 1$, so $MRIS \to 1$.
+
+For $x_0 \to -\infty$, in both cases Mills ratio implies that $\Phi = o(\phi)$: it becomes very unlikely to be above the threshold, so the dominant contribution to marginal utility comes form the possibility that the resources helps overcome the threshold. In this case, however, $\phi_{\sigma} = o(\phi_{\sqrt{2}\sigma})$: the normal distribution with a higher variance decays much slower. This implies that $\frac{d\mathbb{E}(U)}{dx_1} = o(\frac{d\mathbb{E}(U)}{dx_2})$, so $MRIS \to 0$.
+
+### All in vain
+
+Now, $$
+U(x_1,x_2) = (w+x_2)(x_1 > 0 \cap x_2 > 0)
+$$
+
+Therefore, $$
+\mathbb{E}(U) = \int_{-x_0-\Delta x_1}^{+\infty}\int_{-x_0-\Delta x_2 - d-y}^{+\infty}(w + x_0 + \Delta x_1 + \Delta x_2 + x + y) \phi(x) \phi(y) dx dy
+$$
+
+$$
+\begin{aligned}
+\frac{d\mathbb{E}(U)}{dx_1}  & =  1\cdot \int_{-x_0}^{+\infty}\int_{-x_0-d-y}^{+\infty}\phi(x) \phi(y) dx dy + \phi(x_0)\int_{-d}^{+\infty}(w+d+x)\phi(x)dx \\
+& = P(x_1 > 0 \cap x_2 > 0) + \phi_\sigma(x_0)((w+d) \Phi_\sigma(d) + \sigma^2\phi_\sigma(x_0+d))
+\end{aligned}
+$$
+
+This formula is cumbersome, but can be interpreted. The first term is the probability to be able to derive utility from the resources. The second term is the density to be at the threshold in the first time period, weighted by several parameters. First, $w+d$, as $x_1=0$, $\mathbb{E}(x_2) =d$, so one expects to get a utility $w+d$. Second, $\Phi_\sigma(d)$, which is the probability to stay above the threshold in the second time period, given that $x_1 = 0$ (if one falls back below the threshold in the second period, having reached it in the first is useless). Last, one adds $\sigma^2\phi_\sigma(x_0+d))$, which is the partial expectation of $x_2$ conditional on x_2 \> 0: there is a chance that one gets more resources in the second period, which brings utility that one would not have had if not above the threshold in the first.
+
+The marginal utility in the second period is: $$
+\frac{d\mathbb{E}(U)}{dx_2} = 1\cdot \int_{-x_0}^{+\infty}\int_{-x_0-y}^{+\infty}\phi(x) \phi(y) dx dy + w\cdot\int_{-x_0}^{+\infty}\phi(y)\phi(-x_0-d-y)dy
+$$
+
+The second member simplifies (after a change of variable):
+
+$$
+\begin{aligned}
+\frac{d\mathbb{E}(U)}{dx_2} &= P(x_1 > 0 \cap x_2 > 0) + \frac{e^{\frac{-(x_0+d)^2}{4}}}{{2\pi\sigma^2}}\int_{-x_0}^{+\infty}e^{(\sqrt{2}y+(x_0+d)/\sqrt{2})^2/2}dy \\
+&= P(x_1 > 0 \cap x_2 > 0) + w\phi_{\sqrt{2}\sigma}\left( x_0+d \right)\Phi_{\sqrt{2}\sigma}(x_0-d)
+\end{aligned}
+$$ This formula is simpler to interpret: the first term is still the probability to enjoy the extra resource because above the threshold in both periods, and the second is the density of $x_2$ in 0 (intuitively, the chance that the extra resource pushes one above the threshold), weighted by $w$ (the utility at the threshold), and $\Phi_{\sqrt{2}\sigma}(x_0-d)$ gives, intuitively, the probability to have been above the threshold in the first period given that one is right at the threshold in the second.
+
+For very low values of $x_0$, we can look for equivalents of the terms. First, we get the equivalent for the probability to be above in both time steps. The intuition here is that the normal density decays so fast that the majority of the probability mass allowing survival is concentrated just above 0. So, if $x_1>0$ in spite of $x_0 << 0$, most likely $x_1 \sim 0$, and then we need $\epsilon_2 > -d$ to stay above the threshold in $t_2$. Formally, we split the integral and show that the rest becomes negligible. Here goes:
+
+$$
+\begin{aligned}
+\mathbb{P}(x_1 > 0, x_2 > 0) &= \int_{-x_0}^{+\infty} \int_{-x_0 - y}^{+\infty} \phi(x) \phi(y)\,dx\,dy \\
+&= \int_{-x_0}^{+\infty} \int_{0}^{+\infty} \phi(x) \phi(y)\,dx\,dy + \int_{-x_0}^{+\infty} \int_{-x_0 - y - d}^{-d} \phi(x) \phi(y)\,dx\,dy \\
+&= \Phi(x_0) \Phi(d) + R(x_0)
+\end{aligned}
+$$ Now, inside the rest integral, we remark that $\forall x \in [-x_0 - y - d,-d], \phi(x) \le \phi(-d) = \phi(d)$. We minimize the rest, and then we can make an explicit integration of the lower bound.
+
+$$
+\begin{aligned}
+0 \le R(x_0) &\le \phi(d) \int_{-x_0 }^{+\infty} \phi(y)(x_0+y)dy \\
+&= \phi(d)\left[ x_0\Phi(x_0) + \phi(x_0)\right]
+\end{aligned}
+$$ Now, we use the Mills ratio: for very negative $x$, we have: $$
+x\Phi(x) \sim -\phi(x)\left(1 - \frac1{x^2} + o(\frac1{x^2}) \right)
+$$ Therefore, $$
+R(x_0) \sim \frac{\phi(x_0)}{x^2} = o(\Phi(x_0))
+$$
+
+Since we have:
+
+$\Phi(x_0) \Phi(d) \le \mathbb{P}(x_1 \> 0, x_2 \> 0) \le \Phi(x_0) \Phi(d) + R(x_0)$
+
+And $R(x_0) = o(\Phi(x_0)\Phi(d))$, the upper bound is equivalent to the lower bound, and by a sandwich theorem, we have: $$
+\mathbb{P}(x_1 > 0, x_2 > 0) \sim \Phi_\sigma(x_0) \Phi_\sigma(d) \sim -\sigma^2\Phi_\sigma(d)\frac{\phi_\sigma(x_0)}{x_0}
+$$
+
+For $w > 0$, the other member of $\frac{d\mathbb{E}(U)}{dx_1}$ is clearly dominant, and we have:
+
+$$
+\frac{d\mathbb{E}(U)}{dx_1} \sim w\frac{\phi(x_0/\sigma)}{\sigma} \Phi(d/\sigma)
+$$
+
+As for $\frac{d\mathbb{E}(U)}{dx_2}$, we can compute an equivalent of the second member, using Mills ratio and simplifying:
+
+$$
+\frac{w}{\sqrt{2}}\phi_{\sqrt{2}\sigma}(x_0+d)\Phi_{\sqrt{2}\sigma}(x_0-d) \sim -\frac{w}{\sqrt{2}}\phi(x_0/\sigma)\frac{\phi(d/\sigma)}{x_0}
+$$
+
+Let us assume that $w$ is large enough, so that this term dominates the other term -- otherwise the terms are of the same order and we can combine them, leading to a similar behavior. In this case, we obtain:
+
+$$
+\begin{aligned}
+MRIS = \frac{\frac{d\mathbb{E}(U)}{dx_1} }{\frac{d\mathbb{E}(U)}{dx_2}} &\sim \frac{w\frac{\phi(x_0/\sigma)}{\sigma} \Phi(d/\sigma)}{-\frac{w}{\sqrt{2}}\phi(x_0/\sigma)\frac{\phi(d/\sigma)}{x_0}}\\
+&\sim -x_0\frac{\Phi(d/\sigma)}{\sqrt{2}\sigma\phi(d/\sigma)}
+\end{aligned}
+$$
+
+#### Game-over
+
+In this scenario, the utility function is: $$
+U(x_1,x_2) = (x_1+w)(x_1>0) + (x_2+w)(x_1 > 0 \cap x_2 > 0)
+$$
+
+Therefore, $$
+\mathbb{E}(U) =  \int_{-x_0-\Delta x_1}^{+\infty}(x_0+\Delta x_1 + x+w)\phi(x)dx + \int_{-x_0}^{+\infty}\int_{-x_0-\Delta x_2 -y}^{+\infty}(w + x_0 +\Delta x_2 + x + y + d) \phi(x) \phi(y) dx dy
+$$
+
+Marginal utility in the first period is:
+
+$$
+\frac{d\mathbb{E}(U)}{dx_1} = \Phi_\sigma(x_0) + w\phi_\sigma(x_0) + \phi_\sigma(x_0)((w+d)\Phi_\sigma(d) + \sigma^2\phi_\sigma(d))
+$$
+
+The computation of marginal utility in $t_2$ is the same as the previous model: $$
+\frac{d\mathbb{E}(U)}{dx_2} = P(x_1 \> 0 \cap x_2 \> 0) + w\phi_{\sqrt{2}\sigma}\left( x_0+d \right)\Phi_{\sqrt{2}\sigma}(x_0-d)$$
+
+### Supplementary results
+Figure sigma and w
+
