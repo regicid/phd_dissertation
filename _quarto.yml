@@ -2,12 +2,14 @@ project:
   type: book
 
 book:
-  title: "The desperation threshold model: a framework to understand decisions in poverty"
+  title: "The desperation threshold: a model to understand decisions in poverty"
+  subtitle: "De wanhoopsdrempel: een model om beslissingen in armoede te begrijpen"
   author: "Benoît de Courson"
-  date: "2025-06-23"
+  date: "2025"
   
   chapters:
     - index.qmd
+    - intro.qmd
     - violence/violence.qmd
     - model_time/time_draft.qmd
     - empirical_paper/analysis_ccl.qmd
@@ -27,14 +29,11 @@ book:
   #       - chapter2.qmd
 
 format:
-  html:
-    theme: cosmo
-    cover-image: cover.png
-    favicon: favicon.ico
-    
   pdf:
     documentclass: scrreprt
+    include-before-body: title.tex
     include-in-header: header.tex
+    keep-tex: true
     
   epub:
     cover-image: cover.png

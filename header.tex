@@ -17,13 +17,23 @@
 \usepackage{pdflscape}
 \usepackage{enumerate}   
 \newcommand{\beginsupplement}{\setcounter{table}{0}  \renewcommand{\thetable}{S\arabic{table}} \setcounter{figure}{0} \renewcommand{\thefigure}{S\arabic{figure}}}
+
+\newcommand{\stopsupplement}{
+  \setcounter{table}{0}
+  \renewcommand{\thetable}{\arabic{table}}
+  \setcounter{figure}{0}
+  \renewcommand{\thefigure}{\arabic{figure}}
+}
+\usepackage{longtable}\usepackage{array}\usepackage{booktabs}\renewcommand{\arraystretch}{1.2}
 \usepackage{multirow}
 \usepackage{bbm}
 \usepackage{tkz-tab}
 \usepackage{amssymb}
 \usepackage{amsmath}
+\usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{enumerate}
 \usepackage{subfig}
 \usepackage{subcaption}
 \usetikzlibrary{graphs,quotes,arrows.meta,shapes,arrows,positioning,automata,calc}
+\renewcommand{\maketitle}{}

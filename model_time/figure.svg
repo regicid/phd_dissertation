@@ -67,7 +67,7 @@
   <text x="232.5" y="275" class="lmroman" font-size="12" text-anchor="middle" font-style="italic">U(x₁,x₂) = x₁ + x₂ - w(x₁ &lt; 0 ∧ x₂ &lt; 0)</text>
   
   <!-- Square placeholder for Python graph -->
-  <image x="132.5" y="265" width="200" height="200" href="/Users/benoit2c/code/model_time/svg_figure/1.png" />
+  <image x="132.5" y="265" width="200" height="200" href="/Users/benoit2c/code/phd_dissertation/model_time/svg_figure/1.png" />
   
   <!-- Scenario 2: Hibernation - Extended for square placeholder -->
   <rect x="405" y="230" width="325" height="220" fill="#fff" stroke="#ddd" stroke-width="1" rx="5" ry="5"/>
@@ -75,7 +75,7 @@
   <text x="567.5" y="275" class="lmroman" font-size="12" text-anchor="middle" font-style="italic">U(x₁,x₂) = (x₁ + w)(x₁ &lt; 0) + (x₂ + w)(x₂ &lt; 0)</text>
   
   <!-- Square placeholder for Python graph -->
-  <image x="467.5" y="265" width="200" height="200" href="/Users/benoit2c/code/model_time/svg_figure/2.png" />
+  <image x="467.5" y="265" width="200" height="200" href="/Users/benoit2c/code/phd_dissertation/model_time/svg_figure/2.png" />
 
   
   <!-- Scenario 3: Game Over - Extended for square placeholder -->
@@ -84,7 +84,7 @@
   <text x="232.5" y="505" class="lmroman" font-size="12" text-anchor="middle" font-style="italic">U(x₁,x₂) = (x₁ + w)(x₁ &gt; 0) + (x₂ + w)(x₁ &gt; 0 ∧ x₂ &gt; 0)</text>
   
   <!-- Square placeholder for Python graph -->
-  <image x="132.5" y="495" width="200" height="200" href="/Users/benoit2c/code/model_time/svg_figure/3.png" />
+  <image x="132.5" y="495" width="200" height="200" href="/Users/benoit2c/code/phd_dissertation/model_time/svg_figure/3.png" />
 
   
   <!-- Scenario 4: All in Vain - Extended for square placeholder -->
@@ -93,7 +93,7 @@
   <text x="567.5" y="505" class="lmroman" font-size="12" text-anchor="middle" font-style="italic">U(x₁,x₂) = (x₁ + x₂ + w)(x₁ &gt; 0 ∧ x₂ &gt; 0)</text>
   
   <!-- Square placeholder for Python graph -->
-  <image x="467.5" y="495" width="200" height="200" href="/Users/benoit2c/code/model_time/svg_figure/4.png" />
+  <image x="467.5" y="495" width="200" height="200" href="/Users/benoit2c/code/phd_dissertation/model_time/svg_figure/4.png" />
 
   
 </svg>
