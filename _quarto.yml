@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "The desperation threshold: a model to understand decisions in poverty"
+  title: "The desperation threshold: a model to explain decisions in poverty"
   subtitle: "De wanhoopsdrempel: een model om beslissingen in armoede te begrijpen"
   author: "Benoît de Courson"
   date: "2025"
@@ -31,13 +31,11 @@ book:
 format:
   pdf:
     documentclass: scrreprt
+    classoption: [notitlepage]
     include-before-body: title.tex
     include-in-header: header.tex
     keep-tex: true
-    
-  epub:
-    cover-image: cover.png
-
+csl: apa.csl
 link-citations: true
 
 # Optional: Additional metadata
@@ -51,3 +49,13 @@ bibliography:
 # Optional: Execute options
 execute:
   freeze: auto
+
+
+profile:
+  single-chapter: # <--- This is the profile name, as a key directly under 'profile:'
+    project:
+      type: default # Treat it as a standalone document
+      render: [] # Don't render anything else from the book
+    book: ~ # Nullify book-specific settings for this profile
+    format:
+      pdf

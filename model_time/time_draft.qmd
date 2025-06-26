@@ -1,5 +1,5 @@
 ---
-title: "Why does poverty increase time discounting? Present needs and uncertain future."
+title: "Why does poverty increase time discounting? Present needs and uncertain future"
 format:
   pdf
 bibliography: references.bib
@@ -258,7 +258,7 @@ When only the 'uncertainty' effect is present (Fig. 3.2A&B), our model predicts 
 
 Importantly, this effect occurs on both sides of the desperation threshold (Fig. 3.2). This contrasts with the implications of the desperation threshold on risk taking [@decourson2021; @decoursonWhyViolenceHigh2023b], that predict a shift from extreme risk taking to extreme risk avoidance at the threshold. In other words, the DTM predicts that while poverty has a polarizing effect on risk taking, it uniformly increases time discounting. This aligns with empirical findings: studies find that poverty can increase or decrease risk taking, but the effect on time discounting is consistently positive [@haushofer].
 
-What real-world behaviors might our model explain? We argue that it provides a new possible rational account of decisions that alleviate need in the short-term, even if they lead to possibly greater need later. It applies particularly well to behaviors like acquisitive crime in contexts of pressing need [@rossmo2022; @topalli2015; @jacobs1999], or to payday loans uptake [@bertrand2011; @dobbie2013]. It does not, as presented here, account for, for example, high consumption of 'temptation goods' in deprived populations [@banerjee2010]. To extend the model to cover those goods, we would have to posit needs that those goods serve, such as reputational or signalling needs. Alternatively, the consumption of such goods may be a maladaptive byproduct of increased discounting whose proper domain is need goods.
+What real-world behaviors might our model explain? We argue that it provides a new possible rational account of decisions that alleviate need in the short-term, even if they lead to possibly greater need later. It applies particularly well to behaviors like acquisitive crime in contexts of pressing need [@rossmo2022; @topalli2015; @jacobscrime1999], or to payday loans uptake [@bertrand2011; @dobbie2013]. It does not, as presented here, account for, for example, high consumption of 'temptation goods' in deprived populations [@banerjee2010]. To extend the model to cover those goods, we would have to posit needs that those goods serve, such as reputational or signalling needs. Alternatively, the consumption of such goods may be a maladaptive byproduct of increased discounting whose proper domain is need goods.
 
 A second common prediction across our four scenarios is that when above the threshold but still vulnerable in the long run, one should be particularly patient, out of caution (Fig. 3.2). This intuition echoes the concept of 'prudence' and 'precautionary savings' in microeconomics. However, standard utility theory predicts precautionary saving across the social ladder, and in particular among individuals with low resources. In contrast, our model predicts that patience should peak among the 'middle class', that Ravaillon [@ravallion2016] defines as those "who are not considered 'poor' in a specific society but face a non-negligible chance of falling into poverty" (p.270). We are not aware of cross-sectional data supporting this prediction that the middle class is more patient than the upper class: on the contrary, @epper2020 finds that the negative association between resources and time discounting "exists through the wealth distribution" (p. 1177). However, our prediction echoes multiple theories in social sciences and economic history, which claim that patience and saving belong to so-called 'middle class values' [@veblen1899; @weber1905; @mccloskey2007; @doepke2008]. This view is famously expressed by Weber [@weber1905], who argued that the 'protestant ethic' --- emphasizing thrift and self-discipline --- emerged among the upper-middle class, not the aristocracy. @doepke2008, studying 18th-century Britain, draws a more direct link to discounting behavior: "the middle class developed a system of preferences and values centered around parsimony, the work ethic, and delay of gratification," whereas "members of the upper class displayed a low propensity to save and accumulated debt, which suggests low patience" (p. 749--750). Our model also resonates with Sharma's recent findings [@sharma2023], which find a "polarizing effect of scarcity" (p. 1040) in both surveys and experiments. Specifically: "Perceptions of scarcity that threatened needs with shorter time horizons predicted a significantly increased preference for smaller, sooner outcomes \[...\], while perceptions of scarcity that threatened needs with longer time horizons predicted a significantly increased preference for larger, later outcomes" (p. 1040). We hope our model encourages further empirical work to rigorously test this prediction in contemporary populations.
 
@@ -383,6 +383,8 @@ For $x_0 \to +\infty$, in both cases $\Phi \to 1$ and $\phi \to 0$ (intuitively,
 
 For $x_0 \to -\infty$, in both cases Mills ratio implies that $\Phi = o(\phi)$: it becomes very unlikely to be above the threshold, so the dominant contribution to marginal utility comes form the possibility that the resources helps overcome the threshold. In this case, however, $\phi_{\sigma} = o(\phi_{\sqrt{2}\sigma})$: the normal distribution with a higher variance decays much slower. This implies that $\frac{d\mathbb{E}(U)}{dx_1} = o(\frac{d\mathbb{E}(U)}{dx_2})$, so $MRIS \to 0$.
 
+For $x_0 \to +\infty$, clearly $P(x_1 > 0 \cap x_2 > 0) \to 1$ and the other terms become negligible, so $MRIS \to 1$.
+
 #### All in vain
 
 Now, $$
@@ -464,6 +466,7 @@ MRIS = \frac{\frac{d\mathbb{E}(U)}{dx_1} }{\frac{d\mathbb{E}(U)}{dx_2}} &\sim \f
 &\sim -x_0\frac{\Phi(d/\sigma)}{\sqrt{2}\sigma\phi(d/\sigma)}
 \end{aligned}
 $$
+For $x_0 \to +\infty$, clearly $P(x_1 > 0 \cap x_2 > 0) \to 1$ and the other terms become negligible, so $MRIS \to 1$.
 
 #### Game-over
 
@@ -484,11 +487,18 @@ $$
 The computation of marginal utility in $t_2$ is the same as the previous model: $$
 \frac{d\mathbb{E}(U)}{dx_2} = P(x_1 \> 0 \cap x_2 \> 0) + w\phi_{\sqrt{2}\sigma}\left( x_0+d \right)\Phi_{\sqrt{2}\sigma}(x_0-d)$$
 
+Using the same reasooning as in the previous scenario, we can show that the MRIS becomes approximately linear for $x_0 \to -\infty$, but with a steeper asymptotic slope. For high $w$, we have:
+
+$$
+MRIS \sim -x_0\frac{1+\Phi(d/\sigma)}{\sqrt{2}\sigma\phi(d/\sigma)}
+$$
+We note that for $d=0$, the slope is precisely three time steeper than in the 'all in vain' scenario. For $d >> 0$, it is two times steeper. For $d<<0$, it is infinitely steeper. 
+
 ### Sensitivity analysis
 The main text shows the effect of $x_0$ and $d$ on time discounting. Here, we present the effect of the other parameters ($\sigma$ and $w$).
 ```{python}
 #| echo: false
-#| fig.cap: Time discounting depending on resources, for high and low resource noise between periods. The solid line denotes low noise ($\\sigma = 1$), the dashed line denotes high noise ($\\sigma = 2$). The y-axis is truncated at .1 and 10 for legibility.
+#| fig.cap: Time discounting depending on resources, for high and low resource noise between periods. The solid line denotes $σ = 1$, the dashed line denotes $σ = 2$. The y-axis is truncated at .1 and 10 for legibility.
 fig, axes = plt.subplots(2, 2, figsize=(8, 8),sharey=True)  # Adjust figsize as needed
 X = np.linspace(-7,7,200)
 w = 10
